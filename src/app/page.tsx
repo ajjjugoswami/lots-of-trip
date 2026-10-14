@@ -115,7 +115,6 @@ export default async function HomePage() {
         latitude: 30.3165,
         longitude: 78.0322,
       },
-      priceRange: "₹₹",
       areaServed: [
         { "@type": "State", name: "Uttarakhand" },
         { "@type": "State", name: "Himachal Pradesh" },

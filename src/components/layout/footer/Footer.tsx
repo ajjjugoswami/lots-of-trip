@@ -115,7 +115,7 @@ export function Footer() {
           <Link href="/credits" className="underline underline-offset-2 hover:text-ink">
             see full credits
           </Link>
-          . Prices and itineraries shown are indicative and confirmed at the time of booking.
+          . Itineraries shown are indicative; prices are shared on request over WhatsApp.
         </p>
       </div>
     </footer>

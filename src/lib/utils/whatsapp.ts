@@ -11,3 +11,7 @@ export function buildWhatsAppLink(subject?: string) {
       : "Hi Lots of Trip! I'd like help planning a trip to the mountains.",
   );
 }
+
+export function buildPriceEnquiryLink(subject: string) {
+  return buildWhatsAppMessageLink(`Hi Lots of Trip! Could you share the price for ${subject}?`);
+}

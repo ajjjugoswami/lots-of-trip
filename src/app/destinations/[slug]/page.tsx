@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DestinationHero } from "@/components/sections/destination/DestinationHero";
+import { DestinationLocation } from "@/components/sections/destination/DestinationLocation";
 import { DestinationOverview } from "@/components/sections/destination/DestinationOverview";
 import { LiveWeather } from "@/components/sections/destination/LiveWeather";
 import { NextDestination } from "@/components/sections/destination/NextDestination";
@@ -11,6 +12,7 @@ import { TourGrid } from "@/components/sections/shared/TourGrid";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { getAdjacentDestination, getDestination, getDestinations } from "@/lib/data/destinations";
 import { getToursForDestination } from "@/lib/data/tours";
+import { destinationMapHref } from "@/lib/utils/maps";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export function generateStaticParams() {
@@ -92,7 +94,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
         "@type": "AdministrativeArea",
         name: stateName,
       },
-      hasMap: `https://www.openstreetmap.org/?mlat=${destination.coordinates.lat}&mlon=${destination.coordinates.lng}`,
+      hasMap: `${siteUrl}${destinationMapHref(destination.slug)}`,
     },
     {
       "@context": "https://schema.org",
@@ -126,6 +128,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
       <DestinationHero destination={destination} />
       <DestinationOverview destination={destination} />
       <LiveWeather destination={destination} />
+      <DestinationLocation destination={destination} />
       <PhotoGrid images={destination.images.slice(1)} title={`${destination.name} in pictures`} />
       <SeasonBar months={destination.bestMonths} name={destination.name} />
       {tours.length > 0 && (

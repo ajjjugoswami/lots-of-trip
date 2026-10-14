@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/tours/[slug]">): 
   if (!tour) return {};
 
   const title = `${tour.title} (${tour.durationDays} Days Itinerary) — Lots of Trip`;
-  const description = `${tour.summary} Includes stays, private car transfers, sightseeing, and 24/7 on-trip assistance. Starting from ₹${tour.priceFromINR.toLocaleString("en-IN")}.`;
+  const description = `${tour.summary} Includes stays, private car transfers, sightseeing, and 24/7 on-trip assistance. Pricing shared on request over WhatsApp.`;
   const coverImage = tour.cover.src;
 
   return {
@@ -89,13 +89,6 @@ export default async function TourPage({ params }: PageProps<"/tours/[slug]">) {
             description: day.description,
           },
         })),
-      },
-      offers: {
-        "@type": "Offer",
-        price: tour.priceFromINR,
-        priceCurrency: "INR",
-        availability: "https://schema.org/InStock",
-        url: `${siteUrl}/tours/${tour.slug}`,
       },
       provider: {
         "@type": "TravelAgency",

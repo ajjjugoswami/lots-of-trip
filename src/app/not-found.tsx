@@ -1,4 +1,4 @@
-import { Compass, Home, MapPin } from "lucide-react";
+import { ArrowRight, Compass, Home, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -88,8 +88,12 @@ export default function NotFound() {
 
           <div className="mt-6 border-t border-line pt-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-[13px] text-slate">
             <span>Looking for a personalized Himalayan trip?</span>
-            <Link href="/contact" className="font-semibold text-accent hover:underline">
-              Plan custom journey &rarr;
+            <Link href="/contact" className="group inline-flex items-center gap-1.5 font-semibold text-accent hover:underline">
+              Plan custom journey
+              <ArrowRight
+                className="size-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
+                aria-hidden
+              />
             </Link>
           </div>
         </div>

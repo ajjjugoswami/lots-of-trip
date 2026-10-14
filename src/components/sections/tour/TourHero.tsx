@@ -1,7 +1,10 @@
-import { CalendarDays, Gauge, IndianRupee, Users } from "lucide-react";
+import { ArrowUpRight, CalendarDays, Gauge, Users } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
-import { difficultyLabel, formatINR } from "@/lib/utils/format";
+import { pricingCopy } from "@/content/site";
+import { difficultyLabel } from "@/lib/utils/format";
+import { buildPriceEnquiryLink } from "@/lib/utils/whatsapp";
 import type { Tour } from "@/types/tour";
 
 export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
@@ -9,7 +12,6 @@ export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
     { Icon: CalendarDays, label: "Duration", value: `${tour.durationDays} days` },
     { Icon: Gauge, label: "Level", value: difficultyLabel(tour.difficulty) },
     { Icon: Users, label: "Group", value: tour.groupSize },
-    { Icon: IndianRupee, label: "From", value: `${formatINR(tour.priceFromINR)} pp` },
   ];
 
   return (
@@ -34,6 +36,27 @@ export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
             </div>
           </div>
         ))}
+        <div className="bg-paper">
+          <dt className="sr-only">Price</dt>
+          <dd className="h-full">
+            <a
+              href={buildPriceEnquiryLink(`the ${tour.title} journey`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex h-full items-center gap-3 px-5 py-5 transition-colors hover:bg-surface"
+            >
+              <FaWhatsapp className="size-5 shrink-0 text-[#25d366]" aria-hidden />
+              <span className="flex-1">
+                <span className="block text-[12px] text-slate">{pricingCopy.label}</span>
+                <span className="block text-[15px] font-semibold">{pricingCopy.short}</span>
+              </span>
+              <ArrowUpRight
+                className="size-4 text-slate transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                aria-hidden
+              />
+            </a>
+          </dd>
+        </div>
       </dl>
     </section>
   );

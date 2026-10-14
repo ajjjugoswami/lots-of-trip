@@ -92,7 +92,8 @@
     outline-offset: 3px;
   }
 
-  html.menu-open {
+  html.menu-open,
+  html.scroll-locked {
     overflow: hidden;
   }
 

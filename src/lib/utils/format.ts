@@ -20,8 +20,6 @@ export const monthShort = (month: number) => MONTHS[month - 1].slice(0, 3);
 
 const numberFormat = new Intl.NumberFormat("en-IN");
 
-export const formatINR = (value: number) => `₹${numberFormat.format(value)}`;
-
 export const formatAltitude = (metres: number) => `${numberFormat.format(metres)} m`;
 
 export function formatCoordinates({ lat, lng }: Coordinates) {

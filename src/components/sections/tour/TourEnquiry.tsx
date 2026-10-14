@@ -2,8 +2,8 @@ import { Clock, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { EmbeddedForm } from "@/components/ui/EmbeddedForm";
-import { siteConfig } from "@/content/site";
-import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
+import { pricingCopy, siteConfig } from "@/content/site";
+import { buildPriceEnquiryLink } from "@/lib/utils/whatsapp";
 
 export function TourEnquiry({ title }: { title: string }) {
   const { contact } = siteConfig;
@@ -32,12 +32,12 @@ export function TourEnquiry({ title }: { title: string }) {
           </ul>
           <div className="mt-8">
             <ButtonLink
-              href={buildWhatsAppLink(`the ${title} journey`)}
+              href={buildPriceEnquiryLink(`the ${title} journey`)}
               external
               variant="outline"
               icon={<FaWhatsapp className="size-4 text-[#25d366]" />}
             >
-              Ask on WhatsApp
+              {pricingCopy.cta}
             </ButtonLink>
           </div>
         </div>

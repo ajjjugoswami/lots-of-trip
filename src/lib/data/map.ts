@@ -1,7 +1,7 @@
 import mapSource from "@/content/generated/map.json";
 import { mapLabelSides } from "@/content/mapLabels";
 import type { Coordinates } from "@/types/destination";
-import type { MapData, MapState } from "@/types/map";
+import type { MapData, MapPlace, MapState } from "@/types/map";
 import type { CurrentWeather } from "@/types/weather";
 import { getDestinations } from "./destinations";
 
@@ -40,4 +40,17 @@ export function getMapData(weather: Record<string, CurrentWeather | null>): MapD
       ...project(destination.coordinates),
     })),
   };
+}
+
+export function getMapPlaces(): MapPlace[] {
+  return getDestinations().map((destination) => ({
+    slug: destination.slug,
+    name: destination.name,
+    region: destination.region,
+    tagline: destination.tagline,
+    altitudeM: destination.altitudeM,
+    bestMonths: destination.bestMonths,
+    coordinates: destination.coordinates,
+    image: destination.images[0],
+  }));
 }

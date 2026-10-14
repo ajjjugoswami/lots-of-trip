@@ -1,5 +1,5 @@
 import type { HeaderData } from "@/types/site";
-import { formatAltitude, formatINR } from "@/lib/utils/format";
+import { difficultyLabel, formatAltitude } from "@/lib/utils/format";
 import { getDestinationsByState, getStates } from "./destinations";
 import { getTour } from "./tours";
 
@@ -24,7 +24,7 @@ export function getHeaderData(): HeaderData {
     feature: {
       eyebrow: "Featured journey",
       title: tour.title,
-      meta: `${tour.durationDays} days · from ${formatINR(tour.priceFromINR)}`,
+      meta: `${tour.durationDays} days · ${difficultyLabel(tour.difficulty)}`,
       href: `/tours/${tour.slug}`,
       image: tour.cover,
     },

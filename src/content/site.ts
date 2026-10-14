@@ -57,4 +57,10 @@ export const analytics = {
   siteId: "EHU8K8SymLZDnOsT",
 };
 
+export const pricingCopy = {
+  label: "Price on request",
+  cta: "Get price on WhatsApp",
+  short: "Ask for price",
+};
+
 export const bookingStatus = "Now booking winter 2026–27 trips";

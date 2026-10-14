@@ -1,4 +1,4 @@
-import type { StateSlug } from "./destination";
+import type { Coordinates, StateSlug } from "./destination";
 import type { ImageAsset } from "./image";
 import type { CurrentWeather } from "./weather";
 
@@ -38,4 +38,15 @@ export interface MapData {
   states: MapState[];
   labels: MapLabel[];
   destinations: MapDestination[];
+}
+
+export interface MapPlace {
+  slug: string;
+  name: string;
+  region: string;
+  tagline: string;
+  altitudeM: number;
+  bestMonths: number[];
+  coordinates: Coordinates;
+  image: ImageAsset;
 }
