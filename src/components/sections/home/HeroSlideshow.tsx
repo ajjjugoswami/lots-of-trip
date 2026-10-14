@@ -28,7 +28,7 @@ export function HeroSlideshow({ slides, children }: { slides: HeroSlide[]; child
   }, [active, reducedMotion, slides.length]);
 
   return (
-    <section ref={sectionRef} className="relative isolate flex flex-col overflow-hidden bg-night text-white md:min-h-svh">
+    <section ref={sectionRef} data-header-overlay className="relative isolate flex flex-col overflow-hidden bg-night text-white md:min-h-svh">
       <div className="absolute inset-0 -z-10" aria-hidden>
         {slides.map((slide, index) => (
           <div key={slide.image.src} className={styles.slide} data-active={index === active || undefined}>

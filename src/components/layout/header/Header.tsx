@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { mainNav } from "@/content/site";
-import { isOverlayRoute } from "@/lib/utils/routes";
+import { cn } from "@/lib/utils/cn";
 import type { HeaderData } from "@/types/site";
 import styles from "./Header.module.css";
 import { MegaMenu } from "./MegaMenu";
@@ -43,15 +43,13 @@ export function Header({ data }: { data: HeaderData }) {
     setOpen((value) => !value);
   };
 
-  const hasOverlay = isOverlayRoute(pathname);
-  const overlay = hasOverlay && !scrolled && !open;
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <>
       <header
         className={styles.header}
-        data-overlay={overlay || undefined}
+        data-solid={scrolled || open || undefined}
         data-scrolled={scrolled || undefined}
         data-menu-open={open || undefined}
       >
@@ -83,7 +81,7 @@ export function Header({ data }: { data: HeaderData }) {
 
         {open && <MobileMenu onClose={() => setOpen(false)} />}
       </header>
-      {!hasOverlay && <div aria-hidden className="h-header" />}
+      <div aria-hidden className={cn("h-header", styles.spacer)} />
     </>
   );
 }

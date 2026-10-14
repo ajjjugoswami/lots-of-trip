@@ -21,7 +21,7 @@ export function DestinationHero({ destination }: { destination: Destination }) {
   ];
 
   return (
-    <section className="relative isolate flex min-h-152 flex-col overflow-hidden bg-night text-white md:h-[92svh] md:max-h-256">
+    <section data-header-overlay className="relative isolate flex min-h-152 flex-col overflow-hidden bg-night text-white md:h-[92svh] md:max-h-256">
       <ViewTransition name={`destination-${destination.slug}`} share="morph" default="none">
         <div className="absolute inset-0 -z-10">
           <AppImage
