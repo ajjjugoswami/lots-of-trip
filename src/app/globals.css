@@ -81,6 +81,26 @@
   html.menu-open {
     overflow: hidden;
   }
+
+  a,
+  button,
+  [role="button"],
+  [role="tab"],
+  [role="radio"],
+  summary,
+  select,
+  label[for],
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="submit"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [aria-disabled="true"],
+  input:disabled {
+    cursor: not-allowed;
+  }
 }
 
 @layer utilities {

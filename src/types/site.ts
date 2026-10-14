@@ -21,6 +21,7 @@ export interface SiteConfig {
     address: string;
     hours: string;
   };
+  contactFormSrc: string;
   social: {
     instagram: { handle: string; url: string };
   };

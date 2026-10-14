@@ -9,13 +9,14 @@ export const siteConfig: SiteConfig = {
   established: "2026",
   copyrightYear: 2026,
   contact: {
-    phoneDisplay: "+91 98765 43210",
-    phoneE164: "+919876543210",
-    whatsappNumber: "919876543210",
-    email: "hello@lotsoftrip.com",
+    phoneDisplay: "+91 70152 48493",
+    phoneE164: "+917015248493",
+    whatsappNumber: "917015248493",
+    email: "lotsoftrip9@gmail.com",
     address: "Rajpur Road, Dehradun, Uttarakhand 248001",
     hours: "Mon – Sat · 9:30 am – 7:30 pm IST",
   },
+  contactFormSrc: "https://forms.daorbit.in/form/6acf236599fe13e93f3f270c/view",
   social: {
     instagram: {
       handle: "@lotsoftrip_",

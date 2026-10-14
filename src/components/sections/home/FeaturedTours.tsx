@@ -1,7 +1,6 @@
-import { TourCard } from "@/components/cards/TourCard";
-import { Reveal, RevealItem } from "@/components/motion/Reveal";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { SectionIntro } from "@/components/ui/SectionIntro";
+import { TourGrid } from "@/components/sections/shared/TourGrid";
 import type { Tour } from "@/types/tour";
 
 export function FeaturedTours({ tours }: { tours: Tour[] }) {
@@ -21,13 +20,9 @@ export function FeaturedTours({ tours }: { tours: Tour[] }) {
           </ButtonLink>
         }
       />
-      <Reveal stagger className="mt-12 grid gap-6 md:grid-cols-2">
-        {tours.map((tour) => (
-          <RevealItem key={tour.slug}>
-            <TourCard tour={tour} />
-          </RevealItem>
-        ))}
-      </Reveal>
+      <div className="mt-12">
+        <TourGrid tours={tours} />
+      </div>
     </section>
   );
 }
