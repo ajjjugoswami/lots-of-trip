@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/sections/home/Testimonials";
 import { TwoStates } from "@/components/sections/home/TwoStates";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { experiences } from "@/content/experiences";
+import { heroSlides } from "@/content/hero";
 import { testimonials } from "@/content/testimonials";
 import {
   getDestinations,
@@ -43,8 +44,7 @@ export default function HomePage() {
   return (
     <>
       <Hero
-        image={resolveImage({ destination: "manali", index: 0 }, "Solang Valley, Manali")}
-        caption="Solang Valley · Manali"
+        slides={heroSlides.map((slide) => ({ caption: slide.caption, image: resolveImage(slide.image, slide.caption) }))}
         destinations={destinations.map(({ slug, name, region, state }) => ({ slug, name, region, state }))}
       />
       <Manifesto />
