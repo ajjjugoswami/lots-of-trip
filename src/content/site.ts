@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
     address: "Rajpur Road, Dehradun, Uttarakhand 248001",
     hours: "Mon – Sat · 9:30 am – 7:30 pm IST",
   },
-  contactFormSrc: "https://forms.daorbit.in/form/6acf236599fe13e93f3f270c/view",
+  contactFormSrc: "https://forms.daorbit.in/form/6acf292c58e591d396a9d8fa/view",
   social: {
     instagram: {
       handle: "@lotsoftrip_",
@@ -30,7 +30,6 @@ export const mainNav: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
-
 export const mobileNav: NavItem[] = [
   { label: "Destinations", href: "/destinations" },
   { label: "Journeys", href: "/tours" },

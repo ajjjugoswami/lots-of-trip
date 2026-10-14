@@ -1,28 +1,32 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { mainNav, siteConfig } from "@/content/site";
-import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
+import { mainNav } from "@/content/site";
 import type { HeaderData } from "@/types/site";
 import styles from "./Header.module.css";
 import { MegaMenu } from "./MegaMenu";
 import { MenuToggle } from "./MenuToggle";
 import { MobileMenu } from "./MobileMenu";
 
+const OVERLAY_ROUTES = new Set(["/"]);
+
 export function Header({ data }: { data: HeaderData }) {
   const pathname = usePathname();
+  const { scrollY } = useScroll();
+  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [openedAt, setOpenedAt] = useState(pathname);
 
   if (open && openedAt !== pathname) {
     setOpen(false);
   }
+
+  useMotionValueEvent(scrollY, "change", (value) => setScrolled(value > 48));
 
   useEffect(() => {
     if (!open) return;
@@ -40,59 +44,48 @@ export function Header({ data }: { data: HeaderData }) {
     setOpen((value) => !value);
   };
 
+  const hasOverlay = OVERLAY_ROUTES.has(pathname);
+  const overlay = hasOverlay && !scrolled && !open;
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
-    <header className={styles.header} data-menu-open={open || undefined}>
-      <div className="mx-auto flex h-12 max-w-360 items-center gap-4 px-4 sm:px-8 lg:px-12">
-        <div className="flex flex-1 items-center">
-          <Logo />
-        </div>
+    <>
+      <header
+        className={styles.header}
+        data-overlay={overlay || undefined}
+        data-scrolled={scrolled || undefined}
+        data-menu-open={open || undefined}
+      >
+        <div className="container-x relative grid h-header grid-cols-[1fr_auto_1fr] items-center gap-4">
+          <nav aria-label="Main" className="hidden items-center gap-1 self-stretch lg:flex">
+            <MegaMenu data={data} label="Destinations" />
+            {mainNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={styles.navLink}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+          <div className="lg:hidden" />
 
-        <nav aria-label="Main" className="hidden shrink-0 items-center gap-1 self-stretch lg:flex">
-          <MegaMenu data={data} label="Destinations" />
-          {mainNav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              aria-current={isActive(item.href) ? "page" : undefined}
-              className={styles.navLink}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+          <Logo inverted={overlay} />
 
-        <div className="flex flex-1 items-center justify-end gap-2">
-          <a
-            href={siteConfig.social.instagram.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`Instagram ${siteConfig.social.instagram.handle}`}
-            className={styles.iconButton}
-          >
-            <FaInstagram className="size-4" />
-          </a>
-          <ThemeToggle />
-          <span className={styles.divider} aria-hidden />
-          <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer" className={styles.ghost}>
-            <FaWhatsapp className="size-4 text-[#25d366]" />
-            WhatsApp
-          </a>
-          <Link href="/contact" className={`${styles.cta} ${styles.ctaDesktop}`}>
-            Plan a trip
-            <ArrowRight className="size-3" aria-hidden />
-          </Link>
-          {!open && (
-            <Link href="/contact" className={`${styles.cta} ${styles.ctaMobile}`}>
+          <div className="flex items-center justify-end gap-1.5">
+            <ThemeToggle className={styles.iconButton} />
+            <Link href="/contact" className={styles.cta}>
               Plan a trip
             </Link>
-          )}
-          <MenuToggle open={open} onToggle={toggle} />
+            <MenuToggle open={open} onToggle={toggle} />
+          </div>
         </div>
-      </div>
 
-      {open && <MobileMenu onClose={() => setOpen(false)} />}
-    </header>
+        {open && <MobileMenu onClose={() => setOpen(false)} />}
+      </header>
+      {!hasOverlay && <div aria-hidden className="h-header" />}
+    </>
   );
 }

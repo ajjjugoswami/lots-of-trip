@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import { Analytics } from "@/components/layout/Analytics";
 import { Footer } from "@/components/layout/footer/Footer";
 import { Header } from "@/components/layout/header/Header";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
-import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
+import { SocialFloat } from "@/components/layout/SocialFloat";
 import { siteConfig } from "@/content/site";
 import { getHeaderData } from "@/lib/data/navigation";
 import "./globals.css";
@@ -13,6 +13,14 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -32,14 +40,14 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+    { media: "(prefers-color-scheme: light)", color: "#faf8f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#0e0d0c" },
   ],
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-IN" className={inter.variable} suppressHydrationWarning>
+    <html lang="en-IN" className={`${inter.variable} ${cormorant.variable}`} suppressHydrationWarning>
       <body className="min-h-dvh">
         <ThemeProvider>
           <MotionProvider>
@@ -52,7 +60,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Header data={getHeaderData()} />
             <main id="main">{children}</main>
             <Footer />
-            <WhatsAppFloat />
+            <SocialFloat />
           </MotionProvider>
         </ThemeProvider>
         <Analytics />

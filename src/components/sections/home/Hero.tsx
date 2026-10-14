@@ -1,48 +1,52 @@
 import { Reveal } from "@/components/motion/Reveal";
-import { AnnouncementPill } from "@/components/ui/AnnouncementPill";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import type { ImageAsset } from "@/types/image";
-import { HeroImage } from "./HeroImage";
+import { TripFinder } from "./TripFinder";
 
-export function Hero({ image }: { image: ImageAsset }) {
+interface HeroProps {
+  image: ImageAsset;
+  caption: string;
+  destinations: { slug: string; name: string }[];
+}
+
+export function Hero({ image, caption, destinations }: HeroProps) {
   return (
-    <section className="overflow-hidden bg-black pt-16 pb-16 text-white md:pt-24 md:pb-24">
-      <div className="container-x text-center">
+    <section className="relative isolate flex min-h-svh flex-col overflow-hidden bg-night text-white">
+      <div className="absolute inset-0 -z-10 animate-[ken-burns_18s_var(--ease-out-expo)_both]">
+        <AppImage image={image} sizes="100vw" preload alt={caption} />
+      </div>
+      <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/55 via-black/10 to-black/75" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/45 via-transparent to-transparent" />
+
+      <div className="container-x flex flex-1 flex-col justify-end pt-36 pb-8 md:pb-12">
         <Reveal onLoad>
-          <AnnouncementPill href="/tours/shimla-manali-classic" label="New" tone="dark">
-            Snow season in Shimla & Manali is now open
-          </AnnouncementPill>
+          <p className="eyebrow text-[#d4b483]">Uttarakhand · Himachal Pradesh</p>
         </Reveal>
-        <Reveal onLoad delay={0.08}>
-          <h1 className="mx-auto mt-6 max-w-4xl text-display-2xl">
-            Where the Himalaya <em>begins.</em>
+        <Reveal onLoad delay={0.1}>
+          <h1 className="mt-5 max-w-4xl text-display-2xl [text-shadow:0_2px_30px_rgb(0_0_0/0.25)]">
+            Where the Himalaya <em className="text-[#d4b483]">begins.</em>
           </h1>
         </Reveal>
-        <Reveal onLoad delay={0.16}>
-          <p className="mx-auto mt-6 max-w-2xl text-lead text-white/65">
-            Small-group treks, pilgrimages and slow road journeys — planned by people who grew up
+        <Reveal onLoad delay={0.2}>
+          <p className="mt-6 max-w-xl text-lead text-white/85">
+            Private journeys and small-group trips across the hills — planned by people who grew up
             beneath these peaks.
           </p>
         </Reveal>
-        <Reveal onLoad delay={0.24} className="mt-9 flex flex-wrap items-center justify-center gap-x-6 gap-y-4">
-          <ButtonLink href="/contact">Plan your trip</ButtonLink>
-          <ButtonLink href="/destinations" variant="link-light">
-            Explore destinations
+        <Reveal onLoad delay={0.3} className="mt-9 flex flex-wrap items-center gap-3">
+          <ButtonLink href="/tours" variant="light">
+            Explore journeys
+          </ButtonLink>
+          <ButtonLink href="/destinations" variant="glass">
+            Destinations
           </ButtonLink>
         </Reveal>
-      </div>
 
-      <div className="container-x mt-14 md:mt-20">
-        <HeroImage>
-          <AppImage
-            image={image}
-            sizes="(min-width: 1312px) 1216px, 100vw"
-            preload
-            alt="Snow-capped peaks above Solang Valley, Manali"
-          />
-        </HeroImage>
-        <p className="mt-4 text-center text-[13px] text-white/45">Solang Valley, Manali · Himachal Pradesh</p>
+        <Reveal onLoad delay={0.45} className="mt-12 md:mt-16">
+          <TripFinder destinations={destinations} />
+        </Reveal>
+        <p className="mt-5 text-right text-[11px] tracking-[0.18em] text-white/55 uppercase">{caption}</p>
       </div>
     </section>
   );

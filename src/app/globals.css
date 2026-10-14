@@ -11,20 +11,21 @@
 
 .dark {
   color-scheme: dark;
-  --color-snow: #000000;
-  --color-paper: #101011;
-  --color-surface: #1c1c1e;
-  --color-ink: #f5f5f7;
-  --color-ink-soft: #d2d2d7;
-  --color-slate: #a1a1a6;
-  --color-glacier: #3a3a3c;
-  --color-accent: #2997ff;
-  --color-accent-hover: #47a6ff;
-  --color-line: rgb(255 255 255 / 0.12);
+  --color-snow: #0e0d0c;
+  --color-paper: #171614;
+  --color-surface: #1f1d1a;
+  --color-ink: #f3efe8;
+  --color-ink-soft: #d6d0c6;
+  --color-slate: #a39e95;
+  --color-glacier: #3a3631;
+  --color-accent: #d4b483;
+  --color-accent-hover: #e0c497;
+  --color-saffron: #c9a774;
+  --color-line: rgb(255 255 255 / 0.1);
 }
 
 @theme inline {
-  --font-display: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
   --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
 }
@@ -54,18 +55,16 @@
   h1,
   h2,
   h3 {
-    font-weight: 600;
+    font-family: var(--font-display);
+    font-weight: 500;
     text-wrap: balance;
   }
 
   h1 em,
   h2 em,
   h3 em {
-    font-style: normal;
-    background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-saffron) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-style: italic;
+    color: var(--color-saffron);
   }
 
   ::selection {
@@ -108,14 +107,21 @@
     width: 100%;
     margin-inline: auto;
     padding-inline: var(--spacing-gutter);
-    max-width: 82rem;
+    max-width: 84rem;
   }
 
   .eyebrow {
+    font-family: var(--font-sans);
     font-size: var(--text-eyebrow);
     line-height: var(--text-eyebrow--line-height);
-    font-weight: 600;
-    letter-spacing: -0.005em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .font-serif-display {
+    font-family: var(--font-display);
+    font-weight: 500;
   }
 }
 
@@ -136,6 +142,15 @@
 *::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background: var(--color-glacier);
+}
+
+@keyframes ken-burns {
+  from {
+    transform: scale(1.12);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 ::view-transition-group(.morph) {

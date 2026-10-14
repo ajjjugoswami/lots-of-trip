@@ -22,7 +22,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
       <button
         type="button"
         aria-haspopup="true"
-        className="inline-flex items-center gap-1 px-3.5 py-1.5 text-[13px] transition-colors duration-200 group-focus-within:text-slate group-hover:text-slate"
+        className="inline-flex items-center gap-1.5 px-[0.9rem] py-2 text-[12px] font-medium tracking-[0.16em] uppercase"
       >
         {label}
         <ChevronDown
@@ -32,27 +32,27 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
       </button>
 
       <div className={styles.panel}>
-        <div className="mx-auto max-w-360 px-4 sm:px-8 lg:px-12 grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,0.9fr)] gap-12 pt-8 pb-12 text-ink">
+        <div className="container-x grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,0.9fr)] gap-14 pt-10 pb-12 text-ink">
           {data.groups.map((group) => (
             <div key={group.href}>
               <Link
                 href={group.href}
                 onClick={dismiss}
-                className={cn(styles.reveal, "group/head inline-flex items-center gap-2 text-[12px] text-slate hover:text-ink")}
+                className={cn(styles.reveal, "group/head eyebrow inline-flex items-center gap-2 text-saffron hover:text-ink")}
               >
                 {group.label}
                 <ArrowUpRight className="size-3 transition-transform duration-300 group-hover/head:translate-x-0.5 group-hover/head:-translate-y-0.5" />
               </Link>
-              <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5">
+              <ul className="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
                 {group.items.map((item) => (
                   <li key={item.href} className={styles.reveal}>
                     <Link
                       href={item.href}
                       onClick={dismiss}
-                      className="group/item flex items-baseline justify-between gap-3 text-[14px] font-medium transition-colors hover:text-accent"
+                      className="group/item flex items-baseline justify-between gap-3 font-serif-display text-[1.3rem] leading-tight transition-colors hover:text-accent"
                     >
                       <span className="truncate">{item.label}</span>
-                      <span className="text-[11px] text-slate/70 opacity-0 transition-opacity group-hover/item:opacity-100">
+                      <span className="font-sans text-[11px] text-slate opacity-0 transition-opacity group-hover/item:opacity-100">
                         {item.meta}
                       </span>
                     </Link>
@@ -75,7 +75,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
             </div>
             <div className="mt-3 flex items-center justify-between">
               <div>
-                <p className="text-[15px] font-semibold tracking-tight">{data.feature.title}</p>
+                <p className="font-serif-display text-[1.4rem] leading-tight">{data.feature.title}</p>
                 <p className="text-[12px] text-slate">{data.feature.meta}</p>
               </div>
               <span className="grid size-8 place-items-center rounded-full bg-ink text-snow transition-transform duration-300 group-hover/feature:rotate-45">
@@ -85,7 +85,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
           </Link>
         </div>
 
-        <div className="mx-auto max-w-360 px-4 sm:px-8 lg:px-12 flex items-center justify-between border-t border-line py-4 text-[13px]">
+        <div className="container-x flex items-center justify-between border-t border-line py-4 text-[13px]">
           <span className="text-slate">{data.groups.reduce((total, group) => total + group.items.length, 0)} handpicked destinations across the hills</span>
           <Link href="/destinations" onClick={dismiss} className="inline-flex items-center gap-1.5 font-medium hover:text-accent">
             Browse all destinations <ArrowUpRight className="size-3.5" />
