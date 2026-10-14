@@ -7,13 +7,12 @@ import { useEffect, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { mainNav } from "@/content/site";
+import { isOverlayRoute } from "@/lib/utils/routes";
 import type { HeaderData } from "@/types/site";
 import styles from "./Header.module.css";
 import { MegaMenu } from "./MegaMenu";
 import { MenuToggle } from "./MenuToggle";
 import { MobileMenu } from "./MobileMenu";
-
-const OVERLAY_ROUTES = new Set(["/"]);
 
 export function Header({ data }: { data: HeaderData }) {
   const pathname = usePathname();
@@ -44,7 +43,7 @@ export function Header({ data }: { data: HeaderData }) {
     setOpen((value) => !value);
   };
 
-  const hasOverlay = OVERLAY_ROUTES.has(pathname);
+  const hasOverlay = isOverlayRoute(pathname);
   const overlay = hasOverlay && !scrolled && !open;
   const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 

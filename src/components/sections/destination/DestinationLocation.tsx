@@ -36,7 +36,7 @@ export function DestinationLocation({ destination }: { destination: Destination 
           </ButtonLink>
         </Reveal>
 
-        <Reveal delay={0.1} className="lg:col-span-8">
+        <Reveal delay={0.1} className="order-first lg:order-none lg:col-span-8">
           <div className="relative aspect-4/3 overflow-hidden rounded-xl bg-paper ring-1 ring-line sm:aspect-16/10">
             <LeafletMap
               places={getMapPlaces()}

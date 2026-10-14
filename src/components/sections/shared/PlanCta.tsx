@@ -36,7 +36,7 @@ export function PlanCta({ image, subject }: PlanCtaProps) {
             </ButtonLink>
           </div>
         </div>
-        <RevealImage delay={0.15} className="aspect-4/3 md:aspect-auto md:min-h-[28rem]">
+        <RevealImage delay={0.15} rounded={false} className="aspect-4/3 md:aspect-auto md:min-h-[28rem]">
           <AppImage image={image} sizes="(min-width: 768px) 40rem, 100vw" />
         </RevealImage>
       </Reveal>

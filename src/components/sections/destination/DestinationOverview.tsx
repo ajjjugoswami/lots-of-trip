@@ -42,7 +42,7 @@ export function DestinationOverview({ destination }: { destination: Destination 
             <dl className="mt-5 divide-y divide-line border-y border-line">
               {facts.map((fact) => (
                 <div key={fact.label} className="flex justify-between gap-6 py-3.5 text-[14px]">
-                  <dt className="text-slate">{fact.label}</dt>
+                  <dt className="shrink-0 text-slate">{fact.label}</dt>
                   <dd className="text-right font-medium">{fact.value}</dd>
                 </div>
               ))}

@@ -64,7 +64,7 @@ export function HeroSlideshow({ slides, children }: { slides: HeroSlide[]; child
               </button>
             ))}
           </div>
-          <p aria-live="polite" className="text-right text-[11px] tracking-[0.18em] text-white/60 uppercase">
+          <p aria-live="polite" className="min-w-0 truncate text-right text-[11px] tracking-[0.18em] text-white/60 uppercase">
             {slides[active].caption}
           </p>
         </div>

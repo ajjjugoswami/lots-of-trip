@@ -13,7 +13,7 @@ export function NextDestination({ destination }: { destination: Destination }) {
         <div className="relative aspect-4/3 overflow-hidden rounded-2xl">
           <AppImage
             image={destination.images[0]}
-            sizes="12rem"
+            sizes="(min-width: 640px) 12rem, 100vw"
             className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-105"
           />
         </div>

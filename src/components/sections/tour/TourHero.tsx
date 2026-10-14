@@ -3,6 +3,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { pricingCopy } from "@/content/site";
+import { cn } from "@/lib/utils/cn";
 import { difficultyLabel } from "@/lib/utils/format";
 import { buildPriceEnquiryLink } from "@/lib/utils/whatsapp";
 import type { Tour } from "@/types/tour";
@@ -27,8 +28,11 @@ export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
       </div>
 
       <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-line md:grid-cols-4">
-        {facts.map(({ Icon, label, value }) => (
-          <div key={label} className="flex items-center gap-3 bg-paper px-5 py-5">
+        {facts.map(({ Icon, label, value }, index) => (
+          <div
+            key={label}
+            className={cn("flex items-center gap-3 bg-paper px-5 py-5", index === facts.length - 1 && "col-span-2 md:col-span-1")}
+          >
             <Icon className="size-5 shrink-0 text-accent" aria-hidden />
             <div>
               <dt className="text-[12px] text-slate">{label}</dt>
@@ -36,7 +40,7 @@ export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
             </div>
           </div>
         ))}
-        <div className="bg-paper">
+        <div className="col-span-2 bg-paper md:col-span-1">
           <dt className="sr-only">Price</dt>
           <dd className="h-full">
             <a

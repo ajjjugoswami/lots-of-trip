@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils/cn";
 import type { MapPlace } from "@/types/map";
 
@@ -9,6 +12,12 @@ interface MapPlaceChipsProps {
 }
 
 export function MapPlaceChips({ places, activeSlug, onSelect, className }: MapPlaceChipsProps) {
+  const activeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    activeRef.current?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  }, [activeSlug]);
+
   return (
     <nav aria-label="Jump to a destination" className={cn("overflow-x-auto overscroll-x-contain", className)}>
       <ul className="flex w-max gap-2 p-1">
@@ -17,6 +26,7 @@ export function MapPlaceChips({ places, activeSlug, onSelect, className }: MapPl
           return (
             <li key={place.slug}>
               <button
+                ref={isActive ? activeRef : undefined}
                 type="button"
                 aria-pressed={isActive}
                 onClick={() => onSelect(place.slug)}

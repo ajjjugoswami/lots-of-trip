@@ -14,7 +14,7 @@ export function PhotoGallery({ images }: { images: ImageAsset[] }) {
 
   return (
     <>
-      <div className="mt-8 grid gap-4 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
         {images.map((image, index) => {
           const isLead = index === 0;
           return (
@@ -23,7 +23,7 @@ export function PhotoGallery({ images }: { images: ImageAsset[] }) {
               delay={index * REVEAL.stagger}
               className={cn(
                 "rounded-xl bg-paper",
-                isLead ? "aspect-4/3 md:col-span-2 md:row-span-2 md:aspect-auto" : "aspect-4/3",
+                isLead ? "col-span-2 aspect-4/3 md:row-span-2 md:aspect-auto" : "aspect-square md:aspect-4/3",
               )}
             >
               <button
@@ -34,7 +34,7 @@ export function PhotoGallery({ images }: { images: ImageAsset[] }) {
               >
                 <AppImage
                   image={image}
-                  sizes={isLead ? "(min-width: 768px) 52rem, 100vw" : "(min-width: 768px) 26rem, 100vw"}
+                  sizes={isLead ? "(min-width: 768px) 52rem, 100vw" : "(min-width: 768px) 26rem, 50vw"}
                   className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-[1.04]"
                 />
                 <span className="absolute right-3 bottom-3 grid size-9 place-items-center rounded-full bg-snow/90 text-ink opacity-0 shadow-sm backdrop-blur transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">

@@ -74,7 +74,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
           {matches.length === 1 ? "destination" : "destinations"} in season in {MONTHS[month - 1]}
         </p>
 
-        <ul className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <ul className="-mx-gutter mt-10 flex snap-x snap-mandatory scroll-px-gutter gap-3 overflow-x-auto px-gutter pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
           <AnimatePresence mode="popLayout">
             {matches.map((destination, index) => (
               <motion.li
@@ -83,6 +83,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0, transition: { delay: index * 0.03, duration: 0.5, ease: CUBIC.outExpo } }}
                 exit={{ opacity: 0, transition: { duration: 0.15 } }}
+                className="w-[44%] shrink-0 snap-start sm:w-auto"
               >
                 <Link
                   href={`/destinations/${destination.slug}`}

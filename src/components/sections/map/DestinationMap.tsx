@@ -49,7 +49,7 @@ export function DestinationMap({ data }: { data: MapData }) {
           </Reveal>
         </div>
 
-        <div className="mt-8 flex flex-wrap gap-2" role="tablist" aria-label="Destinations">
+        <div className="-mx-gutter mt-8 flex gap-2 overflow-x-auto px-gutter pb-1 sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0" role="tablist" aria-label="Destinations">
           {data.destinations.map((item) => (
             <button
               key={item.slug}
@@ -58,7 +58,7 @@ export function DestinationMap({ data }: { data: MapData }) {
               aria-selected={item.slug === active}
               onClick={() => setActive(item.slug)}
               className={cn(
-                "inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[13px] font-medium ring-1 ring-inset transition-colors",
+                "inline-flex shrink-0 items-center gap-2 rounded-full px-3.5 py-1.5 text-[13px] font-medium ring-1 ring-inset transition-colors",
                 item.slug === active
                   ? "bg-[#f0d3a0] text-night ring-[#f0d3a0]"
                   : "text-white/70 ring-white/15 hover:text-white hover:ring-white/30",
