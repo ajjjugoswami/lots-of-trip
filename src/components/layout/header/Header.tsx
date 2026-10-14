@@ -4,8 +4,9 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { Logo } from "@/components/ui/Logo";
+import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { mainNav, siteConfig } from "@/content/site";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import type { HeaderData } from "@/types/site";
@@ -70,10 +71,12 @@ export function Header({ data }: { data: HeaderData }) {
             aria-label={`Instagram ${siteConfig.social.instagram.handle}`}
             className={styles.iconButton}
           >
-            <InstagramIcon className="size-4" />
+            <FaInstagram className="size-4" />
           </a>
+          <ThemeToggle />
+          <span className={styles.divider} aria-hidden />
           <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer" className={styles.ghost}>
-            <WhatsAppIcon className="size-3.5" />
+            <FaWhatsapp className="size-4 text-[#25d366]" />
             WhatsApp
           </a>
           <Link href="/contact" className={`${styles.cta} ${styles.ctaDesktop}`}>

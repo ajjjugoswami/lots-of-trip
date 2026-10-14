@@ -11,7 +11,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const current = items[index];
 
   return (
-    <section className="bg-black py-section text-paper">
+    <section className="bg-black py-section text-white dark:bg-paper">
       <div className="container-x text-center">
         <p className="eyebrow text-saffron">Field notes</p>
         <div className="relative mx-auto mt-8 max-w-4xl md:min-h-[17rem]">

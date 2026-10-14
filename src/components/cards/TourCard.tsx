@@ -22,7 +22,7 @@ export function TourCard({ tour }: { tour: Tour }) {
       <div className="flex flex-1 flex-col p-7 md:p-9">
         <div className="flex flex-wrap gap-2">
           {facts.map((fact) => (
-            <span key={fact} className="rounded-full bg-white px-3 py-1 text-[12px] font-medium text-ink-soft">
+            <span key={fact} className="rounded-full bg-surface px-3 py-1 text-[12px] font-medium text-ink-soft">
               {fact}
             </span>
           ))}

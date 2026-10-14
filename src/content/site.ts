@@ -52,4 +52,9 @@ export const legalNav: NavItem[] = [
   { label: "Journeys", href: "/tours" },
 ];
 
+export const analytics = {
+  trackerSrc: "https://quantalog-be.daorbit.in/tracker.js",
+  siteId: "EgutFP6FrMBkRbaE",
+};
+
 export const bookingStatus = "Now booking winter 2026–27 trips";

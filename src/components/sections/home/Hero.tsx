@@ -7,7 +7,7 @@ import { HeroImage } from "./HeroImage";
 
 export function Hero({ image }: { image: ImageAsset }) {
   return (
-    <section className="overflow-hidden bg-black pt-16 pb-16 text-paper md:pt-24 md:pb-24">
+    <section className="overflow-hidden bg-black pt-16 pb-16 text-white md:pt-24 md:pb-24">
       <div className="container-x text-center">
         <Reveal onLoad>
           <AnnouncementPill href="/tours/shimla-manali-classic" label="New" tone="dark">

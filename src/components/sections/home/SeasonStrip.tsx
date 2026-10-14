@@ -32,7 +32,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
           <div
             role="tablist"
             aria-label="Months"
-            className="flex max-w-full gap-1 overflow-x-auto rounded-full bg-white p-1 shadow-[inset_0_0_0_1px_rgb(0_0_0/0.06)] scrollbar-none"
+            className="flex max-w-full gap-1 overflow-x-auto rounded-full bg-surface p-1 ring-1 ring-line ring-inset scrollbar-none"
           >
             {MONTHS.map((name, index) => {
               const value = index + 1;
@@ -47,7 +47,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
                   onClick={() => setMonth(value)}
                   className={cn(
                     "relative shrink-0 rounded-full px-3.5 py-2 text-[13px] font-medium transition-colors duration-200 md:px-4",
-                    active ? "text-white" : "text-slate hover:text-ink",
+                    active ? "text-snow" : "text-slate hover:text-ink",
                   )}
                 >
                   {active && (
@@ -81,7 +81,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
               >
                 <Link
                   href={`/destinations/${destination.slug}`}
-                  className="group block overflow-hidden rounded-[20px] bg-white transition-shadow duration-300 hover:shadow-[0_12px_30px_rgb(0_0_0/0.08)]"
+                  className="group block overflow-hidden rounded-[20px] bg-surface transition-shadow duration-300 hover:shadow-[0_12px_30px_rgb(0_0_0/0.08)]"
                 >
                   <div className="relative aspect-4/3 overflow-hidden">
                     <AppImage

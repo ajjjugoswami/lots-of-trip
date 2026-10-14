@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { FaWhatsapp } from "react-icons/fa6";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import type { ImageAsset } from "@/types/image";
 
@@ -29,7 +29,7 @@ export function PlanCta({ image, subject }: PlanCtaProps) {
               href={buildWhatsAppLink(subject)}
               external
               variant="outline"
-              icon={<WhatsAppIcon className="size-4" />}
+              icon={<FaWhatsapp className="size-4" />}
             >
               Chat on WhatsApp
             </ButtonLink>

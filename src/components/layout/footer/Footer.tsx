@@ -1,7 +1,8 @@
 import { Clock, Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { Logo } from "@/components/ui/Logo";
+import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 import { bookingStatus, companyNav, legalNav, siteConfig } from "@/content/site";
 import { getDestinationsByState } from "@/lib/data/destinations";
 import { getTours } from "@/lib/data/tours";
@@ -28,13 +29,13 @@ export function Footer() {
   ];
 
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} text-ink`}>
       <div className="mx-auto max-w-7xl px-5 pt-12 sm:px-6 sm:pt-16 lg:px-10">
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-12">
           <div className="col-span-2 lg:col-span-4">
             <Logo />
             <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-slate">{siteConfig.description}</p>
-            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-snow px-3 py-1 text-[12px] text-slate">
+            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-[12px] text-slate">
               <span className={styles.liveDot} aria-hidden />
               {bookingStatus}
             </p>
@@ -85,6 +86,7 @@ export function Footer() {
               © {siteConfig.copyrightYear} {siteConfig.name}. All rights reserved.
             </p>
             <div className="flex items-center gap-2 lg:order-3">
+              <ThemeSwitcher />
               <a
                 href={buildWhatsAppLink()}
                 target="_blank"
@@ -92,7 +94,7 @@ export function Footer() {
                 aria-label="Chat on WhatsApp"
                 className={styles.social}
               >
-                <WhatsAppIcon className="size-4" />
+                <FaWhatsapp className="size-4" />
               </a>
               <a
                 href={social.instagram.url}
@@ -101,7 +103,7 @@ export function Footer() {
                 aria-label={`Instagram ${social.instagram.handle}`}
                 className={styles.social}
               >
-                <InstagramIcon className="size-4" />
+                <FaInstagram className="size-4" />
               </a>
             </div>
           </div>

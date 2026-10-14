@@ -11,7 +11,7 @@
   margin-top: 3rem;
   margin-bottom: -0.08em;
   padding-bottom: 0.2em;
-  font-size: 19.5cqi;
+  font-size: 15.5cqi;
   font-weight: 700;
   line-height: 0.9;
   letter-spacing: -0.055em;
@@ -77,7 +77,7 @@
 
 @media (min-width: 80rem) {
   .wordmark {
-    font-size: min(19.5cqi, 16rem);
+    font-size: min(15.5cqi, 13rem);
   }
 }
 
@@ -94,7 +94,7 @@
   }
 
   .wordmark {
-    font-size: 17cqi;
+    font-size: 15cqi;
   }
 }
 

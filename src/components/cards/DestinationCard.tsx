@@ -27,7 +27,7 @@ export function DestinationCard({ destination, sizes, className, aspect = "portr
             sizes={sizes}
             className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-[1.05]"
           />
-          <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-[12px] font-medium text-ink backdrop-blur">
+          <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-[12px] font-medium text-black backdrop-blur">
             {formatAltitude(destination.altitudeM)}
           </span>
         </div>

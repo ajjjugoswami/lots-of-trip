@@ -1,7 +1,7 @@
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { InstagramIcon } from "@/components/ui/BrandIcons";
+import { FaInstagram } from "react-icons/fa6";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { siteConfig } from "@/content/site";
 import type { ImageAsset } from "@/types/image";
@@ -20,7 +20,7 @@ export function InstagramStrip({ images }: { images: ImageAsset[] }) {
             href={instagram.url}
             external
             variant="outline"
-            icon={<InstagramIcon className="size-4" />}
+            icon={<FaInstagram className="size-4" />}
           >
             Follow on Instagram
           </ButtonLink>
@@ -42,7 +42,7 @@ export function InstagramStrip({ images }: { images: ImageAsset[] }) {
                 className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-110"
               />
               <span className="absolute inset-0 grid place-items-center bg-black/0 text-white opacity-0 transition-all duration-300 group-hover:bg-black/30 group-hover:opacity-100">
-                <InstagramIcon className="size-7" />
+                <FaInstagram className="size-7" />
               </span>
             </a>
           </RevealItem>

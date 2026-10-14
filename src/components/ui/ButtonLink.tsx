@@ -7,9 +7,9 @@ export type ButtonVariant = "solid" | "dark" | "light" | "outline" | "outline-li
 
 const VARIANTS: Record<ButtonVariant, string> = {
   solid: "h-11 rounded-full bg-accent px-5 text-white hover:bg-accent-hover",
-  dark: "h-11 rounded-full bg-ink px-5 text-white hover:bg-ink-soft",
-  light: "h-11 rounded-full bg-white px-5 text-ink hover:bg-paper",
-  outline: "h-11 rounded-full px-5 text-ink ring-1 ring-ink/20 ring-inset hover:bg-ink hover:text-white",
+  dark: "h-11 rounded-full bg-ink px-5 text-snow hover:bg-ink-soft",
+  light: "h-11 rounded-full bg-snow px-5 text-ink hover:bg-paper",
+  outline: "h-11 rounded-full px-5 text-ink ring-1 ring-ink/20 ring-inset hover:bg-ink hover:text-snow",
   "outline-light": "h-11 rounded-full px-5 text-white ring-1 ring-white/30 ring-inset hover:bg-white hover:text-ink",
   link: "text-accent hover:underline underline-offset-4",
   "link-light": "text-accent-light hover:underline underline-offset-4",

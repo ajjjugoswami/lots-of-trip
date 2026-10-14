@@ -1,6 +1,7 @@
 import { ArrowRight, ChevronRight, Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
+import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 import { mobileNav, siteConfig } from "@/content/site";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import styles from "./MobileMenu.module.css";
@@ -45,6 +46,10 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
         </div>
 
         <div className={`${styles.rise} mt-10 space-y-2.5 text-[14px]`}>
+          <div className="mb-8 flex items-center justify-between">
+            <p className={styles.label}>Appearance</p>
+            <ThemeSwitcher />
+          </div>
           <p className={styles.label}>Talk to us</p>
           <a href={`tel:${contact.phoneE164}`} className="flex items-center gap-2.5">
             <Phone className="size-4 text-slate" aria-hidden />
@@ -55,7 +60,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
             {contact.email}
           </a>
           <a href={social.instagram.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5">
-            <InstagramIcon className="size-4 text-slate" />
+            <FaInstagram className="size-4 text-slate" />
             {social.instagram.handle}
           </a>
         </div>
@@ -68,7 +73,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
           rel="noopener noreferrer"
           className={`${styles.button} ${styles.ghost}`}
         >
-          <WhatsAppIcon className="size-4" />
+          <FaWhatsapp className="size-4" />
           WhatsApp
         </a>
         <Link href="/contact" onClick={onClose} className={`${styles.button} ${styles.solid}`}>
