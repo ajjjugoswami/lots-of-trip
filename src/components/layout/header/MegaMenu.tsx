@@ -27,7 +27,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
         {label}
         <ChevronDown
           aria-hidden
-          className="size-3 transition-transform duration-200 group-focus-within:rotate-180 group-hover:rotate-180"
+          className="size-3 transition-transform duration-200 group-has-focus-visible:rotate-180 group-hover:rotate-180"
         />
       </button>
 

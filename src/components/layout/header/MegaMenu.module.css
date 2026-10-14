@@ -33,7 +33,7 @@
 }
 
 .mega:hover .panel,
-.mega:focus-within .panel {
+.mega:has(:focus-visible) .panel {
   visibility: visible;
   clip-path: inset(0 0 0 0);
   transition:
@@ -42,12 +42,12 @@
 }
 
 .mega:hover .scrim,
-.mega:focus-within .scrim {
+.mega:has(:focus-visible) .scrim {
   opacity: 1;
 }
 
 .mega:hover .reveal,
-.mega:focus-within .reveal {
+.mega:has(:focus-visible) .reveal {
   opacity: 1;
   transform: none;
   transition:
