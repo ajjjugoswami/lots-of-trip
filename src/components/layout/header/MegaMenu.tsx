@@ -1,9 +1,9 @@
 "use client";
 
+import { ArrowUpRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useState, type MouseEvent } from "react";
 import { AppImage } from "@/components/ui/AppImage";
-import { ArrowUpRightIcon } from "@/components/ui/icons";
 import { cn } from "@/lib/utils/cn";
 import type { HeaderData } from "@/types/site";
 import styles from "./MegaMenu.module.css";
@@ -22,20 +22,17 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
       <button
         type="button"
         aria-haspopup="true"
-        className="inline-flex items-center gap-1 px-3.5 py-1.5 text-[13px] transition-opacity duration-200 group-focus-within:opacity-60 group-hover:opacity-60"
+        className="inline-flex items-center gap-1 px-3.5 py-1.5 text-[13px] transition-colors duration-200 group-focus-within:text-slate group-hover:text-slate"
       >
         {label}
-        <svg
-          viewBox="0 0 12 12"
+        <ChevronDown
           aria-hidden
           className="size-3 transition-transform duration-200 group-focus-within:rotate-180 group-hover:rotate-180"
-        >
-          <path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-        </svg>
+        />
       </button>
 
       <div className={styles.panel}>
-        <div className="container-x grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,0.9fr)] gap-12 pt-8 pb-12 text-ink">
+        <div className="mx-auto max-w-360 px-4 sm:px-8 lg:px-12 grid grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,0.9fr)] gap-12 pt-8 pb-12 text-ink">
           {data.groups.map((group) => (
             <div key={group.href}>
               <Link
@@ -44,7 +41,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
                 className={cn(styles.reveal, "group/head inline-flex items-center gap-2 text-[12px] text-slate hover:text-ink")}
               >
                 {group.label}
-                <ArrowUpRightIcon className="size-3 transition-transform duration-300 group-hover/head:translate-x-0.5 group-hover/head:-translate-y-0.5" />
+                <ArrowUpRight className="size-3 transition-transform duration-300 group-hover/head:translate-x-0.5 group-hover/head:-translate-y-0.5" />
               </Link>
               <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-2.5">
                 {group.items.map((item) => (
@@ -55,7 +52,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
                       className="group/item flex items-baseline justify-between gap-3 text-[14px] font-medium transition-colors hover:text-accent"
                     >
                       <span className="truncate">{item.label}</span>
-                      <span className="font-mono text-[10px] text-slate/70 opacity-0 transition-opacity group-hover/item:opacity-100">
+                      <span className="text-[11px] text-slate/70 opacity-0 transition-opacity group-hover/item:opacity-100">
                         {item.meta}
                       </span>
                     </Link>
@@ -82,16 +79,16 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
                 <p className="text-[12px] text-slate">{data.feature.meta}</p>
               </div>
               <span className="grid size-8 place-items-center rounded-full bg-ink text-snow transition-transform duration-300 group-hover/feature:rotate-45">
-                <ArrowUpRightIcon className="size-3.5" />
+                <ArrowUpRight className="size-3.5" />
               </span>
             </div>
           </Link>
         </div>
 
-        <div className="container-x flex items-center justify-between border-t border-line py-4 text-[13px]">
+        <div className="mx-auto max-w-360 px-4 sm:px-8 lg:px-12 flex items-center justify-between border-t border-line py-4 text-[13px]">
           <span className="text-slate">24 destinations across two Himalayan states</span>
           <Link href="/destinations" onClick={dismiss} className="inline-flex items-center gap-1.5 font-medium hover:text-accent">
-            Browse all destinations <ArrowUpRightIcon className="size-3.5" />
+            Browse all destinations <ArrowUpRight className="size-3.5" />
           </Link>
         </div>
       </div>

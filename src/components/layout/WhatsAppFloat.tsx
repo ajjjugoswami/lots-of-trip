@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { WhatsAppIcon } from "@/components/ui/icons";
+import { WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { CUBIC } from "@/lib/motion/tokens";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 

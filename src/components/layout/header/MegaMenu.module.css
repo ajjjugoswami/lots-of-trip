@@ -14,7 +14,7 @@
 
 .scrim {
   position: fixed;
-  inset: 3.5rem 0 0;
+  inset: 3rem 0 0;
   z-index: 40;
   pointer-events: none;
   opacity: 0;

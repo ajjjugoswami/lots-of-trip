@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { AnnouncementPill } from "@/components/ui/AnnouncementPill";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import type { ImageAsset } from "@/types/image";
@@ -6,13 +7,15 @@ import { HeroImage } from "./HeroImage";
 
 export function Hero({ image }: { image: ImageAsset }) {
   return (
-    <section className="overflow-hidden bg-black pt-32 pb-16 text-paper md:pt-40 md:pb-24">
+    <section className="overflow-hidden bg-black pt-16 pb-16 text-paper md:pt-24 md:pb-24">
       <div className="container-x text-center">
         <Reveal onLoad>
-          <p className="eyebrow text-saffron">Uttarakhand · Himachal Pradesh</p>
+          <AnnouncementPill href="/tours/kedarkantha-winter-summit" label="New" tone="dark">
+            Winter treks for 2026–27 are now open
+          </AnnouncementPill>
         </Reveal>
         <Reveal onLoad delay={0.08}>
-          <h1 className="mx-auto mt-4 max-w-4xl text-display-2xl">
+          <h1 className="mx-auto mt-6 max-w-4xl text-display-2xl">
             Where the Himalaya <em>begins.</em>
           </h1>
         </Reveal>

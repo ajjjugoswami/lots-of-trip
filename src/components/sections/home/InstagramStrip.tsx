@@ -1,7 +1,7 @@
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { InstagramIcon } from "@/components/ui/icons";
+import { InstagramIcon } from "@/components/ui/BrandIcons";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { siteConfig } from "@/content/site";
 import type { ImageAsset } from "@/types/image";

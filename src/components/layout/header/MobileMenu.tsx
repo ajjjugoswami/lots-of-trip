@@ -1,5 +1,6 @@
+import { ArrowRight, ChevronRight, Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { WhatsAppIcon } from "@/components/ui/icons";
+import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { mobileNav, siteConfig } from "@/content/site";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import styles from "./MobileMenu.module.css";
@@ -36,24 +37,25 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
               <li key={item.href}>
                 <Link href={item.href} onClick={onClose} className={styles.chip}>
                   <span className="min-w-0 truncate">{item.label}</span>
-                  <svg viewBox="0 0 12 12" aria-hidden className="size-3.5 shrink-0 text-slate">
-                    <path d="M4.5 3 7.5 6l-3 3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-                  </svg>
+                  <ChevronRight className="size-4 shrink-0 text-slate" aria-hidden />
                 </Link>
               </li>
             ))}
           </ul>
         </div>
 
-        <div className={`${styles.rise} mt-10 space-y-1.5 text-[14px] text-slate`}>
+        <div className={`${styles.rise} mt-10 space-y-2.5 text-[14px]`}>
           <p className={styles.label}>Talk to us</p>
-          <a href={`tel:${contact.phoneE164}`} className="block text-ink">
+          <a href={`tel:${contact.phoneE164}`} className="flex items-center gap-2.5">
+            <Phone className="size-4 text-slate" aria-hidden />
             {contact.phoneDisplay}
           </a>
-          <a href={`mailto:${contact.email}`} className="block text-ink">
+          <a href={`mailto:${contact.email}`} className="flex items-center gap-2.5">
+            <Mail className="size-4 text-slate" aria-hidden />
             {contact.email}
           </a>
-          <a href={social.instagram.url} target="_blank" rel="noopener noreferrer" className="block text-ink">
+          <a href={social.instagram.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2.5">
+            <InstagramIcon className="size-4 text-slate" />
             {social.instagram.handle}
           </a>
         </div>
@@ -71,6 +73,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
         </a>
         <Link href="/contact" onClick={onClose} className={`${styles.button} ${styles.solid}`}>
           Plan a trip
+          <ArrowRight className="size-4" aria-hidden />
         </Link>
       </div>
     </div>

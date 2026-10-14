@@ -1,7 +1,7 @@
 "use client";
 
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Children, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import { cn } from "@/lib/utils/cn";
 import styles from "./Carousel.module.css";
 
 interface CarouselProps {
@@ -55,13 +55,9 @@ export function Carousel({ children, label, className }: CarouselProps) {
             onClick={() => scroll(direction)}
             disabled={direction === -1 ? edges.start : edges.end}
             aria-label={direction === -1 ? "Previous" : "Next"}
-            className={cn(
-              "grid size-10 place-items-center rounded-full bg-paper text-ink transition-colors duration-200 hover:bg-glacier disabled:cursor-default disabled:opacity-40 disabled:hover:bg-paper",
-            )}
+            className="grid size-10 place-items-center rounded-full bg-paper text-ink transition-colors duration-200 hover:bg-glacier disabled:cursor-default disabled:opacity-40 disabled:hover:bg-paper"
           >
-            <svg viewBox="0 0 12 12" aria-hidden className={cn("size-3.5", direction === -1 && "rotate-180")}>
-              <path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            {direction === -1 ? <ChevronLeft className="size-5" /> : <ChevronRight className="size-5" />}
           </button>
         ))}
       </div>

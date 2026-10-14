@@ -1,7 +1,7 @@
 import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
-import { WhatsAppIcon } from "@/components/ui/icons";
+import { WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import type { ImageAsset } from "@/types/image";
 

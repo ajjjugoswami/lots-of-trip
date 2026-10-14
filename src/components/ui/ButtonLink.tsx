@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
@@ -23,13 +24,10 @@ export const buttonClassName = (variant: ButtonVariant, className?: string) =>
 
 export function Chevron() {
   return (
-    <svg
-      viewBox="0 0 12 12"
+    <ChevronRight
       aria-hidden
-      className="size-3 transition-transform duration-300 ease-out-expo group-hover:translate-x-0.5"
-    >
-      <path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
+      className="size-4 transition-transform duration-300 ease-out-expo group-hover:translate-x-0.5"
+    />
   );
 }
 

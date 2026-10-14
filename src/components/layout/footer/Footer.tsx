@@ -1,5 +1,6 @@
+import { Clock, Mail, Phone } from "lucide-react";
 import Link from "next/link";
-import { InstagramIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { InstagramIcon, WhatsAppIcon } from "@/components/ui/BrandIcons";
 import { Logo } from "@/components/ui/Logo";
 import { bookingStatus, companyNav, legalNav, siteConfig } from "@/content/site";
 import { getDestinationsByState } from "@/lib/data/destinations";
@@ -30,27 +31,32 @@ export function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className="container-x pt-14 sm:pt-20">
+      <div className="mx-auto max-w-7xl px-5 pt-12 sm:px-6 sm:pt-16 lg:px-10">
         <div className="grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-12">
           <div className="col-span-2 lg:col-span-4">
-            <Logo size="lg" />
+            <Logo />
             <p className="mt-5 max-w-xs text-[14px] leading-relaxed text-slate">{siteConfig.description}</p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-snow px-3 py-1 text-[12px] text-slate">
               <span className={styles.liveDot} aria-hidden />
               {bookingStatus}
             </p>
-            <ul className="mt-8 space-y-1.5 text-[14px]">
+            <ul className="mt-8 space-y-2.5 text-[13px]">
               <li>
-                <a href={`tel:${contact.phoneE164}`} className="transition-colors hover:text-accent">
+                <a href={`tel:${contact.phoneE164}`} className="inline-flex items-center gap-2.5 transition-colors hover:text-accent">
+                  <Phone className="size-4 text-slate" aria-hidden />
                   {contact.phoneDisplay}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contact.email}`} className="transition-colors hover:text-accent">
+                <a href={`mailto:${contact.email}`} className="inline-flex items-center gap-2.5 transition-colors hover:text-accent">
+                  <Mail className="size-4 text-slate" aria-hidden />
                   {contact.email}
                 </a>
               </li>
-              <li className="text-slate">{contact.hours}</li>
+              <li className="inline-flex items-center gap-2.5 text-slate">
+                <Clock className="size-4" aria-hidden />
+                {contact.hours}
+              </li>
             </ul>
           </div>
 
