@@ -5,7 +5,7 @@ import { MONTHS, monthShort } from "@/lib/utils/format";
 export function SeasonBar({ months, name }: { months: number[]; name: string }) {
   return (
     <section className="container-x pb-section">
-      <Reveal className="rounded-[28px] bg-paper p-7 md:p-10">
+      <Reveal className="rounded-xl bg-paper p-7 md:p-10">
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="eyebrow text-saffron">When to go</p>

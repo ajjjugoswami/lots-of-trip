@@ -44,7 +44,7 @@ export function TripFinder({ destinations }: TripFinderProps) {
   const message = `Hi Lots of Trip! I'd like to plan a trip to ${place}${month ? ` in ${month}` : ""} for ${travellers} ${travellers === "1" ? "traveller" : "travellers"}.`;
 
   return (
-    <div className="flex flex-col divide-y divide-white/15 overflow-hidden rounded-[28px] bg-white/10 p-1.5 ring-1 ring-white/20 backdrop-blur-xl md:flex-row md:items-center md:divide-x md:divide-y-0 md:rounded-full">
+    <div className="flex flex-col divide-y divide-white/15 overflow-hidden rounded-xl bg-white/10 p-1.5 ring-1 ring-white/20 backdrop-blur-xl md:flex-row md:items-center md:divide-x md:divide-y-0 md:rounded-full">
       <Field Icon={MapPin} label="Destination">
         <select value={destination} onChange={(event) => setDestination(event.target.value)} className={SELECT_CLASS}>
           <option value="">Anywhere in the hills</option>

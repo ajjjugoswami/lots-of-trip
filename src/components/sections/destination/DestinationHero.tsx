@@ -29,7 +29,7 @@ export function DestinationHero({ destination }: { destination: Destination }) {
       </Reveal>
 
       <ViewTransition name={`destination-${destination.slug}`} share="morph" default="none">
-        <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-[28px] bg-paper sm:aspect-16/9 md:mt-16 md:rounded-[36px] lg:aspect-21/9">
+        <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-xl bg-paper sm:aspect-16/9 md:mt-16 lg:aspect-21/9">
           <AppImage image={destination.images[0]} sizes="(min-width: 1312px) 1216px, 100vw" preload />
         </div>
       </ViewTransition>

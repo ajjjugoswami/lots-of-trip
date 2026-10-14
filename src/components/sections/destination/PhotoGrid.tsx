@@ -14,7 +14,7 @@ export function PhotoGrid({ images, title }: { images: ImageAsset[]; title: stri
           <RevealItem
             key={image.src}
             className={cn(
-              "relative overflow-hidden rounded-[24px] bg-paper",
+              "relative overflow-hidden rounded-xl bg-paper",
               index === 0 ? "aspect-4/3 md:col-span-2 md:row-span-2 md:aspect-auto" : "aspect-4/3",
             )}
           >

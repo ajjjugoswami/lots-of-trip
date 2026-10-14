@@ -13,7 +13,7 @@ interface PlanCtaProps {
 export function PlanCta({ image, subject }: PlanCtaProps) {
   return (
     <section className="container-x pb-section">
-      <Reveal className="grid overflow-hidden rounded-[32px] bg-paper md:grid-cols-2">
+      <Reveal className="grid overflow-hidden rounded-xl bg-paper md:grid-cols-2">
         <div className="flex flex-col justify-center p-8 md:p-14">
           <p className="eyebrow text-saffron">Ready when you are</p>
           <h2 className="mt-3 text-display-lg">

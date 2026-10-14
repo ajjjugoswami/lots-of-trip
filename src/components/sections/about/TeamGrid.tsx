@@ -9,7 +9,7 @@ export function TeamGrid() {
       <Reveal stagger className="mx-auto mt-14 grid max-w-5xl grid-cols-2 gap-5 md:grid-cols-4">
         {team.map((member) => (
           <RevealItem key={member.name} className="text-center">
-            <div className="mx-auto grid aspect-square w-full max-w-44 place-items-center rounded-full bg-paper text-display-md font-semibold text-slate">
+            <div className="mx-auto grid aspect-square w-full max-w-44 place-items-center rounded-full bg-paper font-serif-display text-display-md text-slate">
               {member.initials}
             </div>
             <h3 className="mt-4 text-[17px] tracking-tight">{member.name}</h3>

@@ -28,7 +28,7 @@ export function ExperienceGrid({ items }: { items: ExperienceItem[] }) {
         {items.map((item) => (
           <RevealItem key={item.type}>
             <Link href={`/destinations?type=${item.type}`} className="group block">
-              <div className="relative aspect-3/2 overflow-hidden rounded-[24px] bg-paper">
+              <div className="relative aspect-3/2 overflow-hidden rounded-xl bg-paper">
                 <AppImage
                   image={item.image}
                   sizes="(min-width: 1024px) 26rem, (min-width: 640px) 50vw, 100vw"

@@ -7,7 +7,7 @@ export function AboutStory({ image }: { image: ImageAsset }) {
   return (
     <section className="container-x pb-section">
       <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
-        <Reveal className="relative aspect-4/5 overflow-hidden rounded-[32px] bg-paper">
+        <Reveal className="relative aspect-4/5 overflow-hidden rounded-xl bg-paper">
           <AppImage image={image} sizes="(min-width: 768px) 40rem, 100vw" />
         </Reveal>
         <Reveal delay={0.1}>

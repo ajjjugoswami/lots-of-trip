@@ -18,7 +18,7 @@ export function DestinationCard({ destination, sizes, className, aspect = "portr
       <ViewTransition name={`destination-${destination.slug}`} share="morph" default="none">
         <div
           className={cn(
-            "relative overflow-hidden rounded-[24px] bg-paper",
+            "relative overflow-hidden rounded-xl bg-paper",
             aspect === "portrait" ? "aspect-4/5" : "aspect-4/3",
           )}
         >
@@ -33,8 +33,8 @@ export function DestinationCard({ destination, sizes, className, aspect = "portr
         </div>
       </ViewTransition>
       <div className="mt-4 px-1">
-        <p className="text-[12px] font-semibold text-saffron">{destination.region}</p>
-        <h3 className="mt-1 text-xl tracking-tight">{destination.name}</h3>
+        <p className="eyebrow text-saffron">{destination.region}</p>
+        <h3 className="mt-2 text-[1.75rem] leading-tight">{destination.name}</h3>
         <p className="mt-1 text-[15px] text-slate">{destination.tagline}</p>
       </div>
     </Link>

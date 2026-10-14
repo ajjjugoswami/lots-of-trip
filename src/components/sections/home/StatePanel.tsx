@@ -12,7 +12,7 @@ export function StatePanel({ panel }: { panel: StatePanelData }) {
   return (
     <Link
       href={`/journeys/${panel.slug}`}
-      className="group block overflow-hidden rounded-[28px] bg-surface shadow-[0_2px_12px_rgb(0_0_0/0.04)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgb(0_0_0/0.1)]"
+      className="group block overflow-hidden rounded-xl bg-surface shadow-[0_2px_12px_rgb(0_0_0/0.04)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgb(0_0_0/0.1)]"
     >
       <div className="px-8 pt-9 text-center md:px-10 md:pt-11">
         <p className="eyebrow text-slate">{panel.epithet}</p>

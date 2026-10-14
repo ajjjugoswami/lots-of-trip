@@ -10,7 +10,7 @@ export function TourCard({ tour }: { tour: Tour }) {
   return (
     <Link
       href={`/tours/${tour.slug}`}
-      className="group flex h-full flex-col overflow-hidden rounded-[28px] bg-paper transition-shadow duration-500 hover:shadow-[0_20px_50px_rgb(0_0_0/0.1)]"
+      className="group flex h-full flex-col overflow-hidden rounded-xl bg-paper transition-shadow duration-500 hover:shadow-[0_20px_50px_rgb(0_0_0/0.1)]"
     >
       <div className="relative aspect-16/10 overflow-hidden">
         <AppImage

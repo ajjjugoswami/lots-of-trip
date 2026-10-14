@@ -11,9 +11,9 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const current = items[index];
 
   return (
-    <section className="bg-black py-section text-white dark:bg-paper">
+    <section className="bg-night py-section text-white dark:bg-paper">
       <div className="container-x text-center">
-        <p className="eyebrow text-saffron">Field notes</p>
+        <p className="eyebrow text-[#d4b483]">Field notes</p>
         <div className="relative mx-auto mt-8 max-w-4xl md:min-h-[17rem]">
           <AnimatePresence mode="wait">
             <motion.figure
@@ -23,7 +23,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.5, ease: CUBIC.outExpo }}
             >
-              <blockquote className="text-display-md font-semibold text-balance">“{current.quote}”</blockquote>
+              <blockquote className="font-serif-display text-display-md text-balance italic">“{current.quote}”</blockquote>
               <figcaption className="mt-8 text-[15px]">
                 <span className="font-semibold">{current.name}</span>
                 <span className="text-white/50">

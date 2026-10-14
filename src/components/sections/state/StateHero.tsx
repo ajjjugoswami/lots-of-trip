@@ -12,14 +12,14 @@ export function StateHero({ state, image }: { state: StateInfo; image: ImageAsse
         <p className="mx-auto mt-5 max-w-2xl text-lead text-slate">{state.description}</p>
       </Reveal>
 
-      <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-[28px] bg-paper sm:aspect-16/9 md:mt-16 md:rounded-[36px] lg:aspect-21/9">
+      <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-xl bg-paper sm:aspect-16/9 md:mt-16 lg:aspect-21/9">
         <AppImage image={image} sizes="(min-width: 1312px) 1216px, 100vw" preload />
       </div>
 
-      <dl className="mt-6 grid grid-cols-3 gap-px overflow-hidden rounded-[24px] bg-line">
+      <dl className="mt-6 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-line">
         {state.stats.map((stat) => (
           <div key={stat.label} className="bg-paper px-5 py-5 text-center">
-            <dd className="text-display-md font-semibold">{stat.value}</dd>
+            <dd className="font-serif-display text-display-md">{stat.value}</dd>
             <dt className="mt-1 text-[13px] text-slate">{stat.label}</dt>
           </div>
         ))}

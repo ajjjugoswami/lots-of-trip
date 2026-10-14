@@ -61,7 +61,7 @@ export function ContactChannels() {
           <a
             href={href}
             {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="group block h-full rounded-[22px] bg-paper p-6 transition-colors duration-300 hover:bg-glacier/40"
+            className="group block h-full rounded-xl bg-paper p-6 transition-colors duration-300 hover:bg-glacier/40"
           >
             <Icon className={`size-5 ${iconClass}`} aria-hidden />
             <h3 className="mt-4 text-[15px] tracking-tight">{title}</h3>

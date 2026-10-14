@@ -34,7 +34,7 @@ export function InstagramStrip({ images }: { images: ImageAsset[] }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${instagram.handle} on Instagram`}
-              className="group relative block aspect-square overflow-hidden rounded-[20px] bg-paper"
+              className="group relative block aspect-square overflow-hidden rounded-xl bg-paper"
             >
               <AppImage
                 image={image}

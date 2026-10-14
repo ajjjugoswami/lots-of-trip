@@ -35,7 +35,7 @@ export function DestinationOverview({ destination }: { destination: Destination 
         </Reveal>
 
         <Reveal delay={0.1} className="lg:col-span-5">
-          <div className="rounded-[28px] bg-paper p-7 md:p-8 lg:sticky lg:top-20">
+          <div className="rounded-xl bg-paper p-7 md:p-8 lg:sticky lg:top-20">
             <h3 className="text-lg tracking-tight">At a glance</h3>
             <dl className="mt-5 divide-y divide-line">
               {facts.map((fact) => (

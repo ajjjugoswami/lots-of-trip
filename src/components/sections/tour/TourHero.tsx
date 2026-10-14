@@ -20,11 +20,11 @@ export function TourHero({ tour, places }: { tour: Tour; places: string[] }) {
         <p className="mx-auto mt-5 max-w-2xl text-lead text-slate">{tour.summary}</p>
       </Reveal>
 
-      <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-[28px] bg-paper sm:aspect-16/9 md:mt-16 md:rounded-[36px] lg:aspect-21/9">
+      <div className="relative mt-12 aspect-4/3 overflow-hidden rounded-xl bg-paper sm:aspect-16/9 md:mt-16 lg:aspect-21/9">
         <AppImage image={tour.cover} sizes="(min-width: 1312px) 1216px, 100vw" preload />
       </div>
 
-      <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-[24px] bg-line md:grid-cols-4">
+      <dl className="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-line md:grid-cols-4">
         {facts.map(({ Icon, label, value }) => (
           <div key={label} className="flex items-center gap-3 bg-paper px-5 py-5">
             <Icon className="size-5 shrink-0 text-accent" aria-hidden />

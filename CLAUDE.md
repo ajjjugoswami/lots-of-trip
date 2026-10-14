@@ -45,15 +45,17 @@ npm run lint     # lint
 
 ---
 
-## 3. Design Direction — Apple-level clarity
+## 3. Design Direction — Luxury travel (Aman / Black Tomato feel)
 
-- **Look:** clean white (`#ffffff`) and light grey (`#f5f5f7`) sections, near-black text (`#1d1d1f`), secondary text `#6e6e73`. Black sections (hero, testimonials) for rhythm.
-- **Accent:** logo blue `#0071e3` for buttons/links, logo orange `#f5820b` for small labels. Headline emphasis uses a blue→orange gradient (`<em>` inside h1–h3).
-- **Typography:** Inter (fallback SF Pro / system). Headlines semibold with tight tracking; fluid sizes via `text-display-*` tokens in `src/styles/tokens.css`.
-- **Components:** rounded image frames (20–36px radius), pill buttons, soft shadows on hover, Apple-style carousel with arrow buttons, segmented controls.
-- **Header/footer:** modelled on the quantalog-lp reference — slim frosted header with mega menu and pill CTAs; rounded gradient footer card with a giant fading wordmark.
+- **Palette:** warm ivory background `#faf8f4`, paper `#f2eee7`, ink `#1c1b19`, muted `#75706a`, champagne-gold accent `#94723f` (light `#d4b483`), charcoal night sections `#14120f`. Full dark mode via `.dark` overrides in `globals.css`.
+- **Typography:** Cormorant Garamond (serif, 500) for all h1–h3 and display numbers (`font-serif-display`); Inter for body. Eyebrows are 12px uppercase with 0.2em tracking in gold. Headline emphasis is gold italic (`<em>`).
+- **Buttons:** black pills with 12px uppercase tracked labels; `light` and `glass` variants for use over photos.
+- **Hero:** full-screen cinematic photo with slow ken-burns zoom, dark gradients for legibility, glass trip-finder bar (destination / month / travellers → WhatsApp).
+- **Header:** fixed; nav left · logo centred · actions right; uppercase tracked links. Transparent with white text over the home hero, frosted ivory glass after scrolling. Mega menu for destinations.
+- **Corners:** subtle 12px (`rounded-xl`) on images and cards; pills stay fully rounded.
+- **Floating buttons:** Instagram (brand gradient) and WhatsApp (brand green), bottom-right.
 - **Logo:** `public/logo-light.png` on light backgrounds, `public/logo-dark.png` on dark. Favicons in `src/app/icon.png` and `src/app/apple-icon.png`.
-- **Avoid:** text over bright photos, purple gradients, glassmorphism everywhere, emoji icons, serif/editorial gimmicks, heavy animation.
+- **Avoid:** text over photos without gradients, bright saturated UI colours, emoji icons, heavy animation.
 
 ---
 

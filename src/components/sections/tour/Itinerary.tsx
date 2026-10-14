@@ -11,7 +11,7 @@ export function Itinerary({ days }: { days: ResolvedItineraryDay[] }) {
         {days.map((day) => (
           <li key={day.day} className="relative">
             <span className="absolute top-7 left-[-1.9rem] size-3 rounded-full bg-accent ring-4 ring-snow md:left-[-2.9rem]" />
-            <Reveal className="grid gap-5 rounded-[24px] bg-paper p-5 sm:grid-cols-[1fr_14rem] md:p-6">
+            <Reveal className="grid gap-5 rounded-xl bg-paper p-5 sm:grid-cols-[1fr_14rem] md:p-6">
               <div>
                 <p className="text-[13px] font-semibold text-accent">Day {day.day}</p>
                 <h3 className="mt-1 text-xl tracking-tight">{day.title}</h3>

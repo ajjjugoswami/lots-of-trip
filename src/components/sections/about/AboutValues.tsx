@@ -19,7 +19,7 @@ export function AboutValues() {
           {aboutValues.map((value) => {
             const Icon = ICONS[value.icon];
             return (
-              <RevealItem key={value.title} className="rounded-[24px] bg-surface p-7">
+              <RevealItem key={value.title} className="rounded-xl bg-surface p-7">
                 <span className="grid size-11 place-items-center rounded-full bg-accent/10 text-accent">
                   <Icon className="size-5" aria-hidden />
                 </span>
