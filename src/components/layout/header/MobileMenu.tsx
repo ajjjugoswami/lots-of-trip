@@ -6,12 +6,12 @@ import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import styles from "./MobileMenu.module.css";
 
 const POPULAR = [
-  { label: "Kedarnath", href: "/destinations/kedarnath" },
-  { label: "Spiti Valley", href: "/destinations/spiti-valley" },
-  { label: "Valley of Flowers", href: "/destinations/valley-of-flowers" },
-  { label: "Chandratal", href: "/destinations/chandratal" },
-  { label: "Auli", href: "/destinations/auli" },
   { label: "Manali", href: "/destinations/manali" },
+  { label: "Shimla", href: "/destinations/shimla" },
+  { label: "Rishikesh", href: "/destinations/rishikesh" },
+  { label: "Nainital", href: "/destinations/nainital" },
+  { label: "Kasol", href: "/destinations/kasol" },
+  { label: "Amritsar", href: "/destinations/amritsar" },
 ];
 
 export function MobileMenu({ onClose }: { onClose: () => void }) {

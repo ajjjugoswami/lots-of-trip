@@ -7,7 +7,7 @@ import { AppImage } from "@/components/ui/AppImage";
 import { SectionIntro } from "@/components/ui/SectionIntro";
 import { CUBIC } from "@/lib/motion/tokens";
 import { cn } from "@/lib/utils/cn";
-import { MONTHS, monthShort, stateLabel } from "@/lib/utils/format";
+import { MONTHS, monthShort } from "@/lib/utils/format";
 import type { Destination } from "@/types/destination";
 
 export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
@@ -69,7 +69,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
           {matches.length === 1 ? "destination" : "destinations"} in season in {MONTHS[month - 1]}
         </p>
 
-        <ul className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <ul className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           <AnimatePresence mode="popLayout">
             {matches.map((destination, index) => (
               <motion.li
@@ -92,7 +92,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
                   </div>
                   <div className="px-4 py-3.5">
                     <p className="text-[15px] font-semibold tracking-tight">{destination.name}</p>
-                    <p className="text-[12px] text-slate">{stateLabel(destination.state)}</p>
+                    <p className="text-[12px] text-slate">{destination.region}</p>
                   </div>
                 </Link>
               </motion.li>

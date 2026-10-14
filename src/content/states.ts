@@ -5,30 +5,28 @@ export const states: StateInfo[] = [
     slug: "uttarakhand",
     name: "Uttarakhand",
     epithet: "Devbhoomi — Land of the Gods",
-    intro:
-      "Where the Ganga is born, and every ridge seems to carry a temple bell.",
+    intro: "Ganga ghats, lake towns, deodar ridges and tiger country.",
     description:
-      "Garhwal and Kumaon hold the Char Dham shrines, alpine meadows that bloom for a single season, and old hill towns wrapped in deodar. It is a place for pilgrims and trekkers alike — and for anyone who wants to watch the sun light up Nanda Devi.",
-    heroImage: { destination: "kedarnath", index: 1 },
+      "From the evening aarti in Haridwar and Rishikesh to the lakes of Nainital, the misty ridges of Mussoorie and Dhanaulti, and jeep safaris in Jim Corbett — Uttarakhand packs a lot into a short trip.",
+    heroImage: { destination: "rishikesh", index: 0 },
     stats: [
-      { label: "Destinations", value: "13" },
-      { label: "Highest point we trek", value: "4,000 m" },
-      { label: "UNESCO site", value: "Valley of Flowers" },
+      { label: "Destinations", value: "6" },
+      { label: "Ideal trip", value: "4–7 days" },
+      { label: "Best for", value: "Families" },
     ],
   },
   {
     slug: "himachal",
     name: "Himachal Pradesh",
-    epithet: "Where the cold desert meets the cedar forest",
-    intro:
-      "From apple orchards in Kullu to the moonscape of Spiti, in a single road trip.",
+    epithet: "Snow peaks and cedar valleys",
+    intro: "Toy trains, snow days, river valleys and Tibetan monasteries.",
     description:
-      "Himachal changes face with every pass you cross: Tibetan monasteries clinging to cliffs, glacial lakes at 4,300 metres, paragliders over the Kangra valley and quiet wooden villages in Tirthan. It rewards the slow traveller.",
-    heroImage: { destination: "spiti-valley", index: 1 },
+      "Shimla's colonial ridges, Manali's snow, the Parvati and Tirthan valleys, Dharamshala's monasteries and Dalhousie's meadows — easily combined with the Golden Temple in Amritsar.",
+    heroImage: { destination: "manali", index: 0 },
     stats: [
-      { label: "Destinations", value: "11" },
-      { label: "Highest lake", value: "4,300 m" },
-      { label: "Mountain passes", value: "6+" },
+      { label: "Destinations", value: "7" },
+      { label: "Ideal trip", value: "6–10 days" },
+      { label: "Best for", value: "Couples" },
     ],
   },
 ];

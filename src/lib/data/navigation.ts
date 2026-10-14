@@ -1,9 +1,9 @@
 import type { HeaderData } from "@/types/site";
-import { formatAltitude } from "@/lib/utils/format";
+import { formatAltitude, formatINR } from "@/lib/utils/format";
 import { getDestinationsByState, getStates } from "./destinations";
 import { getTour } from "./tours";
 
-const FEATURED_TOUR = "spiti-circuit";
+const FEATURED_TOUR = "shimla-manali-classic";
 
 export function getHeaderData(): HeaderData {
   const groups = getStates().map((state) => ({
@@ -24,7 +24,7 @@ export function getHeaderData(): HeaderData {
     feature: {
       eyebrow: "Featured journey",
       title: tour.title,
-      meta: `${tour.durationDays} days · ${tour.destinations.length} regions`,
+      meta: `${tour.durationDays} days · from ${formatINR(tour.priceFromINR)}`,
       href: `/tours/${tour.slug}`,
       image: tour.cover,
     },

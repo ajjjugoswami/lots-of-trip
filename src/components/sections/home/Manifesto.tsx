@@ -1,9 +1,9 @@
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
 
 const STATS = [
-  { value: "24", label: "Destinations we know by heart" },
-  { value: "8", label: "Signature journeys" },
-  { value: "4,551 m", label: "Highest pass we cross" },
+  { value: "13", label: "Destinations we know by heart" },
+  { value: "6", label: "Signature journeys" },
+  { value: "24×7", label: "On-trip support" },
   { value: "1,200+", label: "Happy travellers" },
 ];
 

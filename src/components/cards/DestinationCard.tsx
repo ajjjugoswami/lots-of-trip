@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ViewTransition } from "react";
 import { AppImage } from "@/components/ui/AppImage";
-import { formatAltitude, stateLabel } from "@/lib/utils/format";
+import { formatAltitude } from "@/lib/utils/format";
 import { cn } from "@/lib/utils/cn";
 import type { Destination } from "@/types/destination";
 
@@ -33,7 +33,7 @@ export function DestinationCard({ destination, sizes, className, aspect = "portr
         </div>
       </ViewTransition>
       <div className="mt-4 px-1">
-        <p className="text-[12px] font-semibold text-saffron">{stateLabel(destination.state)}</p>
+        <p className="text-[12px] font-semibold text-saffron">{destination.region}</p>
         <h3 className="mt-1 text-xl tracking-tight">{destination.name}</h3>
         <p className="mt-1 text-[15px] text-slate">{destination.tagline}</p>
       </div>

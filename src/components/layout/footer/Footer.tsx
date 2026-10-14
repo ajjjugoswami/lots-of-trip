@@ -11,9 +11,7 @@ import { FooterColumn } from "./FooterColumn";
 import styles from "./Footer.module.css";
 
 const toDestinationLinks = (state: "uttarakhand" | "himachal"): NavItem[] =>
-  getDestinationsByState(state)
-    .slice(0, 6)
-    .map((item) => ({ label: item.name, href: `/destinations/${item.slug}` }));
+  getDestinationsByState(state).map((item) => ({ label: item.name, href: `/destinations/${item.slug}` }));
 
 export function Footer() {
   const { contact, social } = siteConfig;

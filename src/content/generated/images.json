@@ -1,433 +1,55 @@
 {
-  "rishikesh": [
+  "jim-corbett": [
     {
-      "src": "/images/destinations/rishikesh/01.webp",
+      "src": "/images/destinations/jim-corbett/01.webp",
       "width": 2560,
       "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsAA4BaJbACdADsFwK5gAD8j5YhRrvXQtwh50seaIkJdyx6bRub5EIKQay7KvCRMHiVuDUPPBLFmw0RF5cjYAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsAA4BaJbACdADmOg3YtqAA/vDh947tFVu3lVwerKUWuUUR4PWa8RYrhpxiuNdJKT0dHAmAtaz2tBcG4brBKN6ek5RJmj7CsgAA",
       "credit": {
-        "title": "Tera manjil temple, Laxman Jhula, Rishikesh",
-        "artist": "Arpita Tripathy",
+        "title": "025 Chitals in Jim Corbett National Park Photo by Giles Laurent",
+        "artist": "Giles Laurent",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tera_manjil_temple,_Laxman_Jhula,_Rishikesh.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:025_Chitals_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
       }
     },
     {
-      "src": "/images/destinations/rishikesh/02.webp",
-      "width": 2080,
-      "height": 1544,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwAA4BaJYwCdAEO5THnwAD+6cPtCSTuxoECl1ekvk9KSDA1wNRdxhRtlul6FqdzyE0hZV5RPZJ9hLH5xDgA",
-      "credit": {
-        "title": "Rishikesh view across bridge",
-        "artist": "meg and rahul",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rishikesh_view_across_bridge.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/rishikesh/03.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkAA4BaJYwCw7DyVfOAAP7MRVVF4rmRY+u5PP9Pweg4cVIa6C7lyzUFjJ4UEzLEYRNYAAA=",
-      "credit": {
-        "title": "Ganga ghats, Laxman jhula, Rishikesh",
-        "artist": "आशीष_भटनागर",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganga_ghats,_Laxman_jhula,_Rishikesh.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/rishikesh/04.webp",
-      "width": 2560,
-      "height": 1898,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAwAA4BaJZQCdADx+bvwAPv9M7RW6gTUliZKkrSgc/4+yTfqfYVLEHescSZfcPIhYvrSc41Jg18ij0pVRVYA",
-      "credit": {
-        "title": "Laxman Jhula, Rishikesh",
-        "artist": "Cbiskartik2002",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laxman_Jhula,_Rishikesh.jpg"
-      }
-    }
-  ],
-  "kedarnath": [
-    {
-      "src": "/images/destinations/kedarnath/01.webp",
-      "width": 2560,
-      "height": 1989,
-      "blurDataURL": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAwAgCdASoQAAwAA4BaJYgCdAEekYYsK+9ugAD+tWivD+fo0rSNPOyfdEIlrnpQOaDffrnzeiD8MHT/fMSuoTlk5TbPWtYElxvZCjCkzxd4Zh2lOBrmEo2mJXJ39rgadrgguWVrwQmAAA==",
-      "credit": {
-        "title": "Kedarnath Temple in Rainy season",
-        "artist": "Shivam Kumar 766",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarnath_Temple_in_Rainy_season.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarnath/02.webp",
-      "width": 2560,
-      "height": 1152,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAQCdASoQAAcAA4BaJZgCdADpkx2gAOH5JGtYAbLUUbdDLWbaymcqRu9x4WVK0MFDAH2VXFmJceGxCAy7CehTxtwtODv4SHgIjrd9gAA=",
-      "credit": {
-        "title": "Kedarnath temple in uttarakhand",
-        "artist": "Nehasnaps0306",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarnath_temple_in_uttarakhand.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarnath/03.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwAA4BaJQBOgCPw5RUZDMwA/pqOuAc54KLL/g54xeAlLLJidXdXa9UXmn52bIm6quehitlULNyCKnQmDnfGxrt4dGaye5aQ3AE4b8AAAA==",
-      "credit": {
-        "title": "Kedarnath Temple in 2014",
-        "artist": "Kiranmadhu.e",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarnath_Temple_in_2014.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarnath/04.webp",
-      "width": 1920,
-      "height": 1080,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkAA4BaJQBOgBeiYIjW9wAA+kvB0/L8N7rEzFIA62fQ5rjx4pt0oVD+WoI8zW9oqyVs6qJB+guXJTo4GCAA",
-      "credit": {
-        "title": "Majestic and Serene Kedarnath temple",
-        "artist": "Photos Worldwide",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Majestic_and_Serene_Kedarnath_temple.jpg"
-      }
-    }
-  ],
-  "badrinath": [
-    {
-      "src": "/images/destinations/badrinath/01.webp",
-      "width": 2560,
-      "height": 1776,
-      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAsAA4BaJaACdAEP/KuXd3AA/vi5iNle923EfE4++exXXgqrSjeYsvxzot5nV6wViGNlu3EKVJhfqNHhKRtyMdwBErM3IF7BzieaZgAAAA==",
-      "credit": {
-        "title": "Badrinath temple - Uttarakhand",
-        "artist": "Shitha Valsan",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badrinath_temple_-_Uttarakhand.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/badrinath/02.webp",
-      "width": 2560,
-      "height": 1527,
-      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAoAA4BaJZQCdAEC9a3KpleAAP6/YMQB0AECYvV+FiiwEfo2irMt5PJScAA6UoMk1X/mTuWMzwJIT5Y+sai97Sh8c5MNaA0AAA==",
-      "credit": {
-        "title": "Badrinath Temple, Uttarakhand (Photo- Vishwanath Negi)",
-        "artist": "Vishwanath Negi",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badrinath_Temple,_Uttarakhand_(Photo-_Vishwanath_Negi).jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/badrinath/03.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQAgCdASoQAAwAA4BaJYwCdAYulv7uaUGLXAAA/uGr6B/oY/DMtq0BNIwMW4g8XCV6sk58Bo48a4Tq1/Y4gGB7wi3MPUSovBW6B+Dz/aBcffR5k4xdO52pmGWrc62pTCruWDQAAAA=",
-      "credit": {
-        "title": "Badrinath Temple-Saugata Das",
-        "artist": "Saugatadas1",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badrinath_Temple-Saugata_Das.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/badrinath/04.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAwAgCdASoQAAwAA4BaJagCdAYwT2wwdaBtwAD+9vpepQcB5TgIWK+/kn2tpoi23fd10rIgGfgZdG2ZKitRAhCu4xz/Rw5JmAjFNjZfvV6sBF80MG+TY/o+GuI02Vu0qrzF0ZXvZG+0wAAA",
-      "credit": {
-        "title": "Badrinath Main Entrance",
-        "artist": "Heavren",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badrinath_Main_Entrance.jpg"
-      }
-    }
-  ],
-  "valley-of-flowers": [
-    {
-      "src": "/images/destinations/valley-of-flowers/01.webp",
+      "src": "/images/destinations/jim-corbett/02.webp",
       "width": 2560,
       "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsAA4BaJbACdAEW0tda0KAA/u9bqIW5qORbVuexhtR5fnpqbir8lHNBjKJ77wHCBuKF4dpzhGEsWafSq0b3ZsyU1uVe3bx4mCqAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAQCdASoQAAsAA4BaJagC7ABVsLAA9X9/nENIF8ujLtbeV1fXAUXXLiBHPzGgr+3znPhCZU/zuHLhHBnoOv/gAAA=",
       "credit": {
-        "title": "Valley of flowers national park, Uttarakhand, India 03 (edit)",
-        "artist": "Original: Rohit Sharma Derivative work: UnpetitproleX",
+        "title": "026 Chital mother grooming her baby in Jim Corbett National Park Photo by Giles Laurent",
+        "artist": "Giles Laurent",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valley_of_flowers_national_park,_Uttarakhand,_India_03_(edit).jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:026_Chital_mother_grooming_her_baby_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
       }
     },
     {
-      "src": "/images/destinations/valley-of-flowers/02.webp",
+      "src": "/images/destinations/jim-corbett/03.webp",
       "width": 2560,
       "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAsAA4BaJbACdAEf5h1QLQYAAPlwhafBFZXI2ZoPu5MRmy7ASR6cOYzxqQeu4G2rLnGnNa31zAKzB9SC0iO8Wz70D9eA39qgAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAsAA4BaJQBYdh7FPX6IbcAA/s2HUK76p1gvoWs+BeI7JFQHlirvcksLgjGwAAA=",
       "credit": {
-        "title": "Valley of flowers national park, Uttarakhand, India",
-        "artist": "Rohit Sharma",
+        "title": "023 Indian peafowl in Jim Corbett National Park Photo by Giles Laurent",
+        "artist": "Giles Laurent",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valley_of_flowers_national_park,_Uttarakhand,_India.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:023_Indian_peafowl_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
       }
     },
     {
-      "src": "/images/destinations/valley-of-flowers/03.webp",
+      "src": "/images/destinations/jim-corbett/04.webp",
       "width": 2560,
       "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQAgCdASoQAAsAA4BaJZACdAEemMMIHZGAAP7XPuqcWSazWfzfxr3jfSyevvTZMkphJ66LxDk5cMrMX/73TxDWY1CSNCR06ofXnBnIiX007hDy2l0d4nSkUIQFESoAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAsAA4BaJagCdADpe+PgAADcPALoztiMkgMrrcqa6NCdrNU7rbqgQWeo0AAA",
       "credit": {
-        "title": "Valley of flowers national park, Uttarakhand, India 01",
-        "artist": "Rohit Sharma",
+        "title": "001 Golden jackal and azureum flowers in Jim Corbett National Park Photo by Giles Laurent",
+        "artist": "Giles Laurent",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valley_of_flowers_national_park,_Uttarakhand,_India_01.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/valley-of-flowers/04.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABQAgCdASoQAAwAA4BaJaACdAYvhWdSPY/EAoAA/q1E70YgiJ7VJvfhRCm5cV4FjSOanC6SJOoJL2TlXlVXhmY4bh82KzfkkaO7mdCJvJUpK2/O5X4SXRAS6WbkmGGoAF4S4nUorVwYOOSAAAA=",
-      "credit": {
-        "title": "Brahma kamal at Valley of flowers national park, India",
-        "artist": "Rohit Sharma",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brahma_kamal_at_Valley_of_flowers_national_park,_India.jpg"
-      }
-    }
-  ],
-  "auli": [
-    {
-      "src": "/images/destinations/auli/01.webp",
-      "width": 2560,
-      "height": 1441,
-      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkAA4BaJYwCdAEemnV5EQAA/ofzkD91WaVSs+bxybQXJPBgWj7yPJIxqhp2fYNE0jSXyneJoPHMzE1zw6c6ul2PduxjeogAAA==",
-      "credit": {
-        "title": "Auli, India",
-        "artist": "Amit Shaw",
-        "license": "CC0",
-        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auli,_India.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/auli/02.webp",
-      "width": 2048,
-      "height": 1536,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAwAA4BaJQBOgCHiFIQ4QAAA/vHdOz74bzGMoyuEGU1KavW7EkJRsIB+CA+QZKfOazOhR5lnEH2Fo6Nq/0f32w5vhhEfT4Nakb/wAAA=",
-      "credit": {
-        "title": "View of Himalayas from Auli",
-        "artist": "Induhari",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Himalayas_from_Auli.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/auli/03.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAQAgCdASoQAAsAA4BaJQBOj+ADAsx1FgLAAP7uHxT6KffgwbX7VzORMPf9USgZWeSOnpqLsabLpOAA",
-      "credit": {
-        "title": "Himalayas near Auli",
-        "artist": "Michael Scalet",
-        "license": "CC BY-SA 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayas_near_Auli.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/auli/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAA4BaJYgCdAEQOBRxu4AAAP7fxEmj2mLHJSvb2qUWXdYTBI85+UCVna75srB7AvhNIvpOygn+hfDLDAAA",
-      "credit": {
-        "title": "Auli mountains",
-        "artist": "Navi8apr",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auli_mountains.jpg"
-      }
-    }
-  ],
-  "chopta-tungnath": [
-    {
-      "src": "/images/destinations/chopta-tungnath/01.webp",
-      "width": 2048,
-      "height": 1536,
-      "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAAAQAgCdASoQAAwAA4BaJYwCdH8AgqBS55oAAP7wBNfOMY7uLCG7qwkL7lI3kmH/BETiQonuiBgAdNUQlRp19e9Btv2DR8iNi4lOmTpnaT3nC+x+90tS9Osb5cGG92fhCn10SNQAAAA=",
-      "credit": {
-        "title": "Tungnath temple 2",
-        "artist": "Varun Shiv Kapur from Berkeley, United States",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tungnath_temple_2.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/chopta-tungnath/02.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAwAA4BaJbACdAEO45FX3MNAAPueWrASLcIHD32p0DxrxRQ15G30n+PlQeKDmmNJTxaO9sORpWfvETRbBqPGLDcRgAAA",
-      "credit": {
-        "title": "Tungnath Temple in winter",
-        "artist": "Navdeep Gusain",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tungnath_Temple_in_winter.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/chopta-tungnath/03.webp",
-      "width": 2048,
-      "height": 1536,
-      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwAA4BaJQBdgMX14Kv9lbc2AAD+83KzrrSyLDuirMQGEg5IF66tz0HMhS5KS2/Qkk/iCh0umwd4IdWTDJ5VBcU7VJotcPUwzbbN/P+agAAA",
-      "credit": {
-        "title": "Tungnath-temple",
-        "artist": "Varun Shiv Kapur",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tungnath-temple.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/chopta-tungnath/04.webp",
-      "width": 2048,
-      "height": 1536,
-      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAQCdASoQAAwAA4BaJQBOgBnAlxuAAP7x9kO2/snA5N9V12NgV5AcWu9WmfLnZKrfvE8aBY37Tlj8H9lW9mfMoKQ1hCSPCQYlh4BQCtqfAAAA",
-      "credit": {
-        "title": "Tungnath temple (3530156063)",
-        "artist": "Varun Shiv Kapur from New Delhi, India",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tungnath_temple_(3530156063).jpg"
-      }
-    }
-  ],
-  "kedarkantha": [
-    {
-      "src": "/images/destinations/kedarkantha/01.webp",
-      "width": 2560,
-      "height": 1695,
-      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAsAA4BaJbACdAD5g5m4WAAA/sWBsldah9cE3xIXFyS7sMl6p0VD+cRuVVzZIYPa6HDteJe9W7+z+ijMCnK+eUIAAA==",
-      "credit": {
-        "title": "Kedarkantha Peak",
-        "artist": "Kanthi Kiran",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarkantha_Peak.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarkantha/02.webp",
-      "width": 2560,
-      "height": 1196,
-      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAcAA4BaJQBOgCIJuMZf1AD+SiEscuOeoT6BS8EZsFNnxEHHHwBEdRqfUIJ4PNiB7uZ3w/sAAA==",
-      "credit": {
-        "title": "Kedarkantha camps in heaven",
-        "artist": "AmxxmA",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarkantha_camps_in_heaven.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarkantha/03.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAkAA4BaJaQAAuQpJQ2gAADiTfCwB7uvK9SwgderMpuYf9gyzEQTBHKJBMSvjZQAAAAA",
-      "credit": {
-        "title": "Himalayas from Kedarkantha Summit",
-        "artist": "Atulbhats",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayas_from_Kedarkantha_Summit.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kedarkantha/04.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAwAA4BaJZwAAvcbt36YAAD+6ACy5Z67EYtippqMn7HNRi5zmC273WXB9pB9/2GrDAAA",
-      "credit": {
-        "title": "Kedarkantha",
-        "artist": "rakesh kumar",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kedarkantha.jpg"
-      }
-    }
-  ],
-  "har-ki-dun": [
-    {
-      "src": "/images/destinations/har-ki-dun/01.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAkAA4BaJZACdAEefhcHUgAA/u3ZGmOes2lLR4Ehcpa2jJ9IO3ZhGxDlfW1sXnCGIXIu1mW1UZPf8pJtcSzMcu4aQbyTYuMxj3JgAAA=",
-      "credit": {
-        "title": "Entering Har Ki Dun",
-        "artist": "Omkar",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entering_Har_Ki_Dun.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/har-ki-dun/02.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAABQAgCdASoQAAsAA4BaJQBOgCLQt/2ry4/rNgAA8dFI/4ZZfUV0NMnjUeMvk8PpVPAiqAFPsx6Bx2Zvu9sohBzI5/B3sbRzaFC3jgsUw6Y26ykAAAA=",
-      "credit": {
-        "title": "SWARGAROHINI PEAK",
-        "artist": "Govind Shirude",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SWARGAROHINI_PEAK.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/har-ki-dun/03.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJZACdAD0FPz1umAAAPni2gxaUW/yLYRwevK1bVZw/4Um44ypX9s3BaT9f5pZaNRRJ3rP6mOCHLaQewAAAA==",
-      "credit": {
-        "title": "Har Ki Dun 3",
-        "artist": "Mayur.mundra",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Har_Ki_Dun_3.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/har-ki-dun/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAsAA4BaJYgCdAYt80i1AAB0WRoZl8YJa3iuchyvvx//B5AftW0DROOmZ00qVyc66zD7FjXyGQ/zvEiHDBVDCIUL44AA",
-      "credit": {
-        "title": "Har Ki Dun 4",
-        "artist": "Mayur.mundra",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Har_Ki_Dun_4.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Golden_jackal_and_azureum_flowers_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
       }
     }
   ],
@@ -485,461 +107,219 @@
       }
     }
   ],
+  "haridwar": [
+    {
+      "src": "/images/destinations/haridwar/01.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAA4BaJQBOkCYjAw0GMqmgAP7Ij+QVSQmm3e/HRrpaNuwvUa0/FQPpNeXOZ5fJ/1v968amSUkIDIeAAA==",
+      "credit": {
+        "title": "View of Har Ki Pauri",
+        "artist": "Paradise Chronicle",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Har_Ki_Pauri.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/haridwar/02.webp",
+      "width": 2560,
+      "height": 1915,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwAA4BaJZgCsAEVuIzjuv6uAAD+q9Fx/9rdn7eOA9lrA5muia3CKdGiOSPLpAmDuTFi8FvUM1K9FnbJ7pYM1volSB11AZkIqsZaTRArwAAA",
+      "credit": {
+        "title": "Aarti at Har ki Pauri on Explore",
+        "artist": "Ramesh Lalwani",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aarti_at_Har_ki_Pauri_on_Explore.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/haridwar/03.webp",
+      "width": 2560,
+      "height": 1086,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAcAA4BaJQBOiP/wIMoZ4AD+x3s6UWJF/JZLSrvSZAm+l4KxIM8iyV9nRrDl3w8fbUf+wMJ/g4BsEnYfVKH3RlhIs029F8m0B1qAAAA=",
+      "credit": {
+        "title": "Har Ki Pauri and Clock Tower of Haridwar",
+        "artist": "Whispyhistory",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Har_Ki_Pauri_and_Clock_Tower_of_Haridwar.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/haridwar/04.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAsAA4BaJZQAAwFeW8ZQAAD+wPUUogRuYCFsMzDayzn7TGd83yFTsxOteKd44gXboKA/UhXEFPhtCrQ0UXz7KOAAAA==",
+      "credit": {
+        "title": "Har ki pauri 01",
+        "artist": "pavankunar",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Har_ki_pauri_01.jpg"
+      }
+    }
+  ],
+  "rishikesh": [
+    {
+      "src": "/images/destinations/rishikesh/01.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAsAA4BaJbACdADsFwK5gAD8j5YhRrvXQtwh50seaIkJdyx6bRub5EIKQay7KvCRMHiVuDUPPBLFmw0RF5cjYAA=",
+      "credit": {
+        "title": "Tera manjil temple, Laxman Jhula, Rishikesh",
+        "artist": "Arpita Tripathy",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tera_manjil_temple,_Laxman_Jhula,_Rishikesh.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/rishikesh/02.webp",
+      "width": 2080,
+      "height": 1544,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAwAA4BaJYwCdAEO5THnwAD+6cPtCSTuxoECl1ekvk9KSDA1wNRdxhRtlul6FqdzyE0hZV5RPZJ9hLH5xDgA",
+      "credit": {
+        "title": "Rishikesh view across bridge",
+        "artist": "meg and rahul",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rishikesh_view_across_bridge.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/rishikesh/03.webp",
+      "width": 2560,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkAA4BaJYwCw7DyVfOAAP7MRVVF4rmRY+u5PP9Pweg4cVIa6C7lyzUFjJ4UEzLEYRNYAAA=",
+      "credit": {
+        "title": "Ganga ghats, Laxman jhula, Rishikesh",
+        "artist": "आशीष_भटनागर",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganga_ghats,_Laxman_jhula,_Rishikesh.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/rishikesh/04.webp",
+      "width": 2560,
+      "height": 1898,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAwAA4BaJZQCdADx+bvwAPv9M7RW6gTUliZKkrSgc/4+yTfqfYVLEHescSZfcPIhYvrSc41Jg18ij0pVRVYA",
+      "credit": {
+        "title": "Laxman Jhula, Rishikesh",
+        "artist": "Cbiskartik2002",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laxman_Jhula,_Rishikesh.jpg"
+      }
+    }
+  ],
   "mussoorie": [
     {
       "src": "/images/destinations/mussoorie/01.webp",
       "width": 2560,
       "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAwAA4BaJZwAApr9Eug3gAD+86TCGUz9F8umFXq9pJFsMMs3CiD6jKvuxCAA",
+      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAgCdASoQAAwAA4BaJbACdAEWPXi4Y8lu0AAA/mBhnt3pIMylO9aMTWptizDkqIv/THPPZlVcPoF/kcVHC7z71VvKxPVq4hQ0CLoAAAA=",
       "credit": {
-        "title": "Mussoorie 5",
-        "artist": "Gannu03",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mussoorie_5.jpg"
+        "title": "Mussoorie view from Mall road 07",
+        "artist": "Harshanh",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mussoorie_view_from_Mall_road_07.JPG"
       }
     },
     {
       "src": "/images/destinations/mussoorie/02.webp",
       "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkAA4BaJaACdAEQ+pTVmLsAAP6384x0TcjjG1Lszvjzfnt3Kiv5pu6AGLqTtj89dZAJF4Kb7wHCFFncVxI/BABEDWCJdNxJeJiAAAA=",
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwAA4BaJYwCdAEQJE3h2EAA/eOawNv2yKnbsOz5g+ECPKwhd7xwtuo5hKnPGSyfniX/UuoDK0AA",
       "credit": {
-        "title": "Mountain view from eco park dhanaulti, near mussoorie India",
-        "artist": "Keshariiiitm",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_view_from_eco_park_dhanaulti,_near_mussoorie_India.jpg"
+        "title": "Mussoorie view from Mall road 08",
+        "artist": "Harshanh",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mussoorie_view_from_Mall_road_08.JPG"
       }
     },
     {
       "src": "/images/destinations/mussoorie/03.webp",
       "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkAA4BaJZwC7AEQzVSSKUwAAP7trAL7vh9tmFFpjzVgVpM1NRkP9+mJSoEeEw1QlzITJYbcGnyGtkSAD4Z7ztje+yxfMedwAA==",
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAAwAA4BaJYwAAqGXYVrRAADvYT6ivhq8wYKCDshcwxSezgJbv3etc5bzUz1I5BGHvqhwAAA=",
       "credit": {
-        "title": "MUSSOORIE(INDIA)",
-        "artist": "Bhargav0895",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MUSSOORIE(INDIA).jpg"
+        "title": "Mussoorie view from Mall road 09",
+        "artist": "Harshanh",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mussoorie_view_from_Mall_road_09.JPG"
       }
     },
     {
       "src": "/images/destinations/mussoorie/04.webp",
       "width": 2560,
       "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAwAA4BaJaACdAEO56g3jgfKAAD94pIqFsqhuzpelw2VcHYuLsZLhkUrTkIlxkiZvTjpWij4uDDCPXL5U0ungNEKEnAA",
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwAA4BaJZQAAxPOgdStgAD+3fvsE9WpfhilFitesesiWD29uCkepJ78nLrVuvwBvLyj55CRE7sS251glJdbTJoeiplTx6+qiAAA",
       "credit": {
-        "title": "Mussoorie Hill Station",
-        "artist": "आर्या जोशी",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mussoorie_Hill_Station.jpg"
-      }
-    }
-  ],
-  "jim-corbett": [
-    {
-      "src": "/images/destinations/jim-corbett/01.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsAA4BaJbACdADmOg3YtqAA/vDh947tFVu3lVwerKUWuUUR4PWa8RYrhpxiuNdJKT0dHAmAtaz2tBcG4brBKN6ek5RJmj7CsgAA",
-      "credit": {
-        "title": "025 Chitals in Jim Corbett National Park Photo by Giles Laurent",
-        "artist": "Giles Laurent",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:025_Chitals_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/jim-corbett/02.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAQCdASoQAAsAA4BaJagC7ABVsLAA9X9/nENIF8ujLtbeV1fXAUXXLiBHPzGgr+3znPhCZU/zuHLhHBnoOv/gAAA=",
-      "credit": {
-        "title": "026 Chital mother grooming her baby in Jim Corbett National Park Photo by Giles Laurent",
-        "artist": "Giles Laurent",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:026_Chital_mother_grooming_her_baby_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/jim-corbett/03.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAsAA4BaJQBYdh7FPX6IbcAA/s2HUK76p1gvoWs+BeI7JFQHlirvcksLgjGwAAA=",
-      "credit": {
-        "title": "023 Indian peafowl in Jim Corbett National Park Photo by Giles Laurent",
-        "artist": "Giles Laurent",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:023_Indian_peafowl_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/jim-corbett/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAsAA4BaJagCdADpe+PgAADcPALoztiMkgMrrcqa6NCdrNU7rbqgQWeo0AAA",
-      "credit": {
-        "title": "001 Golden jackal and azureum flowers in Jim Corbett National Park Photo by Giles Laurent",
-        "artist": "Giles Laurent",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Golden_jackal_and_azureum_flowers_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
-      }
-    }
-  ],
-  "munsiyari": [
-    {
-      "src": "/images/destinations/munsiyari/01.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAwAA4BaJZgCdAEOk+apwAD+thVY2WarM9Jt+uDisTF+RTmXoquWlrJ+iS3LgJ3z33r6k/Pjc+LPsH2JUj/vkwaa4AAA",
-      "credit": {
-        "title": "Munsiyari",
-        "artist": "Ebenezer Rao",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munsiyari.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/munsiyari/02.webp",
-      "width": 1963,
-      "height": 1243,
-      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAoAA4BaJZACdADbWxIoAAD+ZmscpK4ZlU/e86qZmBWz/X0lxawAL2FVKMOjafhQAA==",
-      "credit": {
-        "title": "Munsiyari Clouds",
-        "artist": "Shyamal",
+        "title": "Mall Road, Mussoorie 03",
+        "artist": "Harshanh",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munsiyari_Clouds.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mall_Road,_Mussoorie_03.JPG"
+      }
+    }
+  ],
+  "dhanaulti": [
+    {
+      "src": "/images/destinations/dhanaulti/01.webp",
+      "width": 2560,
+      "height": 1576,
+      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAoAA4BaJagCdAEQLE30YAAA4eyAKVtB+oQdxHzi1FmRFNTKkDBkHu9s1uwXWvQmMkjRD59dgukxom+AAA==",
+      "credit": {
+        "title": "Himalays-viewed-from-Dhanaulti",
+        "artist": "Wander-earth",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalays-viewed-from-Dhanaulti.jpg"
       }
     },
     {
-      "src": "/images/destinations/munsiyari/03.webp",
-      "width": 2560,
-      "height": 1700,
-      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAA4BaJZwAAxeTZc8lCgAA/u4lhKf1MirTF2dOYIGULYwyju5n7gofz1C64kQOBUSp64GpmhWi0XwAAA==",
+      "src": "/images/destinations/dhanaulti/02.webp",
+      "width": 2227,
+      "height": 1485,
+      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAgCdASoQAAsAA4BaJbACdGuAAs57qPwfTuAAyycaA9mYKKCmpAb9gXn20evYOhEhWLX+hk+36IP9uV9eMFeD/kg53ySLSAA=",
       "credit": {
-        "title": "Munsiyari from hotel milam inn - panoramio",
-        "artist": "Vipin Vasudeva",
+        "title": "Himalayan range visible from Dhanaulti",
+        "artist": "Dr.IMRAN ALI VETS",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayan_range_visible_from_Dhanaulti.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/dhanaulti/03.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAsAA4BaJZACdAEOspIbmjAA/vOSPAA2WDTwjaHP4xhtftcXAkmzwY4L/OWfSFKhvS1Dq2xPtLsAgAA=",
+      "credit": {
+        "title": "View of Dhanaulti, Uttarakhand",
+        "artist": "https://www.flickr.com/photos/ramkrsna/",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_Dhanaulti,_Uttarakhand.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/dhanaulti/04.webp",
+      "width": 1958,
+      "height": 1469,
+      "blurDataURL": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwAgCdASoQAAwAA4BaJbAC7AYt9y1cDsQIdn4AAP6380233wC67/pz9/WmU1czeNEqy3knLuYKrAZ3qLtWlWLZRun5jau0CAlVwbaORqI1SaV7v2PzymEndKi9vA6Zv49/mfd/X9z1FoAA",
+      "credit": {
+        "title": "Dhanaulti 2",
+        "artist": "Alok Prasad",
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munsiyari_from_hotel_milam_inn_-_panoramio.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/munsiyari/04.webp",
-      "width": 2560,
-      "height": 1700,
-      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAA4BaJZQCw7YoBR6qdN0AAP7ln5LtaWSB8M43y8YLzp3tvgL+Sa0XVbnW+5maekGOMWMzzueNx/AAAA==",
-      "credit": {
-        "title": "Sunrise at Munsiyari - I (14547053363)",
-        "artist": "Abhijit Kar Gupta from Kolkata, India",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_at_Munsiyari_-_I_(14547053363).jpg"
-      }
-    }
-  ],
-  "kausani": [
-    {
-      "src": "/images/destinations/kausani/01.webp",
-      "width": 2560,
-      "height": 1714,
-      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQAAsAA4BaJYgCdAD5hU3W4/gA+NKxxSPrD8hMOWWZRIkVfvZDoS4rPBlN2YYRGIAAAA==",
-      "credit": {
-        "title": "Trisul, Nanda Devi and Himalayan range from Kausani, Uttarakhand",
-        "artist": "https://www.flickr.com/photos/sanjoy/",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trisul,_Nanda_Devi_and_Himalayan_range_from_Kausani,_Uttarakhand.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kausani/02.webp",
-      "width": 2560,
-      "height": 1443,
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQAAkAA4BaJQBOgCL3JpJfeXAA/t2mjZVZzaDz7CEr0sWf8wxrBL+k2z0u5y42gTMWRwAA",
-      "credit": {
-        "title": "View from Kausani, 11-2009 - panoramio",
-        "artist": "David M.",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_from_Kausani,_11-2009_-_panoramio.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kausani/03.webp",
-      "width": 2560,
-      "height": 1443,
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoQAAkAA4BaJaQAAerIqSAA/nD22KCYZZl3Eh1oxiAAAA==",
-      "credit": {
-        "title": "Kausani, beautiful view on the Kumaon range, 11-2009 - panoramio",
-        "artist": "David M.",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kausani,_beautiful_view_on_the_Kumaon_range,_11-2009_-_panoramio.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kausani/04.webp",
-      "width": 2560,
-      "height": 1543,
-      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAoAA4BaJbACdACxmzwAAP7Q9Hn+U6ETg/lMxhQ0b5oW+dNVmSWIJtfvlMwOnfg0maP0/aIqTknftwkcvCSwAAA=",
-      "credit": {
-        "title": "Sunrise from Kausani, Almora, Uttarakhand, India",
-        "artist": "Abhijit Kar Gupta from Kolkata, India",
-        "license": "CC BY 2.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunrise_from_Kausani,_Almora,_Uttarakhand,_India.jpg"
-      }
-    }
-  ],
-  "manali": [
-    {
-      "src": "/images/destinations/manali/01.webp",
-      "width": 2560,
-      "height": 1600,
-      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYgCdADco5B1HoQAAPz75L27YF+q7xknOlVMVl4abOjm0ifA0s+z9CHPDnKlS/0uWoSt9tBFH4Vc4W8nm4AA",
-      "credit": {
-        "title": "Snow Rohtang Range Manali May24 A7CR 00128",
-        "artist": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Snow_Rohtang_Range_Manali_May24_A7CR_00128.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/manali/02.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAwAA4BaJbACdAEO+wvGqhwAAP6LGoryCRlO+K+uSBIFlGKt6ST4cQk5qKJTjAFPjMW/nvFH37O/XU0/KAAA",
-      "credit": {
-        "title": "Manali 8",
-        "artist": "Ganesh Mohan T",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manali_8.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/manali/03.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAsAA4BaJQBOgCIEAnYKAADiBzdMfl814ZGUtk3+4OMTO6Aug7gw+kVP97NS9Gkkhdq3wb/Lu2IxxKgAAA==",
-      "credit": {
-        "title": "Simsa Manali East Himachal Oct22 A7C 03328",
-        "artist": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Simsa_Manali_East_Himachal_Oct22_A7C_03328.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/manali/04.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAwAA4BaJaACdGuAAbr5/VnXAADJa5OBPVeyg0GbUIVYhXljdg9DWxa3t+2D5hqn2KCUZX53udiOJpGg7+bzx6CMHOLtsatLfry+SdJz64ZZLAAAAA==",
-      "credit": {
-        "title": "Cottages Simsa Manali Himachal May24 A7CR 00116",
-        "artist": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cottages_Simsa_Manali_Himachal_May24_A7CR_00116.jpg"
-      }
-    }
-  ],
-  "spiti-valley": [
-    {
-      "src": "/images/destinations/spiti-valley/01.webp",
-      "width": 2560,
-      "height": 1907,
-      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAA4BaJQBOgCHOEiu9RVAA+p+E5zMiM8CxkIx950hQuW95/M9usiKb4tPMVB6V5zZRfu2zcw2AAAA=",
-      "credit": {
-        "title": "Kee monastery Spiti Valley (edited)",
-        "artist": "Original: Kulbhushan Singh Suryawanshi (website) Derivative work: Aristeas",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kee_monastery_Spiti_Valley_(edited).jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/spiti-valley/02.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAsAA4BaJZQAAp1Z7yIgAM3ruKxMMzHazxc4WfqneaQ7rAvQiZ6n1xkYQGk/f8O6EZ0drM4EAAAA",
-      "credit": {
-        "title": "Key Monastery - Spiti -Himachal Pradesh MG 6796",
-        "artist": "Prasad Gaude",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Key_Monastery_-_Spiti_-Himachal_Pradesh_MG_6796.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/spiti-valley/03.webp",
-      "width": 2048,
-      "height": 1366,
-      "blurDataURL": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAQCdASoQAAsAA4BaJbACdH8ADRVF4AD+TPyd3G3BK6dyRWSKi1gRzTJv4jLivuUHGg4IHhvsrRP/ENcg5kJNmGkmnZtwMi1xhBBGs1haboBNxp4Bu/L8XAhE+7gbAAA=",
-      "credit": {
-        "title": "Key Monastery, Himachal Pradesh",
-        "artist": "Madhumita Das",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Key_Monastery,_Himachal_Pradesh.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/spiti-valley/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAsAA4BaJQAAYvi+9DrEAAD+9OQTgNR4HS5Lw1/voitXTi1Cm4bV9aecF2J4L9YfAM34/AQFJSC4chaffzxGa37YFi9z6Q0pgAAA",
-      "credit": {
-        "title": "Key Gompa monastery, Spiti Valley, Himachal Pradesh, India 03",
-        "artist": "Mike Shaw",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Key_Gompa_monastery,_Spiti_Valley,_Himachal_Pradesh,_India_03.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/spiti-valley/05.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAA4BaJQBOgCIAEa0wEwAA/tz6lUyz94vJ+REEoS8+WaxoYpHvgy6/sA++MgUGm6QFvMupQhcPYAXKAAAA",
-      "credit": {
-        "title": "Kye Gompa-54-Dorf-2016-gje",
-        "artist": "Gerd Eichmann",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kye_Gompa-54-Dorf-2016-gje.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/spiti-valley/06.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAsAA4BaJZQAAubLZ9tJ6VwAAPjkoF5Dd1rgcalDWTg+hSd3CX55ixuoW+Y29x238TN5eP6sxY95rzQAAA==",
-      "credit": {
-        "title": "Kye Gompa-17-Felder-2016-gje",
-        "artist": "Gerd Eichmann",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kye_Gompa-17-Felder-2016-gje.jpg"
-      }
-    }
-  ],
-  "chandratal": [
-    {
-      "src": "/images/destinations/chandratal/01.webp",
-      "width": 2496,
-      "height": 1664,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAsAA4BaJYgCdAEPS0O65qAAAPzYxaAT5yMwG4CTO2k97UiADzkRU3JT4ZCinOIdF4TWAcEZGQQcUUpBCFUkuVkZm0QAAAA=",
-      "credit": {
-        "title": "Chandratal 1",
-        "artist": "Lodhra",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chandratal_1.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/chandratal/02.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAA4BaJagCdADZedsSWAAA/mFdZ5Q+LC4Xjs5pssFmrrZiOm93xEnOJlPEOa97FBp9GuDeGzMXO2yKPO7JwAA=",
-      "credit": {
-        "title": "Chandratal July 2017",
-        "artist": "Wayfarersonmove",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chandratal_July_2017.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/chandratal/03.webp",
-      "width": 1920,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAwAA4BaJZgCdAEVMNNuVmYAAPfdB+C+A8NVDaI6KamSiXmGRciWgG6imQhokN/BgF/xGaSL2Xyg/CbguI5owAA=",
-      "credit": {
-        "title": "Chandratal lake of Spiti valley",
-        "artist": "Pawanranta",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chandratal_lake_of_Spiti_valley.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/chandratal/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAA4BaJZACdAEU1QPQVOQAAP6VCoQC3hzgSeB+9RfURGJHu6GvEHM9xN+w+BuwJ90B0fwyW73hfu3eTyQA",
-      "credit": {
-        "title": "Chandra Taal (Lake), HP, India, D35 7333 nx01",
-        "artist": "Adarsh Patel",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chandra_Taal_(Lake),_HP,_India,_D35_7333_nx01.jpg"
-      }
-    }
-  ],
-  "kasol-parvati": [
-    {
-      "src": "/images/destinations/kasol-parvati/01.webp",
-      "width": 2560,
-      "height": 1653,
-      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAoAA4BaJYwAAuYYh8lAAPe7R1ZoZnjeKiveXiSuWatnlEgnWKjp5k8IwFf1Km1SwughHxE0aAgA",
-      "credit": {
-        "title": "Parvati Valley from Ratocha Village",
-        "artist": "Methemfetamine",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_Valley_from_Ratocha_Village.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kasol-parvati/02.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAkAA4BaJQAAX7VZFKPoAPYe0y2b4tA8xfsVkDlJQJ0YexoiGW0rVvDQqRXSqia2ZEVDxZ/zPmLe+Hxva+QAAAA=",
-      "credit": {
-        "title": "Parvati Valley in Himachal Pradesh 35",
-        "artist": "Pinakpani",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_Valley_in_Himachal_Pradesh_35.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kasol-parvati/03.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAkAA4BaJQAAXWPFySmAAPff32tUkoGqHwWaiDnBLxzQfuV8Dd5ikAvKQZFRYE+oK2hX6eYRaikAAAA=",
-      "credit": {
-        "title": "Parvati Valley in Himachal Pradesh 10",
-        "artist": "Pinakpani",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_Valley_in_Himachal_Pradesh_10.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kasol-parvati/04.webp",
-      "width": 2560,
-      "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkAA4BaJZQC7AEPNnF+18AA/u7zHwGI7YQ40hgYOjRR2bKaF6McDPqsUUu4dChcgGXG3y8QBDRnwt5gs2/J+Ui1HhreAAA=",
-      "credit": {
-        "title": "Parvati Valley in Himachal Pradesh 25",
-        "artist": "Pinakpani",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_Valley_in_Himachal_Pradesh_25.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhanaulti_2.jpg"
       }
     }
   ],
@@ -973,195 +353,141 @@
     {
       "src": "/images/destinations/shimla/03.webp",
       "width": 2560,
-      "height": 1587,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAoAA4BaJQBOgCHd4C9LNWmAAP7oT5rcGujPO45SOQsznWo+ysd13sjRiXhF6lYfjRG+egpaEGfR++P8JdSAQg39jVOAAAA=",
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJQBOgMWb3up+RKmwAP63UY1YZW8mzvoEl8TVmYR2wF4cs3PniBbx9kVII+qja5oorTk8d96iFt+ArJ8OhrJSehrYlowZuCSyKAAA",
       "credit": {
-        "title": "Cityscape of Shimla",
-        "artist": "Navneet Sharma",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Shimla.jpg"
+        "title": "Ridge, Shimla",
+        "artist": "ShashankSharma2511",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ridge,_Shimla.JPG"
       }
     },
     {
       "src": "/images/destinations/shimla/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAsAA4BaJZQCdAEOeYnQMeAA/tgBHooeO0clARtUaUzJIqnlAQyBeAMrZHtssqS5RVJmm8XvdOwrnAAAAA==",
+      "width": 2408,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoQAAoAA4BaJYwCdAEPhU24CgAA/uDbrYYZjsA0tO8g0G8KM7NKZU6dNqhVe00+q7C3algio7/1iPDlBMMouiOkEAWWXOwA",
       "credit": {
-        "title": "Shimla, India, Panoramic view of Shimla hills",
-        "artist": "Vyacheslav Argenberg",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shimla,_India,_Panoramic_view_of_Shimla_hills.jpg"
+        "title": "The Ridge Shimla 6",
+        "artist": "Virusism",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Ridge_Shimla_6.jpg"
       }
     }
   ],
-  "dharamshala": [
+  "manali": [
     {
-      "src": "/images/destinations/dharamshala/01.webp",
-      "width": 2560,
-      "height": 1280,
-      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAgAA4BaJZACdAEPQnBNgADiBdBKsCY3Npic2QXgT61Lp3nyDASWAkhgAA==",
-      "credit": {
-        "title": "Dhauladhar alpenglow above Dharamshala, India",
-        "artist": "UnpetitproleX",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhauladhar_alpenglow_above_Dharamshala,_India.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/dharamshala/02.webp",
+      "src": "/images/destinations/manali/01.webp",
       "width": 2560,
       "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAwAA4BaJQBOgfaSI7SWQkUAAPsd0vqVKK+zpG7mvMpIzTAuvcTrP4JIBG6e89GHOBESzA88dUBYQANJo6gl1qLxdtQMBOTe6A7+AAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAwAgCdASoQAAwAA4BaJYgCdAEN8Gn6A6OUAAD+88AWMyxnQO99dnj/NpVT9h/XG31g4Npj4fiv5DZS48gXM8zEoDyRzibhq6db5LscyEQAAA==",
       "credit": {
-        "title": "Hanuman ji ka Tibba of Dhauladhar Range from Triund",
-        "artist": "Maverickspointyhat",
+        "title": "Solang Valley ,Manali, Himachal Pardes, India",
+        "artist": "Harvinder Chandigarh",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanuman_ji_ka_Tibba_of_Dhauladhar_Range_from_Triund.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solang_Valley_,Manali,_Himachal_Pardes,_India.JPG"
       }
     },
     {
-      "src": "/images/destinations/dharamshala/03.webp",
+      "src": "/images/destinations/manali/02.webp",
+      "width": 2560,
+      "height": 1702,
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoQAAsAA4BaJZACdAEfvVXswCUgAAD8j7I0/gNmf2nur6ONTuJhyiIovKj+M26xmSzcsal782UIzDcGbAOKZa7MQtNjjrZjBtOup+890zhN/UUw3yagAA==",
+      "credit": {
+        "title": "Solang valley under snow, 2015",
+        "artist": "Bleezebub",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solang_valley_under_snow,_2015.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/manali/03.webp",
+      "width": 2560,
+      "height": 1759,
+      "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQAgCdASoQAAsAA4BaJbACdAEQVZ+XXxOSAMtO/Yeg5dbiK4tVBwfenpLzcGd/t5p0p0Dq4bQmAdU98UmW88B9Mt5j+Kv/L6jYp3pu1fJ1yzk2MgcqgU5+PKEsP4QA",
+      "credit": {
+        "title": "Paragliders at Solang Valley, Manali",
+        "artist": "Madhumita Das",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paragliders_at_Solang_Valley,_Manali.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/manali/04.webp",
+      "width": 2048,
+      "height": 1536,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAwAA4BaJZgCdAEWxjC4bZxCAAD8jvCyvUlt6AZMg1IUrC6ZF0s07xagOqMjnpKcVQaYDoHOP1XcvCujk9ODXOGDAAAA",
+      "credit": {
+        "title": "Solang Valley Manali",
+        "artist": "Jishnu2602",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solang_Valley_Manali.JPG"
+      }
+    }
+  ],
+  "kasol": [
+    {
+      "src": "/images/destinations/kasol/01.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAABQAgCdASoQAAsAA4BaJbACdH8AGYc4+seBCwAA/ubogdp3l/2AqqaPyQczc8KK/uJQ+EQvbNLZLhCqK5EqtROCHbGbufB3aDyu6QF+njaGzCaPri6e+7366S6+iGp0OFAAAA==",
+      "credit": {
+        "title": "Parvati Valley river kasol",
+        "artist": "Alok Kumar",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_Valley_river_kasol.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/kasol/02.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoQAAsAA4BaJQBOgB2eOhTFwAAA/vRGSXX7ZSoVvjiu24SKYJIw412i/2u5lfxjIdCwFtA1ARPZ+ZJt1t5QduQr7ylzCgpRtdECWm8HMRqukMNjZAAAAA==",
+      "credit": {
+        "title": "The Moonlit Parvati River flowing beside the Kasol Town, Himachal Pradesh",
+        "artist": "Jan J George",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Moonlit_Parvati_River_flowing_beside_the_Kasol_Town,_Himachal_Pradesh.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/kasol/03.webp",
+      "width": 2560,
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoQAAsAA4BaJaACw7xQAdP90sk7AAD9tbP0EMFFdq3O4SGyZk9MWkRTrg8vafJcn42pA7devT+IPzReqdUIBDQGgJ4nBq7LATEo9qSqPnys8Tyu4nZDC4AA",
+      "credit": {
+        "title": "The Fast Flowing Parvati River on the banks of Kasol, Himachal Pradesh",
+        "artist": "Jan J George",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Fast_Flowing_Parvati_River_on_the_banks_of_Kasol,_Himachal_Pradesh.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/kasol/04.webp",
       "width": 2560,
       "height": 1440,
-      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAQAgCdASoQAAkAA4BaJYgCdAEfbJO0wDYAAN4yc2MOYPmueeJ7sSjWGjQNlc9oL180FHjA2ZUmQFgRuYQgAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAkAA4BaJYwC7AERH7XvupIAAP70wFDvh3D+FZzl8cU7YI3okXxe+of3WKWJdbpZpkW5eAA=",
       "credit": {
-        "title": "Dhauladhar Range from Naddi Village",
-        "artist": "Sitikantha kheti",
-        "license": "CC BY 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dhauladhar_Range_from_Naddi_Village.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/dharamshala/04.webp",
-      "width": 2560,
-      "height": 1152,
-      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAcAA4BaJQBOgCHiFiHyWawA/eLtzWqWFNQ0Ga5K3AzY1rB0xo5v7U+YtgQdW3mAcM8igAA=",
-      "credit": {
-        "title": "The Dhauladhar Range",
-        "artist": "Himalayanlens",
+        "title": "Parvati River in Himachal Pradesh 13",
+        "artist": "Pinakpani",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Dhauladhar_Range.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvati_River_in_Himachal_Pradesh_13.jpg"
       }
     }
   ],
-  "bir-billing": [
+  "jibhi": [
     {
-      "src": "/images/destinations/bir-billing/01.webp",
-      "width": 2560,
-      "height": 1709,
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAsAA4BaJQBOgB4gFbCP/RWYAM3gbOIEvZLk6nGkUIGDOSowUszG/zt1Ryu2KeHph6+SoRkIQljHgOTwAAAA",
-      "credit": {
-        "title": "Paragliding at Bir, HP",
-        "artist": "Original: PanWoyteczekDerivative work: UnpetitproleX",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paragliding_at_Bir,_HP.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/bir-billing/02.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAwAA4BaJbACdAEOzZWC4ADycuCHB/1yfOlrvi/XoFb+A8MabgwXAacDR0tvHtqtHXZzI9/n4tlwbEEhe4KkLnttvbz67BRICJ1jilgAAA==",
-      "credit": {
-        "title": "Pilots on a paragliding takeoff at Bir-Billing (01)",
-        "artist": "Okorok",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilots_on_a_paragliding_takeoff_at_Bir-Billing_(01).JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/bir-billing/03.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAsAA4BaJZgCdAEOpPlBxDgA/up6+Z6VpDuXWjFP8axwAjilpC7KZNOzmBuqCFLbIVCKbY7vfzgEH1EM+lXsLgAAAA==",
-      "credit": {
-        "title": "Paragliding World Cup 2015 at nearby Bir-Billing",
-        "artist": "Wikimate786",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paragliding_World_Cup_2015_at_nearby_Bir-Billing.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/bir-billing/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAQAgCdASoQAAsAA4BaJbACdAERH3fwUnYAAP739Ki6NVo3UfgEGvxTqo3aeearV8qdILqp2ETJJmQkA/Ly6Lu073WcdWnBV5ZE3DFQpJdk9VbTtUMhwJn9A2WpV6yadsN35L++oJ0SQW7BfGJSwAAA",
-      "credit": {
-        "title": "Best paragliding in Bir Biling",
-        "artist": "Panchkaranvarun",
-        "license": "CC BY 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Best_paragliding_in_Bir_Biling.jpg"
-      }
-    }
-  ],
-  "kinnaur": [
-    {
-      "src": "/images/destinations/kinnaur/01.webp",
-      "width": 2560,
-      "height": 1714,
-      "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAsAA4BaJZACdBHABefQxPQAAP7fzxzb+h+Dr0jzrr+GDmwrnlEQyqnFxAZV8EEqqLdDUjnHK2FiVSHFR8ux/nMAAA==",
-      "credit": {
-        "title": "Chitkul village",
-        "artist": "Vachadave",
-        "license": "Public domain",
-        "licenseUrl": "",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chitkul_village.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/kinnaur/02.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAsAA4BaJbACdAC82xOJaaAAypIVhndn66PfvDeuBUq6VqcdCItSsvsxhwXpPcvpKnEelv4zbNGLu8eBi8ZV8xZYlkgAAAA=",
-      "credit": {
-        "title": "Chitkul the last village of India",
-        "artist": "Smathur910",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chitkul_the_last_village_of_India.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/kinnaur/03.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAwAA4BaJaACdAELyRR88ZzgAAD+6tsYU+Xb3LI4XolWFWXbivaKcD1VhX3n8+T7wePVU8ZDz+TnTYjnQ8O+1tdL1C5TWFuJf7WRocQAAA==",
-      "credit": {
-        "title": "Temple at Chitkul",
-        "artist": "Kaiho",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temple_at_Chitkul.JPG"
-      }
-    },
-    {
-      "src": "/images/destinations/kinnaur/04.webp",
-      "width": 2560,
-      "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAsAA4BaJYwC7ADp+snMIwAA/SgD1cixFhg97J21B+Yv+pCY8efdhV992a5ZzyKQ32h8I0d9mGx492pYCKjIDT8g8jQnS4KuDoAA",
-      "credit": {
-        "title": "Traditional house in Chitkul",
-        "artist": "Marsmux",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Traditional_house_in_Chitkul.jpg"
-      }
-    }
-  ],
-  "jibhi-tirthan": [
-    {
-      "src": "/images/destinations/jibhi-tirthan/01.webp",
+      "src": "/images/destinations/jibhi/01.webp",
       "width": 2560,
       "height": 1219,
       "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoQAAgAA4BaJQBdgCPuOyUTQADeZ+bO5sC07vRPL8TvT7p3nb2PUrhqrpZKIb9EA5dVmfelFuhOgIAA",
@@ -1174,48 +500,102 @@
       }
     },
     {
-      "src": "/images/destinations/jibhi-tirthan/02.webp",
+      "src": "/images/destinations/jibhi/02.webp",
       "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAACwAQCdASoQAAwAA4BaJaACdACNhcmAAP7xulDdPrHON8z3mxvWsEfr1SKpWS0NAUr6osOOKx+rmOGHRTIpH7I8z/b/IyDMIwe9vx39XPzCXM6zW6Q2pqOGE9uKH5HMTRbTAAAA",
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkAA4BaJQBOgCHpN04YAAD8tP47WFHWoAeE2Ggnny7aw9DdcolygQXRA5tdaAAAAA==",
       "credit": {
-        "title": "TirthanRiver",
-        "artist": "Ankitwadhwa10",
+        "title": "Jalori Pass",
+        "artist": "Manish57335",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TirthanRiver.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jalori_Pass.jpg"
       }
     },
     {
-      "src": "/images/destinations/jibhi-tirthan/03.webp",
+      "src": "/images/destinations/jibhi/03.webp",
       "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQAAwAA4BaJZACdAEfU/3MbGaYAAD+n4Oz8Xj+LDn33MmL61UpZrq4grAtbmw3Z1/HxjIy1Q7FkF1yMmqmVbAk4kB6+4/XQgA=",
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAkAA4BaJQBOgCHhoZPIPgAA/rcnlRqXd/FWizCIzMcKA8qPUgcrz2NkNGls2gZWkNxizAAAAA==",
       "credit": {
-        "title": "Bathad Village, Plachen Valley, Kullu District Himachal Pradesh",
-        "artist": "Ramwik",
-        "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bathad_Village,_Plachen_Valley,_Kullu_District_Himachal_Pradesh.jpeg"
+        "title": "GHNP view from Jalori pass",
+        "artist": "Manish57335",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:GHNP_view_from_Jalori_pass.jpg"
       }
     },
     {
-      "src": "/images/destinations/jibhi-tirthan/04.webp",
+      "src": "/images/destinations/jibhi/04.webp",
       "width": 2560,
-      "height": 1700,
-      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQAgCdASoQAAsAA4BaJbACdAED+YBClzCAAP7xbCq5LH4wcsYOIX9b4IC/O0yZPZLAz4CiQA0RVzKeQ/4fnY//OGNHjgO8Jh7yS8rJs4YSP6lO4zP4NXfEy0VGPRckzY0oAA==",
+      "height": 1152,
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQAAcAA4BaJaACdADcoi/fuWAA/nkuuD8eeoq0AYH2+J/sQhmVCD4WjrnyO360xx7DCYHYAAA=",
       "credit": {
-        "title": "Trekking Bridge",
-        "artist": "Ankitwadhwa10",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trekking_Bridge.jpg"
+        "title": "The beauty of khanag jalori pass distt kullu",
+        "artist": "Ayis.ha200*21",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_beauty_of_khanag_jalori_pass_distt_kullu.jpg"
       }
     }
   ],
-  "dalhousie-khajjiar": [
+  "dharamshala": [
     {
-      "src": "/images/destinations/dalhousie-khajjiar/01.webp",
+      "src": "/images/destinations/dharamshala/01.webp",
+      "width": 2449,
+      "height": 1633,
+      "blurDataURL": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsAA4BaJbACdADH3A057hAA/uQ/MOLr8H3yLGTjJhVP8tJc/n1z2zbaSjXmDXKDW+P5sGI8aX1Y5O70DE0RM9m+ApEIh9AAAA==",
+      "credit": {
+        "title": "Triund (22356802630)",
+        "artist": "Ashish Gupta from Noida, India",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triund_(22356802630).jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/dharamshala/02.webp",
+      "width": 2560,
+      "height": 1920,
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAwAA4BaJaACdAECv7/lmfks4AD2pvMVP8V0kcr1E2JTkFfRcl9R8cvNWO419Msavwxmu1z+HhdUwAMOp3u4U7i7YUSpx1JYN0xOR35J9iAA",
+      "credit": {
+        "title": "Triund, Dharamsala",
+        "artist": "Mohitb1991",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triund,_Dharamsala.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/dharamshala/03.webp",
+      "width": 2449,
+      "height": 1633,
+      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAsAA4BaJQBOgCIL2yZDfCMgAP6ZZmAXu28wHKjG80a5CK3v4lf9Yylmna634pgnXwQCmsyL7fYtGlvLEhzIOP4aow2xMjZSxCpsAAA=",
+      "credit": {
+        "title": "Triund (22357041548)",
+        "artist": "Ashish Gupta from Noida, India",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triund_(22357041548).jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/dharamshala/04.webp",
+      "width": 1920,
+      "height": 1440,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAwAA4BaJQBOgCKV93gDeAAA/phTUzkmnfB5NL82zpAp4IyVgwBDAG3lI0Z8VQwbsvy0fFM0tmpYx4Dxn5AA",
+      "credit": {
+        "title": "Triund (16100162457)",
+        "artist": "Ashish Gupta from Noida, India",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triund_(16100162457).jpg"
+      }
+    }
+  ],
+  "dalhousie": [
+    {
+      "src": "/images/destinations/dalhousie/01.webp",
       "width": 2560,
       "height": 1707,
       "blurDataURL": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACwAQCdASoQAAsAA4BaJbACdAD0I1MAAPzLuWPWsXP5M7bB8n5UDE02NqvIvI5e6CI9/7X/OZ4Eg0WIoI5Ju/2WNW3WTK0hbtWj85ycjJ5pxAveHKAAAA==",
@@ -1228,7 +608,7 @@
       }
     },
     {
-      "src": "/images/destinations/dalhousie-khajjiar/02.webp",
+      "src": "/images/destinations/dalhousie/02.webp",
       "width": 2560,
       "height": 1920,
       "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAA4BaJagCdAEDe0LN4AAA/kA8tb+TSqcIbTTBwNhUCeUb2iSmYX/QV8PuOTN3MMtKXX8nkiUAAAA=",
@@ -1241,7 +621,7 @@
       }
     },
     {
-      "src": "/images/destinations/dalhousie-khajjiar/03.webp",
+      "src": "/images/destinations/dalhousie/03.webp",
       "width": 2560,
       "height": 1920,
       "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAwAA4BaJagAAudcK6rAAP63e5uHBfg86/LsHfKrO6L4gT48nYVMywUA4P3iTjbbFEQsCoXluHp8jYD/sD1HAAA=",
@@ -1254,7 +634,7 @@
       }
     },
     {
-      "src": "/images/destinations/dalhousie-khajjiar/04.webp",
+      "src": "/images/destinations/dalhousie/04.webp",
       "width": 1920,
       "height": 1200,
       "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQAAoAA4BaJZAAAvmE+2vfwAD+8r7iZ9HbamH5q4zDN5oJwOGFogESZ21Aap9PMRoyRgAA",
@@ -1267,57 +647,57 @@
       }
     }
   ],
-  "hampta-pass": [
+  "amritsar": [
     {
-      "src": "/images/destinations/hampta-pass/01.webp",
+      "src": "/images/destinations/amritsar/01.webp",
+      "width": 2560,
+      "height": 1490,
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkAA4BaJZgCdACy4NncAPxezAJOhUef6hLOlx+bXCOJfvpg5mSMA/m9bYhgJA3b4A6cGzcebbRPVDiEQAAA",
+      "credit": {
+        "title": "Akal Takht and Harmandir Sahib, Amritsar, Punjab, India",
+        "artist": "Jasleen Kaur",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akal_Takht_and_Harmandir_Sahib,_Amritsar,_Punjab,_India.jpg"
+      }
+    },
+    {
+      "src": "/images/destinations/amritsar/02.webp",
       "width": 2560,
       "height": 1707,
-      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAwAgCdASoQAAsAA4BaJaACdAECpoBzyV0KAAD6npvONRQTJHnXDyT9iC+7rI2REgfXOR1mdyhJ2uZ+FqJv5zdTxCgRY/HFWgDcH0zu6I6zLZxg1cFb+AAA",
+      "blurDataURL": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAQCdASoQAAsAA4BaJbACdAD1RNrHQAD+73+gl5mPQmV7htrzZDXTkkxn26aK8t5PNSJ6Y8wJhUaYp+XX/aJDEXjRsLNqCSwB9e7p4hZMgS2uA+trWhGUpgqU4gxrtRyyPNjTAAA=",
       "credit": {
-        "title": "Shea Goru (Hampta Pass)",
-        "artist": "Consequoia",
+        "title": "Golden Temple nighttime",
+        "artist": "Marsmux",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shea_Goru_(Hampta_Pass).jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Temple_nighttime.jpg"
       }
     },
     {
-      "src": "/images/destinations/hampta-pass/02.webp",
+      "src": "/images/destinations/amritsar/03.webp",
       "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAwAA4BaJYwC7ADbOKVjjAAA/ursacSlmwInVdcvuyrgNunlqmDYpelQSDvjyZWxOcMp4xu47MVRcAA=",
+      "height": 1706,
+      "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAwAgCdASoQAAsAA4BaJbACdAEPh/G26BZUQAD+9iEQZOwJieaGNVWroPpi+F4mF76rhsN+fOZI+cF+qs8ue3ht0LozmW8ayl0apAAA",
       "credit": {
-        "title": "Hampta pass",
-        "artist": "Kunalsvnit",
+        "title": "Golden Temple, Amritsar 02",
+        "artist": "Bernard Gagnon",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hampta_pass.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Temple,_Amritsar_02.jpg"
       }
     },
     {
-      "src": "/images/destinations/hampta-pass/03.webp",
+      "src": "/images/destinations/amritsar/04.webp",
       "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwAA4BaJbACdADR5m7L4AAA/lmcaxAXg0YuNro/eQoCds5D5sS0b9WXEhl4HI6gGcY3MM/uIpdYJRp5Nq9k6NtpVPG6AAA=",
+      "height": 1707,
+      "blurDataURL": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAsAA4BaJaACdAEPh/ETZyWMAAD+1BUk6sHfs6mHfwyYgyS0AyXQKrpqjettjUAAsHuVaLjBhJw9FcqVD3P6ZqbAlkBzG+H7TYAA",
       "credit": {
-        "title": "Himalayas in hampta pass",
-        "artist": "Kunalsvnit",
+        "title": "Golden Temple, Amritsar 03",
+        "artist": "Bernard Gagnon",
         "license": "CC BY-SA 4.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Himalayas_in_hampta_pass.jpg"
-      }
-    },
-    {
-      "src": "/images/destinations/hampta-pass/04.webp",
-      "width": 2560,
-      "height": 1920,
-      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQAgCdASoQAAwAA4BaJbACdAEf5sBPjfRQAP6odfX/KwVwWbUBfSAvw8UBtgAbw5EQu06OoRlUzEoV4GIOmT7IVoPsfhNNYWjpmJwy2wLU/30Kqg94mMAA",
-      "credit": {
-        "title": "Way to hampta pass",
-        "artist": "Kunalsvnit",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Way_to_hampta_pass.jpg"
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Temple,_Amritsar_03.jpg"
       }
     }
   ]

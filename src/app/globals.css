@@ -75,29 +75,23 @@
   }
 }
 
-::-webkit-scrollbar {
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-glacier) transparent;
+}
+
+*::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb {
-  border-radius: 999px;
-  background: rgb(0 0 0 / 0.25);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
-}
-
-@supports not selector(::-webkit-scrollbar) {
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(0 0 0 / 0.3) transparent;
-  }
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: var(--color-glacier);
 }
 
 ::view-transition-group(.morph) {

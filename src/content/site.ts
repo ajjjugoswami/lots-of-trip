@@ -52,4 +52,4 @@ export const legalNav: NavItem[] = [
   { label: "Journeys", href: "/tours" },
 ];
 
-export const bookingStatus = "Now planning winter treks · 2026–27";
+export const bookingStatus = "Now booking winter 2026–27 trips";

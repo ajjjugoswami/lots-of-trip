@@ -1,9 +1,9 @@
 {
   "rishikesh": [
-    "Laxman Jhula Rishikesh",
-    "Rishikesh Ganga river",
+    "Laxman Jhula",
     "Ram Jhula Rishikesh",
-    "Triveni Ghat Rishikesh aarti"
+    "Rishikesh Ganga",
+    "Triveni Ghat Rishikesh"
   ],
   "kedarnath": [
     "Kedarnath Temple",
@@ -43,19 +43,23 @@
     "Sankri Uttarakhand"
   ],
   "nainital": [
-    "Nainital lake",
     "Naini Lake",
-    "Nainital"
+    "Nainital view",
+    "Nainital boats",
+    "Snow View Nainital"
   ],
   "mussoorie": [
-    "Mussoorie",
-    "Mussoorie hills",
-    "Kempty Falls"
+    "Mussoorie Mall Road",
+    "Landour",
+    "Mussoorie view Doon valley",
+    "Gun Hill Mussoorie",
+    "Mussoorie snow"
   ],
   "jim-corbett": [
+    "Corbett National Park tiger",
     "Jim Corbett National Park",
-    "Corbett tiger",
-    "Ramganga Corbett"
+    "Dhikala",
+    "Corbett elephant"
   ],
   "munsiyari": [
     "Munsiyari",
@@ -68,10 +72,11 @@
     "Trishul from Kausani"
   ],
   "manali": [
-    "Manali Himachal",
     "Solang Valley",
-    "Hadimba Temple Manali",
-    "Atal Tunnel"
+    "Hadimba Devi Temple",
+    "Manali Beas river",
+    "Old Manali",
+    "Rohtang Pass"
   ],
   "spiti-valley": [
     "Key Monastery",
@@ -85,25 +90,26 @@
     "Chandra Taal",
     "Chandratal Spiti"
   ],
-  "kasol-parvati": [
-    "Parvati Valley",
-    "Kasol",
-    "Kheerganga",
-    "Tosh village"
+  "kasol": [
+    "Kasol Parvati river",
+    "Parvati Valley Himachal",
+    "Manikaran",
+    "Tosh Himachal",
+    "Kheerganga"
   ],
   "shimla": [
-    "Shimla",
+    "Shimla Ridge",
     "Christ Church Shimla",
-    "Kalka Shimla Railway",
-    "Shimla ridge"
+    "Shimla snow",
+    "Kalka Shimla toy train",
+    "Shimla town view"
   ],
   "dharamshala": [
-    "Dhauladhar range",
     "Triund",
-    "Tsuglagkhang",
-    "Bhagsu waterfall",
-    "HPCA Stadium Dharamshala",
-    "Namgyal Monastery"
+    "Dhauladhar Dharamshala",
+    "McLeod Ganj Tsuglagkhang",
+    "Bhagsu Nag",
+    "HPCA Stadium"
   ],
   "bir-billing": [
     "Bir Billing paragliding",
@@ -116,20 +122,40 @@
     "Kinner Kailash",
     "Sangla valley"
   ],
-  "jibhi-tirthan": [
-    "Tirthan Valley",
+  "jibhi": [
     "Jibhi",
-    "Great Himalayan National Park",
-    "Jalori Pass"
+    "Jibhi waterfall",
+    "Jalori Pass",
+    "Serolsar lake",
+    "Tirthan river"
   ],
-  "dalhousie-khajjiar": [
+  "dalhousie": [
     "Khajjiar",
-    "Dalhousie Himachal",
-    "Khajjiar lake"
+    "Dalhousie",
+    "Khajjiar lake",
+    "Dainkund"
   ],
   "hampta-pass": [
     "Hampta Pass",
     "Hampta pass trek",
     "Chatru Lahaul"
+  ],
+  "haridwar": [
+    "Har Ki Pauri",
+    "Haridwar Ganga aarti",
+    "Haridwar ghat",
+    "Haridwar"
+  ],
+  "dhanaulti": [
+    "Dhanaulti",
+    "Surkanda Devi",
+    "Dhanaulti forest",
+    "Eco Park Dhanaulti"
+  ],
+  "amritsar": [
+    "Golden Temple Amritsar",
+    "Harmandir Sahib",
+    "Harmandir Sahib night",
+    "Jallianwala Bagh"
   ]
 }

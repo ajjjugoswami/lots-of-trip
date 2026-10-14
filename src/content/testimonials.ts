@@ -3,30 +3,30 @@ import type { Testimonial } from "@/types/site";
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "We reached Chandratal just as the wind dropped and the lake turned to glass. Everything before that moment was planned perfectly, and nothing felt rushed.",
+      "Our first snowfall was in Solang, with hot chai in hand. Every hotel, every transfer, every timing was taken care of — we just enjoyed Shimla and Manali.",
     name: "Ananya Rao",
     city: "Bengaluru",
-    trip: "Spiti Circuit",
+    trip: "Shimla & Manali Classic",
   },
   {
     quote:
-      "My parents did Kedarnath and Badrinath at their own pace. The team handled every pony, every permit, every early morning. We only had to look up.",
+      "My parents wanted the Ganga Aarti at Har Ki Pauri, and the team found us the best spot on the ghat. Rishikesh was calm, clean and beautifully planned.",
     name: "Rohit Mehra",
     city: "Delhi",
-    trip: "Kedarnath & Badrinath",
+    trip: "Haridwar & Rishikesh",
   },
   {
     quote:
-      "Kedarkantha in January was the coldest, quietest, most beautiful week of my life. The trek leaders made a first-timer feel like they belonged up there.",
+      "Kheerganga's hot spring at night and a wooden homestay in Jibhi — the most relaxed week I've had in years. Great trek leader, great people.",
     name: "Sara Thomas",
     city: "Kochi",
-    trip: "Kedarkantha Winter Summit",
+    trip: "Kasol & Jibhi Trail",
   },
   {
     quote:
-      "No checklists, no crowds. Just Kumaon villages, long breakfasts facing the Panchachuli and a guide who knew every bird by its call.",
+      "We saw a tigress on our very first safari in Corbett. Nainital's lake at sunset was the perfect start. Couldn't have asked for more.",
     name: "Kabir & Neha",
     city: "Mumbai",
-    trip: "Kumaon Slow Escape",
+    trip: "Nainital & Jim Corbett",
   },
 ];

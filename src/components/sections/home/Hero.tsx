@@ -10,8 +10,8 @@ export function Hero({ image }: { image: ImageAsset }) {
     <section className="overflow-hidden bg-black pt-16 pb-16 text-paper md:pt-24 md:pb-24">
       <div className="container-x text-center">
         <Reveal onLoad>
-          <AnnouncementPill href="/tours/kedarkantha-winter-summit" label="New" tone="dark">
-            Winter treks for 2026–27 are now open
+          <AnnouncementPill href="/tours/shimla-manali-classic" label="New" tone="dark">
+            Snow season in Shimla & Manali is now open
           </AnnouncementPill>
         </Reveal>
         <Reveal onLoad delay={0.08}>
@@ -39,10 +39,10 @@ export function Hero({ image }: { image: ImageAsset }) {
             image={image}
             sizes="(min-width: 1312px) 1216px, 100vw"
             preload
-            alt="Key Monastery above the Spiti river, covered in winter snow"
+            alt="Snow-capped peaks above Solang Valley, Manali"
           />
         </HeroImage>
-        <p className="mt-4 text-center text-[13px] text-white/45">Key Monastery, Spiti Valley · 4,166 m</p>
+        <p className="mt-4 text-center text-[13px] text-white/45">Solang Valley, Manali · Himachal Pradesh</p>
       </div>
     </section>
   );

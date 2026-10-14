@@ -1,26 +1,80 @@
 {
-  "rishikesh": [7, 9, 4, 6],
-  "kedarnath": [1, 2, 9, 7],
-  "badrinath": [6, 0, 8, 5],
-  "valley-of-flowers": [0, 3, 2, 1],
-  "auli": [9, 6, 7, 0],
-  "chopta-tungnath": [1, 3, 10, 2],
-  "kedarkantha": [0, 1, 6, 10],
-  "har-ki-dun": [0, 2, 6, 5],
-  "nainital": [10, 2, 11, 4],
-  "mussoorie": [3, 10, 5, 4],
-  "jim-corbett": [11, 9, 1, 0],
-  "munsiyari": [0, 1, 7, 6],
-  "kausani": [4, 3, 10, 1],
-  "manali": [6, 7, 2, 4],
-  "spiti-valley": [0, 1, 2, 7, 8, 6],
-  "chandratal": [6, 11, 7, 1],
-  "kasol-parvati": [0, 3, 7, 6],
-  "shimla": [1, 11, 3, 0],
-  "dharamshala": [8, 3, 10, 4],
-  "bir-billing": [0, 5, 9, 3],
-  "kinnaur": [3, 1, 0, 11],
-  "jibhi-tirthan": [9, 2, 4, 6],
-  "dalhousie-khajjiar": [5, 1, 4, 9],
-  "hampta-pass": [8, 3, 5, 4]
+  "jim-corbett": [
+    11,
+    9,
+    1,
+    0
+  ],
+  "nainital": [
+    10,
+    2,
+    11,
+    4
+  ],
+  "haridwar": [
+    7,
+    0,
+    1,
+    6
+  ],
+  "rishikesh": [
+    7,
+    9,
+    4,
+    6
+  ],
+  "mussoorie": [
+    4,
+    1,
+    3,
+    2
+  ],
+  "dhanaulti": [
+    7,
+    10,
+    2,
+    0
+  ],
+  "shimla": [
+    4,
+    6,
+    0,
+    5
+  ],
+  "manali": [
+    9,
+    0,
+    7,
+    8
+  ],
+  "kasol": [
+    0,
+    1,
+    5,
+    9
+  ],
+  "jibhi": [
+    2,
+    7,
+    10,
+    11
+  ],
+  "dharamshala": [
+    0,
+    3,
+    8,
+    5
+  ],
+  "dalhousie": [
+    5,
+    1,
+    4,
+    9
+  ],
+  "amritsar": [
+    3,
+    7,
+    6,
+    5
+  ]
 }

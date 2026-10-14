@@ -86,7 +86,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
         </div>
 
         <div className="mx-auto max-w-360 px-4 sm:px-8 lg:px-12 flex items-center justify-between border-t border-line py-4 text-[13px]">
-          <span className="text-slate">24 destinations across two Himalayan states</span>
+          <span className="text-slate">{data.groups.reduce((total, group) => total + group.items.length, 0)} handpicked destinations across the hills</span>
           <Link href="/destinations" onClick={dismiss} className="inline-flex items-center gap-1.5 font-medium hover:text-accent">
             Browse all destinations <ArrowUpRight className="size-3.5" />
           </Link>
