@@ -1,44 +1,35 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { cn } from "@/lib/utils/cn";
-import { ArrowUpRightIcon } from "./icons";
-import styles from "./ButtonLink.module.css";
 
-export type ButtonVariant = "solid" | "light" | "outline" | "outline-light" | "saffron";
+export type ButtonVariant = "solid" | "dark" | "light" | "outline" | "outline-light" | "link" | "link-light";
 
 const VARIANTS: Record<ButtonVariant, string> = {
-  solid: "bg-ink text-snow hover:bg-pine",
-  light: "bg-snow text-ink hover:bg-paper",
-  saffron: "bg-saffron text-ink hover:bg-snow",
-  outline: "border border-ink/25 text-ink hover:border-ink",
-  "outline-light": "border border-snow/35 text-snow hover:border-snow",
+  solid: "h-11 rounded-full bg-accent px-5 text-white hover:bg-accent-hover",
+  dark: "h-11 rounded-full bg-ink px-5 text-white hover:bg-ink-soft",
+  light: "h-11 rounded-full bg-white px-5 text-ink hover:bg-paper",
+  outline: "h-11 rounded-full px-5 text-ink ring-1 ring-ink/20 ring-inset hover:bg-ink hover:text-white",
+  "outline-light": "h-11 rounded-full px-5 text-white ring-1 ring-white/30 ring-inset hover:bg-white hover:text-ink",
+  link: "text-accent hover:underline underline-offset-4",
+  "link-light": "text-accent-light hover:underline underline-offset-4",
 };
 
 export const buttonClassName = (variant: ButtonVariant, className?: string) =>
   cn(
-    styles.button,
-    "group inline-flex h-12 items-center gap-3 rounded-full pr-2 pl-6 text-sm font-medium whitespace-nowrap transition-colors duration-300",
+    "group inline-flex items-center justify-center gap-1.5 text-[15px] font-medium whitespace-nowrap transition-colors duration-200",
     VARIANTS[variant],
     className,
   );
 
-export function ButtonContent({ children, icon }: { children: ReactNode; icon?: ReactNode }) {
-  const glyph = icon ?? <ArrowUpRightIcon className="size-4" />;
+export function Chevron() {
   return (
-    <>
-      <span className={styles.label}>
-        <span
-          className={styles.labelInner}
-          data-label={typeof children === "string" ? children : undefined}
-        >
-          {children}
-        </span>
-      </span>
-      <span className={cn(styles.iconWrap, "grid size-8 place-items-center rounded-full")}>
-        <span className={styles.icon}>{glyph}</span>
-        <span className={styles.iconNext}>{glyph}</span>
-      </span>
-    </>
+    <svg
+      viewBox="0 0 12 12"
+      aria-hidden
+      className="size-3 transition-transform duration-300 ease-out-expo group-hover:translate-x-0.5"
+    >
+      <path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
@@ -49,18 +40,13 @@ interface ButtonLinkProps extends Omit<ComponentProps<typeof Link>, "children"> 
   external?: boolean;
 }
 
-export function ButtonLink({
-  children,
-  variant = "solid",
-  icon,
-  external,
-  className,
-  ...props
-}: ButtonLinkProps) {
+export function ButtonLink({ children, variant = "solid", icon, external, className, ...props }: ButtonLinkProps) {
   const externalProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
     <Link {...props} {...externalProps} className={buttonClassName(variant, className)}>
-      <ButtonContent icon={icon}>{children}</ButtonContent>
+      {icon}
+      {children}
+      {!icon && <Chevron />}
     </Link>
   );
 }

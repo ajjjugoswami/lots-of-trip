@@ -14,11 +14,11 @@
 
 .scrim {
   position: fixed;
-  inset: 4rem 0 0;
+  inset: 3.5rem 0 0;
   z-index: 40;
   pointer-events: none;
   opacity: 0;
-  background: color-mix(in srgb, var(--color-snow) 35%, transparent);
+  background: rgb(255 255 255 / 0.35);
   -webkit-backdrop-filter: blur(18px);
   backdrop-filter: blur(18px);
   transition: opacity 0.32s ease;

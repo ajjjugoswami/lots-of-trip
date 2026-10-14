@@ -1,57 +1,30 @@
-"use client";
-
-import { useRef } from "react";
-import { useMotionReady } from "@/components/motion/useMotionReady";
-import { gsap, useGSAP } from "@/lib/motion/gsap";
+import { Reveal, RevealItem } from "@/components/motion/Reveal";
+import { SectionIntro } from "@/components/ui/SectionIntro";
 import type { StatePanelData } from "./StatePanel";
 import { StatePanel } from "./StatePanel";
 
-export function TwoStates({ panels }: { panels: [StatePanelData, StatePanelData] }) {
-  const rootRef = useRef<HTMLElement>(null);
-  const { reduced } = useMotionReady();
-
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
-      mm.add("(min-width: 768px)", () => {
-        const timeline = gsap.timeline({
-          defaults: { ease: "none" },
-          scrollTrigger: {
-            trigger: rootRef.current,
-            start: "top top",
-            end: "+=160%",
-            pin: true,
-            scrub: 0.8,
-            anticipatePin: 1,
-          },
-        });
-
-        timeline
-          .to('[data-panel="0"] [data-panel-copy]', { yPercent: -40, autoAlpha: 0 }, 0)
-          .fromTo(
-            '[data-panel="1"]',
-            { clipPath: "inset(100% 0% 0% 0%)" },
-            { clipPath: "inset(0% 0% 0% 0%)", ease: "power2.inOut" },
-            0.1,
-          )
-          .from('[data-panel="1"] [data-panel-copy]', { yPercent: 40, autoAlpha: 0 }, 0.45);
-
-        if (!reduced) {
-          timeline
-            .to('[data-panel="0"] [data-panel-image]', { scale: 1.12, yPercent: -6 }, 0)
-            .from('[data-panel="1"] [data-panel-image]', { scale: 1.3, yPercent: 10 }, 0.1);
-        }
-      });
-      return () => mm.revert();
-    },
-    { dependencies: [reduced], scope: rootRef },
-  );
-
+export function TwoStates({ panels }: { panels: StatePanelData[] }) {
   return (
-    <section ref={rootRef} aria-label="Two states" className="relative bg-ink text-snow md:h-svh md:overflow-hidden">
-      {panels.map((panel, index) => (
-        <StatePanel key={panel.slug} panel={panel} index={index} />
-      ))}
+    <section aria-label="Two states" className="bg-paper py-section">
+      <div className="container-x">
+        <SectionIntro
+          align="center"
+          label="Two states"
+          title={
+            <>
+              One range. <em>Two worlds.</em>
+            </>
+          }
+          description="Temple towns and alpine meadows in Uttarakhand. Cold deserts and cedar valleys in Himachal. We plan both, end to end."
+        />
+        <Reveal stagger className="mt-14 grid gap-6 md:mt-16 md:grid-cols-2">
+          {panels.map((panel) => (
+            <RevealItem key={panel.slug}>
+              <StatePanel panel={panel} />
+            </RevealItem>
+          ))}
+        </Reveal>
+      </div>
     </section>
   );
 }

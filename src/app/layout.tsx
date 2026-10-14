@@ -1,33 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter_Tight, JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Footer } from "@/components/layout/footer/Footer";
 import { Header } from "@/components/layout/header/Header";
-import { Preloader } from "@/components/layout/Preloader";
-import { RouteScrollReset } from "@/components/layout/RouteScrollReset";
-import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { MotionProvider } from "@/components/layout/MotionProvider";
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
-import { MediaCursor } from "@/components/ui/MediaCursor";
 import { siteConfig } from "@/content/site";
-import { resolveImage } from "@/lib/data/images";
 import { getHeaderData } from "@/lib/data/navigation";
 import "./globals.css";
 
-const display = Instrument_Serif({
-  variable: "--font-instrument-serif",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-});
-
-const sans = Inter_Tight({
-  variable: "--font-inter-tight",
-  subsets: ["latin"],
-});
-
-const mono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: ["400", "500"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -45,28 +29,19 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f4f1ea",
+  themeColor: "#ffffff",
 };
-
-const preloaderImages = [
-  resolveImage({ destination: "spiti-valley", index: 0 }, "Key Monastery, Spiti"),
-  resolveImage({ destination: "kedarnath", index: 1 }, "Kedarnath"),
-  resolveImage({ destination: "chandratal", index: 0 }, "Chandratal"),
-];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-IN" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en-IN" className={inter.variable}>
       <body className="min-h-dvh">
-        <SmoothScroll>
-          <Preloader images={preloaderImages} />
-          <RouteScrollReset />
+        <MotionProvider>
           <Header data={getHeaderData()} />
           <main>{children}</main>
           <Footer />
           <WhatsAppFloat />
-          <MediaCursor />
-        </SmoothScroll>
+        </MotionProvider>
       </body>
     </html>
   );

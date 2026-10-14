@@ -52,6 +52,6 @@ export const legalNav: NavItem[] = [
   { label: "Journeys", href: "/tours" },
 ];
 
-export const headerOverlayRoutes = ["/", "/destinations/", "/tours/", "/journeys/"];
+export const headerOverlayRoutes = ["/"];
 
 export const bookingStatus = "Now planning winter treks · 2026–27";

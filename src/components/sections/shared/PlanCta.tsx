@@ -1,4 +1,4 @@
-import { RevealText } from "@/components/motion/RevealText";
+import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { WhatsAppIcon } from "@/components/ui/icons";
@@ -12,36 +12,33 @@ interface PlanCtaProps {
 
 export function PlanCta({ image, subject }: PlanCtaProps) {
   return (
-    <section className="relative overflow-hidden border-t border-line">
-      <div className="container-x py-section text-center">
-        <p className="eyebrow mb-10 text-slate">Ready when you are</p>
-        <RevealText as="h2" className="mx-auto max-w-[14ch] font-display text-display-xl">
-          Let&apos;s plan your journey into the mountains
-        </RevealText>
-
-        <div className="mx-auto mt-12 h-28 w-48 overflow-hidden rounded-full md:h-36 md:w-72">
-          <div className="relative size-full">
-            <AppImage image={image} sizes="18rem" />
+    <section className="container-x pb-section">
+      <Reveal className="grid overflow-hidden rounded-[32px] bg-paper md:grid-cols-2">
+        <div className="flex flex-col justify-center p-8 md:p-14">
+          <p className="eyebrow text-saffron">Ready when you are</p>
+          <h2 className="mt-3 text-display-lg">
+            Let&apos;s plan your <em>journey.</em>
+          </h2>
+          <p className="mt-5 max-w-md text-slate">
+            Tell us when you want to travel and what you hope to feel. A trip designer replies within a
+            day — usually much sooner on WhatsApp.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <ButtonLink href="/contact">Plan my trip</ButtonLink>
+            <ButtonLink
+              href={buildWhatsAppLink(subject)}
+              external
+              variant="outline"
+              icon={<WhatsAppIcon className="size-4" />}
+            >
+              Chat on WhatsApp
+            </ButtonLink>
           </div>
         </div>
-
-        <p className="mx-auto mt-12 max-w-md text-slate">
-          Tell us when you want to travel and what you hope to feel. A trip designer replies within a
-          day — usually much sooner on WhatsApp.
-        </p>
-
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <ButtonLink href="/contact">Plan my trip</ButtonLink>
-          <ButtonLink
-            href={buildWhatsAppLink(subject)}
-            external
-            variant="outline"
-            icon={<WhatsAppIcon className="size-4" />}
-          >
-            Chat on WhatsApp
-          </ButtonLink>
+        <div className="relative aspect-4/3 md:aspect-auto md:min-h-[28rem]">
+          <AppImage image={image} sizes="(min-width: 768px) 40rem, 100vw" />
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

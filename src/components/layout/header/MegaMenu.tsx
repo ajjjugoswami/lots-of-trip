@@ -52,7 +52,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
                     <Link
                       href={item.href}
                       onClick={dismiss}
-                      className="group/item flex items-baseline justify-between gap-3 text-[14px] font-medium transition-colors hover:text-saffron"
+                      className="group/item flex items-baseline justify-between gap-3 text-[14px] font-medium transition-colors hover:text-accent"
                     >
                       <span className="truncate">{item.label}</span>
                       <span className="font-mono text-[10px] text-slate/70 opacity-0 transition-opacity group-hover/item:opacity-100">
@@ -66,7 +66,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
           ))}
 
           <Link href={data.feature.href} onClick={dismiss} className={cn(styles.reveal, "group/feature block")}>
-            <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-paper">
+            <div className="relative aspect-16/10 overflow-hidden rounded-2xl bg-paper">
               <AppImage
                 image={data.feature.image}
                 sizes="24rem"
@@ -90,7 +90,7 @@ export function MegaMenu({ data, label }: { data: HeaderData; label: string }) {
 
         <div className="container-x flex items-center justify-between border-t border-line py-4 text-[13px]">
           <span className="text-slate">24 destinations across two Himalayan states</span>
-          <Link href="/destinations" onClick={dismiss} className="inline-flex items-center gap-1.5 font-medium hover:text-saffron">
+          <Link href="/destinations" onClick={dismiss} className="inline-flex items-center gap-1.5 font-medium hover:text-accent">
             Browse all destinations <ArrowUpRightIcon className="size-3.5" />
           </Link>
         </div>

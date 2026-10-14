@@ -1,5 +1,5 @@
 import { DestinationGallery } from "@/components/sections/home/DestinationGallery";
-import { ExperienceList } from "@/components/sections/home/ExperienceList";
+import { ExperienceGrid } from "@/components/sections/home/ExperienceGrid";
 import { FeaturedTours } from "@/components/sections/home/FeaturedTours";
 import { Hero } from "@/components/sections/home/Hero";
 import { InstagramStrip } from "@/components/sections/home/InstagramStrip";
@@ -45,7 +45,7 @@ const INSTAGRAM_REFS = [
 export default function HomePage() {
   const destinations = getDestinations();
   const galleryDestinations = GALLERY_SLUGS.map(getDestination).filter((item) => item !== undefined);
-  const [uttarakhand, himachal] = getStates().map((state) => ({
+  const statePanels = getStates().map((state) => ({
     ...state,
     image: getStateHeroImage(state.slug),
   }));
@@ -59,11 +59,11 @@ export default function HomePage() {
     <>
       <Hero image={resolveImage({ destination: "spiti-valley", index: 0 }, "Key Monastery, Spiti")} />
       <Manifesto />
-      <TwoStates panels={[uttarakhand, himachal]} />
+      <TwoStates panels={statePanels} />
       <DestinationGallery destinations={galleryDestinations} total={destinations.length} />
       <FeaturedTours tours={getFeaturedTours()} />
       <SeasonStrip destinations={destinations} />
-      <ExperienceList items={experienceItems} />
+      <ExperienceGrid items={experienceItems} />
       <Testimonials items={testimonials} />
       <InstagramStrip images={INSTAGRAM_REFS.map((ref) => resolveImage(ref, "Lots of Trip on Instagram"))} />
       <PlanCta image={resolveImage({ destination: "chandratal", index: 0 }, "Chandratal lake")} />

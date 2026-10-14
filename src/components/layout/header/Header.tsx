@@ -1,6 +1,5 @@
 "use client";
 
-import { useLenis } from "lenis/react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -21,7 +20,6 @@ const isOverlayRoute = (pathname: string) =>
 
 export function Header({ data }: { data: HeaderData }) {
   const pathname = usePathname();
-  const lenis = useLenis();
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -31,18 +29,18 @@ export function Header({ data }: { data: HeaderData }) {
     setOpen(false);
   }
 
-  useMotionValueEvent(scrollY, "change", (value) => setScrolled(value > 24));
+  useMotionValueEvent(scrollY, "change", (value) => setScrolled(value > window.innerHeight * 0.7));
 
   useEffect(() => {
     if (!open) return;
     const onKey = (event: KeyboardEvent) => event.key === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
-    lenis?.stop();
+    document.documentElement.classList.add("menu-open");
     return () => {
       window.removeEventListener("keydown", onKey);
-      lenis?.start();
+      document.documentElement.classList.remove("menu-open");
     };
-  }, [open, lenis]);
+  }, [open]);
 
   const toggle = () => {
     setOpenedAt(pathname);
@@ -58,7 +56,7 @@ export function Header({ data }: { data: HeaderData }) {
       data-overlay={overlay || undefined}
       data-menu-open={open || undefined}
     >
-      <div className="container-x relative flex h-16 items-center gap-4">
+      <div className="container-x relative flex h-14 items-center gap-4">
         <div className="flex flex-1 items-center">
           <Logo tone={overlay ? "dark" : "light"} />
         </div>

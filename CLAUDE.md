@@ -1,7 +1,7 @@
 # Lots of Trip — Project Guide & Plan
 
 A premium tours & trips website for the Indian Himalayas, covering **Uttarakhand** and **Himachal Pradesh**.
-The goal is an editorial, photography-led site with Apple-grade motion. It must feel crafted by a design studio, never like an AI template.
+The goal is a clean, photography-led site with Apple-level clarity and restrained motion. It must feel crafted by a design studio, never like an AI template.
 
 ---
 
@@ -12,9 +12,7 @@ The goal is an editorial, photography-led site with Apple-grade motion. It must 
 | Framework | Next.js (latest stable, App Router) | Server Components by default, `"use client"` only where motion/interaction needs it |
 | Language | TypeScript (strict) | No `any`; shared types live in `src/types` |
 | Styling | Tailwind CSS v4 + CSS Modules | Tailwind for layout/spacing/tokens; CSS Modules for complex, bespoke pieces (masks, clip-paths, keyframes) |
-| Scroll motion | GSAP + ScrollTrigger | Pinned sections, scrubbed timelines, image reveals |
-| UI motion | Motion (`motion/react`) | Hover, layout transitions, page transitions, menus |
-| Smooth scroll | Lenis | Synced with GSAP ticker |
+| Motion | Motion (`motion/react`) | Subtle fade-up reveals, hover states, segmented controls. No scroll-jacking |
 | Fonts | `next/font` (self-hosted) | No layout shift |
 | Images | `next/image`, local AVIF/WebP | Blur placeholders, explicit sizes |
 | Forms | React Hook Form + Zod | Enquiry / trip planner |
@@ -35,75 +33,36 @@ npm run lint     # lint
 
 1. No comments in CSS files.
 2. No unnecessary comments in code. Code should explain itself through naming.
-3. No inline styles (`style={{}}`). Use Tailwind classes, CSS Modules, or CSS variables set via classes. The only exception is a GSAP/Motion runtime value that cannot be expressed otherwise.
+3. No inline styles (`style={{}}`). Use Tailwind classes, CSS Modules, or CSS variables set via classes. The only exception is a Motion runtime value that cannot be expressed otherwise.
 4. Never put a whole feature in one file. Split into components, hooks, utils, data, and types.
 5. Before writing anything new, search the codebase for an existing component, hook, util, or style and reuse it.
 6. One component per file, PascalCase filenames, co-located `Component.module.css` when needed.
 7. Content (destinations, tours, copy) lives in `src/content` as typed data — never hard-coded inside components.
-8. Every animation must respect `prefers-reduced-motion` (via the shared `useReducedMotion` hook).
+8. Every animation must respect `prefers-reduced-motion` (handled by `MotionConfig` in `MotionProvider`).
 9. Animate only `transform`, `opacity`, `clip-path`, and `filter`. Never animate layout properties.
-10. Every GSAP setup is wrapped in `useGSAP` (or a `gsap.context`) and cleaned up on unmount.
+10. No scroll-jacking, pinned sections, smooth-scroll overrides, preloaders or custom cursors. Native scrolling only.
+11. Text must never sit directly on a busy photo. Put headlines on solid backgrounds; images go in rounded frames.
 
 ---
 
-## 3. Design Direction — "Editorial Himalaya"
+## 3. Design Direction — Apple-level clarity
 
-### What to avoid (the "AI look")
-- Purple/blue gradients, neon glows, glassmorphism cards everywhere
-- Emoji icons, generic 3-column feature cards with icons on top
-- Centered hero with a stock headline like "Explore the World" + two pill buttons
-- Overuse of rounded-2xl cards and drop shadows
-- Stock "smiling tourist" photos; only landscapes, culture, texture, real places
-
-### What to do instead
-- **Photography is the hero.** Full-bleed, large-format images; let mountains breathe.
-- **Editorial typography.** Big serif display headlines against a clean grotesk for body text.
-- **Asymmetric grids,** generous whitespace, magazine-style layouts, numbered sections (01 / 02 / 03).
-- **Small details:** coordinates and altitudes as typographic accents (e.g. `30.7352° N · 79.0669° E · 3,583 m`), thin rules, subtle film grain overlay, custom cursor on media.
-- **Restraint.** One accent color, used sparingly.
-
-### Palette (CSS variables in `src/styles/tokens.css`, exposed to Tailwind via `@theme`)
-| Token | Hex | Use |
-|---|---|---|
-| `--color-snow` | `#F4F1EA` | Main background (warm paper) |
-| `--color-ink` | `#14171A` | Primary text |
-| `--color-pine` | `#1F3A2E` | Deep forest, dark sections |
-| `--color-slate` | `#5B6670` | Secondary text |
-| `--color-glacier` | `#C9D6DC` | Cool tints, dividers |
-| `--color-saffron` | `#D9822B` | Single accent (prayer flags / temple saffron) |
-| `--color-stone` | `#A39887` | Muted warm neutral |
-
-### Typography
-- Display: **Fraunces** or **Instrument Serif** (high-contrast serif, italic for emphasis)
-- Body/UI: **Inter Tight** or **Geist**
-- Mono accents (coordinates, altitude, labels): **JetBrains Mono** or **Geist Mono**
-- Fluid type scale with `clamp()`; hero headlines 8–14vw on desktop
+- **Look:** clean white (`#ffffff`) and light grey (`#f5f5f7`) sections, near-black text (`#1d1d1f`), secondary text `#6e6e73`. Black sections (hero, testimonials) for rhythm.
+- **Accent:** logo blue `#0071e3` for buttons/links, logo orange `#f5820b` for small labels. Headline emphasis uses a blue→orange gradient (`<em>` inside h1–h3).
+- **Typography:** Inter (fallback SF Pro / system). Headlines semibold with tight tracking; fluid sizes via `text-display-*` tokens in `src/styles/tokens.css`.
+- **Components:** rounded image frames (20–36px radius), pill buttons, soft shadows on hover, Apple-style carousel with arrow buttons, segmented controls.
+- **Header/footer:** modelled on the quantalog-lp reference — slim frosted header with mega menu and pill CTAs; rounded gradient footer card with a giant fading wordmark.
+- **Logo:** `public/logo-light.png` on light backgrounds, `public/logo-dark.png` on dark. Favicons in `src/app/icon.png` and `src/app/apple-icon.png`.
+- **Avoid:** text over bright photos, purple gradients, glassmorphism everywhere, emoji icons, serif/editorial gimmicks, heavy animation.
 
 ---
 
-## 4. Motion System (Apple-level)
+## 4. Motion
 
-Shared constants in `src/lib/motion/` (easings, durations, presets). No magic numbers in components.
-
-- **Easing:** `cubic-bezier(0.22, 1, 0.36, 1)` (expo-out) for reveals; `cubic-bezier(0.65, 0, 0.35, 1)` for scrubbed/in-out moves
-- **Durations:** micro 0.2s · UI 0.45s · reveal 0.9–1.2s
-
-### Signature moments
-1. **Preloader → Hero:** counter 0→100, then a mountain image expands from a small frame to full-bleed (clip-path), headline lines rise from a mask.
-2. **Hero parallax:** layered foreground/background (ridge cutout over sky) moving at different speeds on scroll.
-3. **Pinned "Two States" story:** section pins; scroll scrubs from Uttarakhand to Himachal with a crossfading map outline and changing stats.
-4. **Horizontal destination gallery:** vertical scroll drives a horizontal track (ScrollTrigger pin + scrub).
-5. **Image scale reveal:** images start at `scale(1.25)` inside a clipped frame and settle to 1 as they enter.
-6. **Split-text headlines:** line/word reveals with stagger (GSAP SplitText).
-7. **Altitude counter:** numbers count up as a trek's elevation profile line draws (SVG `stroke-dashoffset`).
-8. **Magnetic buttons & media cursor:** cursor turns into a "View" disc over cards.
-9. **Page transitions:** shared image morph from a card into the destination detail hero (Motion `layoutId` / View Transitions API).
-10. **Sticky itinerary:** day-by-day timeline where the image panel stays sticky and swaps per day.
-
-### Performance budget
-- LCP < 2.5s, CLS < 0.1, INP < 200ms on mid-range mobile
-- Lazy-load GSAP-heavy sections; dynamic import non-critical client components
-- Simplified motion on touch / small screens; full motion on desktop
+- One primitive: `components/motion/Reveal` (fade-up on enter, optional stagger via `RevealItem`). Tokens in `src/lib/motion/tokens.ts`.
+- `MotionConfig reducedMotion="user"` in the root layout handles accessibility.
+- Hover micro-interactions are CSS transitions (image scale 1.04–1.05, chevron nudge).
+- Performance: LCP < 2.5s, CLS < 0.1. Animate only transform and opacity.
 
 ---
 
@@ -192,17 +151,16 @@ Everything else (tour prices, testimonials, journal posts, team) is also dummy c
 ```
 
 ### Home page sections
-1. Preloader + full-bleed hero (headline: something like *"Where the Himalaya begins"*)
-2. Intro manifesto — large serif paragraph, words revealed on scroll
-3. "Two States" pinned story (Uttarakhand ↔ Himachal)
-4. Horizontal destination gallery
-5. Featured tours — editorial asymmetric layout
-6. Seasons — a scroll-driven 12-month strip showing where to go each month
-7. Experience types (Treks · Pilgrimage · Snow · Wildlife · Offbeat) as large typographic list with hover image previews
-8. Testimonials — quiet, typographic, no avatars-in-cards
-9. Journal teaser
-10. Instagram strip "On the trail with us" → links to @lotsoftrip_
-11. Big CTA "Plan your journey" (form + WhatsApp) + footer with large wordmark
+1. Hero — centred headline on black, framed photo below
+2. Manifesto — short statement + stats grid
+3. "Two States" — two cards (Uttarakhand, Himachal)
+4. Destination carousel (native scroll + arrow buttons)
+5. Featured tours — card grid
+6. Seasons — month segmented control → destinations in season
+7. Ways to travel — image tile grid
+8. Testimonials — black section, centred quote, dot navigation
+9. Instagram strip "On the trail with us" → links to @lotsoftrip_
+10. Plan-your-journey CTA card (form + WhatsApp)
 
 ---
 
@@ -227,16 +185,16 @@ src/
     sitemap.ts
     robots.ts
   components/
-    layout/        Header, Footer, MobileMenu, Preloader, SmoothScroll
-    ui/            Button, MagneticButton, Cursor, Tag, Divider, Marquee, WhatsAppFloat
-    motion/        RevealText, ImageReveal, Parallax, HorizontalScroll, Counter, PageTransition
-    sections/      home/, destination/, tour/ section components
-    cards/         DestinationCard, TourCard, JournalCard
-  content/         destinations.ts, tours.ts, journal.ts, credits.ts, site.ts
-  hooks/           useReducedMotion, useLenis, useMediaQuery, useIsTouch
+    layout/        header/, footer/, MotionProvider, WhatsAppFloat
+    ui/            ButtonLink, AppImage, Carousel, SectionIntro, Logo, icons
+    motion/        Reveal (+ RevealItem)
+    sections/      home/, shared/, destination/, tour/ section components
+    cards/         DestinationCard, TourCard
+  content/         destinations.ts, tours.ts, states.ts, experiences.ts, testimonials.ts, site.ts, generated/images.json
   lib/
-    motion/        easings.ts, durations.ts, presets.ts, gsap.ts (register plugins once)
-    utils/         cn.ts, format.ts, seo.ts, whatsapp.ts
+    data/          destinations.ts, tours.ts, images.ts, navigation.ts
+    motion/        tokens.ts
+    utils/         cn.ts, format.ts, whatsapp.ts
   styles/
     globals.css
     tokens.css

@@ -2,82 +2,54 @@
 
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@/components/ui/icons";
 import { CUBIC } from "@/lib/motion/tokens";
-import { padIndex } from "@/lib/utils/format";
+import { cn } from "@/lib/utils/cn";
 import type { Testimonial } from "@/types/site";
 
 export function Testimonials({ items }: { items: Testimonial[] }) {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(1);
   const current = items[index];
 
-  const go = (step: number) => {
-    setDirection(step);
-    setIndex((value) => (value + step + items.length) % items.length);
-  };
-
   return (
-    <section className="bg-pine py-section text-snow">
-      <div className="container-x grid gap-12 md:grid-cols-12">
-        <div className="md:col-span-3">
-          <p className="eyebrow flex items-center gap-3 text-snow/60">
-            <span>08</span>
-            <span className="h-px w-10 bg-snow/40" />
-            <span>Field notes</span>
-          </p>
-          <p className="mt-6 max-w-[20ch] text-snow/70">
-            In the words of people who travelled with us.
-          </p>
+    <section className="bg-black py-section text-paper">
+      <div className="container-x text-center">
+        <p className="eyebrow text-saffron">Field notes</p>
+        <div className="relative mx-auto mt-8 max-w-4xl md:min-h-[17rem]">
+          <AnimatePresence mode="wait">
+            <motion.figure
+              key={index}
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -16 }}
+              transition={{ duration: 0.5, ease: CUBIC.outExpo }}
+            >
+              <blockquote className="text-display-md font-semibold text-balance">“{current.quote}”</blockquote>
+              <figcaption className="mt-8 text-[15px]">
+                <span className="font-semibold">{current.name}</span>
+                <span className="text-white/50">
+                  {" "}
+                  · {current.city} · {current.trip}
+                </span>
+              </figcaption>
+            </motion.figure>
+          </AnimatePresence>
         </div>
 
-        <div className="md:col-span-9">
-          <div className="relative min-h-[20rem] md:min-h-[24rem]">
-            <AnimatePresence mode="wait" custom={direction}>
-              <motion.figure
-                key={index}
-                custom={direction}
-                initial={{ opacity: 0, x: direction * 40 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: direction * -40 }}
-                transition={{ duration: 0.6, ease: CUBIC.outExpo }}
-              >
-                <blockquote className="font-display text-lead text-balance md:text-display-md">
-                  “{current.quote}”
-                </blockquote>
-                <figcaption className="mt-10 flex flex-wrap items-baseline gap-x-4 gap-y-1">
-                  <span className="text-base">{current.name}</span>
-                  <span className="eyebrow text-snow/60">
-                    {current.city} · {current.trip}
-                  </span>
-                </figcaption>
-              </motion.figure>
-            </AnimatePresence>
-          </div>
-
-          <div className="mt-12 flex items-center justify-between border-t border-line-light pt-6">
-            <span className="eyebrow tabular-nums text-snow/60">
-              {padIndex(index)} / {padIndex(items.length - 1)}
-            </span>
-            <div className="flex gap-3">
-              <button
-                type="button"
-                onClick={() => go(-1)}
-                aria-label="Previous testimonial"
-                className="grid size-12 place-items-center rounded-full border border-line-light transition-colors hover:bg-snow hover:text-ink"
-              >
-                <ArrowLeftIcon className="size-5" />
-              </button>
-              <button
-                type="button"
-                onClick={() => go(1)}
-                aria-label="Next testimonial"
-                className="grid size-12 place-items-center rounded-full border border-line-light transition-colors hover:bg-snow hover:text-ink"
-              >
-                <ArrowRightIcon className="size-5" />
-              </button>
-            </div>
-          </div>
+        <div role="tablist" aria-label="Testimonials" className="mt-10 flex justify-center gap-2">
+          {items.map((item, itemIndex) => (
+            <button
+              key={item.name}
+              type="button"
+              role="tab"
+              aria-selected={itemIndex === index}
+              aria-label={`Testimonial from ${item.name}`}
+              onClick={() => setIndex(itemIndex)}
+              className={cn(
+                "h-2 rounded-full transition-all duration-500 ease-out-expo",
+                itemIndex === index ? "w-8 bg-white" : "w-2 bg-white/30 hover:bg-white/60",
+              )}
+            />
+          ))}
         </div>
       </div>
     </section>

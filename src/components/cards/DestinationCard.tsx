@@ -7,51 +7,36 @@ import type { Destination } from "@/types/destination";
 
 interface DestinationCardProps {
   destination: Destination;
-  index?: string;
   sizes: string;
   className?: string;
   aspect?: "portrait" | "landscape";
 }
 
-export function DestinationCard({
-  destination,
-  index,
-  sizes,
-  className,
-  aspect = "portrait",
-}: DestinationCardProps) {
-  const cover = destination.images[0];
-
+export function DestinationCard({ destination, sizes, className, aspect = "portrait" }: DestinationCardProps) {
   return (
-    <Link
-      href={`/destinations/${destination.slug}`}
-      data-cursor="Explore"
-      className={cn("group block", className)}
-    >
+    <Link href={`/destinations/${destination.slug}`} className={cn("group block", className)}>
       <ViewTransition name={`destination-${destination.slug}`} share="morph" default="none">
         <div
           className={cn(
-            "relative overflow-hidden bg-paper",
-            aspect === "portrait" ? "aspect-[3/4]" : "aspect-[4/3]",
+            "relative overflow-hidden rounded-[24px] bg-paper",
+            aspect === "portrait" ? "aspect-4/5" : "aspect-4/3",
           )}
         >
           <AppImage
-            image={cover}
+            image={destination.images[0]}
             sizes={sizes}
-            className="transition-transform duration-[1.4s] ease-out-expo group-hover:scale-[1.06]"
+            className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-[1.05]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink/55 via-ink/0 to-ink/0" />
-          {index && <span className="eyebrow absolute top-4 left-4 text-snow">{index}</span>}
-          <span className="eyebrow absolute right-4 bottom-4 text-snow/85">
+          <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-[12px] font-medium text-ink backdrop-blur">
             {formatAltitude(destination.altitudeM)}
           </span>
         </div>
       </ViewTransition>
-      <div className="mt-4 flex items-baseline justify-between gap-4">
-        <h3 className="font-display text-3xl leading-none">{destination.name}</h3>
-        <span className="eyebrow shrink-0 text-slate">{stateLabel(destination.state)}</span>
+      <div className="mt-4 px-1">
+        <p className="text-[12px] font-semibold text-saffron">{stateLabel(destination.state)}</p>
+        <h3 className="mt-1 text-xl tracking-tight">{destination.name}</h3>
+        <p className="mt-1 text-[15px] text-slate">{destination.tagline}</p>
       </div>
-      <p className="mt-2 text-sm text-slate">{destination.tagline}</p>
     </Link>
   );
 }

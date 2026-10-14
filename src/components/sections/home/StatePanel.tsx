@@ -1,6 +1,6 @@
+import Link from "next/link";
 import { AppImage } from "@/components/ui/AppImage";
-import { ButtonLink } from "@/components/ui/ButtonLink";
-import { cn } from "@/lib/utils/cn";
+import { Chevron } from "@/components/ui/ButtonLink";
 import type { StateInfo } from "@/types/destination";
 import type { ImageAsset } from "@/types/image";
 
@@ -8,47 +8,38 @@ export interface StatePanelData extends StateInfo {
   image: ImageAsset;
 }
 
-export function StatePanel({ panel, index }: { panel: StatePanelData; index: number }) {
+export function StatePanel({ panel }: { panel: StatePanelData }) {
   return (
-    <div
-      data-panel={index}
-      className={cn("relative h-svh min-h-[36rem] overflow-hidden md:absolute md:inset-0", index === 1 && "md:z-10 md:[clip-path:inset(100%_0_0_0)]")}
+    <Link
+      href={`/journeys/${panel.slug}`}
+      className="group block overflow-hidden rounded-[28px] bg-white shadow-[0_2px_12px_rgb(0_0_0/0.04)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgb(0_0_0/0.1)]"
     >
-      <div data-panel-image className="absolute inset-0">
-        <AppImage image={panel.image} sizes="100vw" />
-        <div className="absolute inset-0 bg-linear-to-r from-ink/75 via-ink/30 to-ink/10" />
+      <div className="px-8 pt-9 text-center md:px-10 md:pt-11">
+        <p className="eyebrow text-slate">{panel.epithet}</p>
+        <h3 className="mt-2 text-display-md">{panel.name}</h3>
+        <p className="mx-auto mt-3 max-w-md text-slate">{panel.intro}</p>
+        <span className="mt-5 inline-flex items-center gap-1.5 text-[15px] font-medium text-accent">
+          Explore {panel.slug === "himachal" ? "Himachal" : panel.name}
+          <Chevron />
+        </span>
       </div>
 
-      <div
-        data-panel-copy
-        className="relative z-10 container-x flex h-full flex-col justify-between pt-28 pb-12 md:pb-16"
-      >
-        <p className="eyebrow flex items-center gap-3 text-snow/70">
-          <span>{index === 0 ? "02" : "03"}</span>
-          <span className="h-px w-10 bg-snow/40" />
-          <span>{panel.epithet}</span>
-        </p>
+      <dl className="mx-8 mt-8 grid grid-cols-3 divide-x divide-line border-y border-line py-4 text-center md:mx-10">
+        {panel.stats.map((stat) => (
+          <div key={stat.label} className="px-2">
+            <dd className="text-[15px] font-semibold">{stat.value}</dd>
+            <dt className="mt-0.5 text-[12px] text-slate">{stat.label}</dt>
+          </div>
+        ))}
+      </dl>
 
-        <div className="grid gap-10 md:grid-cols-12 md:items-end">
-          <div className="md:col-span-7">
-            <h2 className="font-display text-display-xl">{panel.name}</h2>
-            <p className="mt-6 max-w-md text-lg text-snow/85">{panel.intro}</p>
-          </div>
-          <div className="md:col-span-4 md:col-start-9">
-            <dl className="mb-8 divide-y divide-line-light border-y border-line-light">
-              {panel.stats.map((stat) => (
-                <div key={stat.label} className="flex items-baseline justify-between gap-4 py-3">
-                  <dt className="eyebrow text-snow/60">{stat.label}</dt>
-                  <dd className="font-display text-2xl">{stat.value}</dd>
-                </div>
-              ))}
-            </dl>
-            <ButtonLink href={`/journeys/${panel.slug}`} variant="light">
-              {`Discover ${panel.slug === "himachal" ? "Himachal" : panel.name}`}
-            </ButtonLink>
-          </div>
-        </div>
+      <div className="relative mt-8 aspect-4/3 overflow-hidden">
+        <AppImage
+          image={panel.image}
+          sizes="(min-width: 768px) 46vw, 100vw"
+          className="transition-transform duration-[1.2s] ease-out-expo group-hover:scale-[1.04]"
+        />
       </div>
-    </div>
+    </Link>
   );
 }

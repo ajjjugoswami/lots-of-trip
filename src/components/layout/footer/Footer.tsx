@@ -41,12 +41,12 @@ export function Footer() {
             </p>
             <ul className="mt-8 space-y-1.5 text-[14px]">
               <li>
-                <a href={`tel:${contact.phoneE164}`} className="transition-colors hover:text-saffron">
+                <a href={`tel:${contact.phoneE164}`} className="transition-colors hover:text-accent">
                   {contact.phoneDisplay}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${contact.email}`} className="transition-colors hover:text-saffron">
+                <a href={`mailto:${contact.email}`} className="transition-colors hover:text-accent">
                   {contact.email}
                 </a>
               </li>

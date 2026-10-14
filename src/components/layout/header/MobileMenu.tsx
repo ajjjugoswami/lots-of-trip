@@ -17,7 +17,7 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
   const { contact, social } = siteConfig;
 
   return (
-    <div id="mobile-menu" className={styles.menu} data-lenis-prevent>
+    <div id="mobile-menu" className={styles.menu}>
       <nav aria-label="Mobile" className={styles.body}>
         <ul>
           {mobileNav.map((item) => (
