@@ -45,7 +45,7 @@ export default function HomePage() {
       <Hero
         image={resolveImage({ destination: "manali", index: 0 }, "Solang Valley, Manali")}
         caption="Solang Valley · Manali"
-        destinations={destinations.map(({ slug, name }) => ({ slug, name }))}
+        destinations={destinations.map(({ slug, name, region, state }) => ({ slug, name, region, state }))}
       />
       <Manifesto />
       <TwoStates panels={statePanels} />

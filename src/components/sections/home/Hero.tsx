@@ -2,12 +2,13 @@ import { Reveal } from "@/components/motion/Reveal";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import type { ImageAsset } from "@/types/image";
-import { TripFinder } from "./TripFinder";
+import { TripFinder } from "./trip-finder/TripFinder";
+import type { FinderDestination } from "./trip-finder/types";
 
 interface HeroProps {
   image: ImageAsset;
   caption: string;
-  destinations: { slug: string; name: string }[];
+  destinations: FinderDestination[];
 }
 
 export function Hero({ image, caption, destinations }: HeroProps) {
