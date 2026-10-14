@@ -16,6 +16,16 @@ export const metadata: Metadata = {
   title: "Destinations in Uttarakhand & Himachal — Places to Visit in the Himalayas",
   description:
     "Explore 13 curated mountain destinations across Uttarakhand and Himachal Pradesh — Shimla, Manali, Rishikesh, Nainital, Jim Corbett, Kasol, Jibhi, Dharamshala, and more.",
+  keywords: [
+    "Himalayan travel destinations",
+    "places to visit in Uttarakhand",
+    "places to visit in Himachal Pradesh",
+    "best hill stations in India",
+    "Himalayan offbeat places",
+    "snow places in Himachal",
+    "spiritual places in Uttarakhand",
+    "trekking destinations India",
+  ],
   alternates: { canonical: "/destinations" },
   openGraph: {
     type: "website",

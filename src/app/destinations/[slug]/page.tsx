@@ -30,6 +30,15 @@ export async function generateMetadata({ params }: PageProps<"/destinations/[slu
   return {
     title,
     description,
+    keywords: [
+      `${destination.name} travel guide`,
+      `${destination.name} tour package`,
+      `places to visit in ${destination.name}`,
+      `best time to visit ${destination.name}`,
+      `${destination.name} weather`,
+      `${destination.name} ${stateLabel}`,
+      ...destination.highlights,
+    ],
     alternates: { canonical: `/destinations/${destination.slug}` },
     openGraph: {
       type: "website",

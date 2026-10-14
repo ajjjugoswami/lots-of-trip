@@ -11,6 +11,16 @@ export const metadata: Metadata = {
   title: "Himalayan Tour Packages — Curated Trips in Uttarakhand & Himachal",
   description:
     "Private and small-group journeys across Uttarakhand and Himachal — Shimla & Manali, Haridwar & Rishikesh, Nainital & Corbett, Kasol & Jibhi. Custom dates, stays, and transport included.",
+  keywords: [
+    "Himalayan tour packages",
+    "Uttarakhand tour itineraries",
+    "Himachal holiday packages",
+    "customized road trips Himalayas",
+    "private car tour Himalayas",
+    "North India mountain packages",
+    "Shimla Manali package",
+    "Rishikesh Haridwar tour",
+  ],
   alternates: { canonical: "/tours" },
   openGraph: {
     type: "website",

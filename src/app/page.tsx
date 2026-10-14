@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { DestinationGallery } from "@/components/sections/home/DestinationGallery";
 import { ExperienceGrid } from "@/components/sections/home/ExperienceGrid";
 import { FeaturedTours } from "@/components/sections/home/FeaturedTours";
@@ -25,6 +26,44 @@ import { getMapData } from "@/lib/data/map";
 import { getFeaturedTours } from "@/lib/data/tours";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
 import { getWeatherForAll } from "@/lib/weather/getWeather";
+
+export const metadata: Metadata = {
+  title: "Lots of Trip — Handcrafted Journeys in Uttarakhand & Himachal",
+  description:
+    "Tailor-made Himalayan trips, mountain treks, and cultural circuits across Uttarakhand and Himachal Pradesh. Planned by locals in Dehradun with handpicked stays and private transport.",
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "Uttarakhand tour packages",
+    "Himachal Pradesh tour packages",
+    "Himalayan travel agency",
+    "customized mountain trips India",
+    "Manali tour package",
+    "Shimla Kufri holiday package",
+    "Rishikesh river rafting and yoga",
+    "Jim Corbett tiger safari",
+    "Nainital lake tour",
+    "Kasol Kheerganga trek",
+    "Jibhi Tirthan homestay",
+    "Dharamshala McLeod Ganj itinerary",
+    "Amritsar Golden Temple tour",
+    "Dehradun tour operator",
+  ],
+  openGraph: {
+    type: "website",
+    title: "Lots of Trip — Handcrafted Journeys in Uttarakhand & Himachal",
+    description:
+      "Small-group journeys, treks and pilgrimages across Uttarakhand and Himachal Pradesh — planned by people who live in the mountains.",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lots of Trip — Handcrafted Journeys in Uttarakhand & Himachal",
+    description:
+      "Small-group journeys, treks and pilgrimages across Uttarakhand and Himachal Pradesh — planned by people who live in the mountains.",
+  },
+};
 
 const INSTAGRAM_REFS = [
   { destination: "manali", index: 1 },

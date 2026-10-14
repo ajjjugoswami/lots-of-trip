@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   title: "About Us — Himalayan Trip Designers Based in Dehradun",
   description:
     "Learn about Lots of Trip, a Dehradun-based travel company crafting authentic journeys, treks, and cultural trips across Uttarakhand and Himachal Pradesh.",
+  keywords: [
+    "Lots of Trip",
+    "Dehradun travel company",
+    "Himalayan travel designers",
+    "local tour operators Uttarakhand",
+    "mountain travel planners India",
+  ],
   alternates: { canonical: "/about" },
   openGraph: {
     type: "website",

@@ -25,6 +25,14 @@ export async function generateMetadata({ params }: PageProps<"/journeys/[state]"
   return {
     title,
     description,
+    keywords: [
+      `${state.name} tour packages`,
+      `${state.name} tourism`,
+      `places to visit in ${state.name}`,
+      `best time to visit ${state.name}`,
+      `${state.name} road trip itinerary`,
+      `${state.name} holiday packages`,
+    ],
     alternates: { canonical: `/journeys/${state.slug}` },
     openGraph: {
       type: "website",

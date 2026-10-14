@@ -13,6 +13,14 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   title: "Contact & Trip Planner — Lots of Trip",
   description: DESCRIPTION,
+  keywords: [
+    "contact Lots of Trip",
+    "plan Himalayan trip",
+    "custom trip planner Uttarakhand",
+    "Himachal tour inquiry",
+    "Dehradun travel desk",
+    "Himalayan travel WhatsApp",
+  ],
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",

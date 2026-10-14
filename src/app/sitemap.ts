@@ -5,7 +5,7 @@ import { getTours } from "@/lib/data/tours";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
-  const buildDate = new Date("2026-03-01T00:00:00.000Z");
+  const buildDate = new Date();
 
   const coreRoutes: MetadataRoute.Sitemap = [
     {
