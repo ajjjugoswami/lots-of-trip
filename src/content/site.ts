@@ -25,29 +25,33 @@ export const siteConfig: SiteConfig = {
 };
 
 export const mainNav: NavItem[] = [
+  { label: "Journeys", href: "/tours" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
+export const mobileNav: NavItem[] = [
   { label: "Destinations", href: "/destinations" },
   { label: "Journeys", href: "/tours" },
   { label: "Uttarakhand", href: "/journeys/uttarakhand" },
-  { label: "Himachal", href: "/journeys/himachal" },
+  { label: "Himachal Pradesh", href: "/journeys/himachal" },
   { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
-export const footerNav: { title: string; items: NavItem[] }[] = [
-  {
-    title: "Explore",
-    items: [
-      { label: "All destinations", href: "/destinations" },
-      { label: "Curated journeys", href: "/tours" },
-      { label: "Uttarakhand", href: "/journeys/uttarakhand" },
-      { label: "Himachal Pradesh", href: "/journeys/himachal" },
-    ],
-  },
-  {
-    title: "Company",
-    items: [
-      { label: "About us", href: "/about" },
-      { label: "Plan a trip", href: "/contact" },
-      { label: "Photo credits", href: "/credits" },
-    ],
-  },
+export const companyNav: NavItem[] = [
+  { label: "About us", href: "/about" },
+  { label: "Plan a trip", href: "/contact" },
+  { label: "All destinations", href: "/destinations" },
+  { label: "Photo credits", href: "/credits" },
 ];
+
+export const legalNav: NavItem[] = [
+  { label: "Contact", href: "/contact" },
+  { label: "Photo credits", href: "/credits" },
+  { label: "Journeys", href: "/tours" },
+];
+
+export const headerOverlayRoutes = ["/", "/destinations/", "/tours/", "/journeys/"];
+
+export const bookingStatus = "Now planning winter treks · 2026–27";

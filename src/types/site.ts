@@ -1,4 +1,5 @@
 import type { TripType } from "./destination";
+import type { ImageAsset } from "./image";
 
 export interface NavItem {
   label: string;
@@ -23,6 +24,25 @@ export interface SiteConfig {
   social: {
     instagram: { handle: string; url: string };
   };
+}
+
+export interface NavDestinationGroup {
+  label: string;
+  href: string;
+  items: { label: string; href: string; meta: string }[];
+}
+
+export interface NavFeature {
+  eyebrow: string;
+  title: string;
+  meta: string;
+  href: string;
+  image: ImageAsset;
+}
+
+export interface HeaderData {
+  groups: NavDestinationGroup[];
+  feature: NavFeature;
 }
 
 export interface Testimonial {

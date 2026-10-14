@@ -56,13 +56,6 @@ export const WhatsAppIcon = (props: IconProps) => (
   </svg>
 );
 
-export const MountainIcon = (props: IconProps) => (
-  <svg viewBox="0 0 32 20" {...base} {...props}>
-    <path d="M1 19 11 4l5 7 4-5 11 13H1Z" />
-    <path d="M8.5 8 11 4l2.5 3.5" />
-  </svg>
-);
-
 export const MenuIcon = (props: IconProps) => (
   <svg viewBox="0 0 24 24" {...base} {...props}>
     <path d="M3 9h18M3 15h18" />

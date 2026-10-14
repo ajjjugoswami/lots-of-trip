@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Serif, Inter_Tight, JetBrains_Mono } from "next/font/google";
-import { Footer } from "@/components/layout/Footer";
-import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/footer/Footer";
+import { Header } from "@/components/layout/header/Header";
 import { Preloader } from "@/components/layout/Preloader";
 import { RouteScrollReset } from "@/components/layout/RouteScrollReset";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
@@ -9,6 +9,7 @@ import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat";
 import { MediaCursor } from "@/components/ui/MediaCursor";
 import { siteConfig } from "@/content/site";
 import { resolveImage } from "@/lib/data/images";
+import { getHeaderData } from "@/lib/data/navigation";
 import "./globals.css";
 
 const display = Instrument_Serif({
@@ -60,7 +61,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SmoothScroll>
           <Preloader images={preloaderImages} />
           <RouteScrollReset />
-          <Header />
+          <Header data={getHeaderData()} />
           <main>{children}</main>
           <Footer />
           <WhatsAppFloat />
