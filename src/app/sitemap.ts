@@ -5,67 +5,71 @@ import { getTours } from "@/lib/data/tours";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = getSiteUrl();
-  const buildDate = new Date();
+  const lastModified = new Date();
 
-  const coreRoutes: MetadataRoute.Sitemap = [
+  // Core navigation pages
+  const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: `${siteUrl}/`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${siteUrl}/destinations`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${siteUrl}/tours`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${siteUrl}/about`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${siteUrl}/contact`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
     },
     {
       url: `${siteUrl}/credits`,
-      lastModified: buildDate,
+      lastModified,
       changeFrequency: "monthly",
       priority: 0.3,
     },
   ];
 
+  // Dynamic state hub pages (automatically gathered from data)
   const stateRoutes: MetadataRoute.Sitemap = getStates().map((state) => ({
     url: `${siteUrl}/journeys/${state.slug}`,
-    lastModified: buildDate,
+    lastModified,
     changeFrequency: "weekly",
     priority: 0.85,
   }));
 
+  // Dynamic destination pages (automatically gathered from data)
   const destinationRoutes: MetadataRoute.Sitemap = getDestinations().map((destination) => ({
     url: `${siteUrl}/destinations/${destination.slug}`,
-    lastModified: buildDate,
+    lastModified,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
+  // Dynamic tour itinerary pages (automatically gathered from data)
   const tourRoutes: MetadataRoute.Sitemap = getTours().map((tour) => ({
     url: `${siteUrl}/tours/${tour.slug}`,
-    lastModified: buildDate,
+    lastModified,
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
-  return [...coreRoutes, ...stateRoutes, ...destinationRoutes, ...tourRoutes];
+  return [...staticRoutes, ...stateRoutes, ...destinationRoutes, ...tourRoutes];
 }
