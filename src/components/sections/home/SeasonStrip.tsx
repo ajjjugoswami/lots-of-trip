@@ -87,7 +87,7 @@ export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
               >
                 <Link
                   href={`/destinations/${destination.slug}`}
-                  className="group block overflow-hidden rounded-xl bg-surface transition-shadow duration-300 hover:shadow-[0_12px_30px_rgb(0_0_0/0.08)]"
+                  className="group block h-full overflow-hidden rounded-xl bg-surface transition-shadow duration-300 hover:shadow-[0_12px_30px_rgb(0_0_0/0.08)]"
                 >
                   <div className="relative aspect-4/3 overflow-hidden">
                     <AppImage
