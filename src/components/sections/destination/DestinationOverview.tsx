@@ -1,10 +1,16 @@
-import { Check } from "lucide-react";
+import { Check, Newspaper } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Reveal } from "@/components/motion/Reveal";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { formatAltitude, formatCoordinates, formatMonthRange, tripTypeLabel } from "@/lib/utils/format";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import type { Destination } from "@/types/destination";
+
+/** Builds a Google News search URL for the given destination name. */
+function buildGoogleNewsLink(destinationName: string): string {
+  const query = encodeURIComponent(`${destinationName} travel news`);
+  return `https://news.google.com/search?q=${query}&hl=en-IN&gl=IN&ceid=IN:en`;
+}
 
 export function DestinationOverview({ destination }: { destination: Destination }) {
   const facts = [
@@ -54,6 +60,14 @@ export function DestinationOverview({ destination }: { destination: Destination 
                 icon={<FaWhatsapp className="size-4 text-[#25d366]" />}
               >
                 Ask on WhatsApp
+              </ButtonLink>
+              <ButtonLink
+                href={buildGoogleNewsLink(destination.name)}
+                external
+                variant="outline"
+                icon={<Newspaper className="size-4" />}
+              >
+                Latest news from {destination.name}
               </ButtonLink>
             </div>
           </div>
