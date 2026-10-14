@@ -47,9 +47,9 @@ export const companyNav: NavItem[] = [
 ];
 
 export const legalNav: NavItem[] = [
-  { label: "Contact", href: "/contact" },
-  { label: "Photo credits", href: "/credits" },
-  { label: "Journeys", href: "/tours" },
+  { label: "Cancellation & refunds", href: "/policies/cancellation" },
+  { label: "Terms", href: "/policies/terms" },
+  { label: "Privacy", href: "/policies/privacy" },
 ];
 
 export const analytics = {

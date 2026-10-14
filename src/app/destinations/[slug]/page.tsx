@@ -3,16 +3,20 @@ import { notFound } from "next/navigation";
 import { DestinationHero } from "@/components/sections/destination/DestinationHero";
 import { DestinationLocation } from "@/components/sections/destination/DestinationLocation";
 import { DestinationOverview } from "@/components/sections/destination/DestinationOverview";
+import { GettingThere } from "@/components/sections/destination/GettingThere";
 import { LiveWeather } from "@/components/sections/destination/LiveWeather";
 import { NextDestination } from "@/components/sections/destination/NextDestination";
 import { PhotoGrid } from "@/components/sections/destination/PhotoGrid";
 import { SeasonBar } from "@/components/sections/destination/SeasonBar";
+import { FaqSection } from "@/components/sections/shared/FaqSection";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { TourGrid } from "@/components/sections/shared/TourGrid";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { getAdjacentDestination, getDestination, getDestinations } from "@/lib/data/destinations";
+import { getDestinationFaqs, getGettingThere } from "@/lib/data/guides";
 import { getToursForDestination } from "@/lib/data/tours";
 import { destinationMapHref } from "@/lib/utils/maps";
+import { buildFaqSchema } from "@/lib/utils/schema";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export function generateStaticParams() {
@@ -73,6 +77,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
   if (!destination) notFound();
 
   const tours = getToursForDestination(destination.slug);
+  const faqs = getDestinationFaqs(destination);
   const siteUrl = getSiteUrl();
   const stateName = destination.state === "uttarakhand" ? "Uttarakhand" : "Himachal Pradesh";
 
@@ -120,6 +125,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
         },
       ],
     },
+    buildFaqSchema(faqs),
   ];
 
   return (
@@ -129,6 +135,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
       <DestinationOverview destination={destination} />
       <LiveWeather destination={destination} />
       <DestinationLocation destination={destination} />
+      <GettingThere name={destination.name} legs={getGettingThere(destination.slug)} />
       <PhotoGrid images={destination.images.slice(1)} title={`${destination.name} in pictures`} />
       <SeasonBar months={destination.bestMonths} name={destination.name} />
       {tours.length > 0 && (
@@ -139,6 +146,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
           </div>
         </section>
       )}
+      <FaqSection title={`Planning a trip to ${destination.name}`} faqs={faqs} subject={destination.name} />
       <NextDestination destination={getAdjacentDestination(destination.slug)} />
       <PlanCta image={destination.images[1] ?? destination.images[0]} subject={destination.name} />
     </>

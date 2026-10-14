@@ -64,3 +64,14 @@ export function formatMonthRange(months: number[]) {
   if (months.length === 12) return "All year";
   return months.map(monthShort).join(" · ");
 }
+
+export function formatMonthList(months: number[]) {
+  const names = months.map((month) => MONTHS[month - 1]);
+  if (names.length <= 1) return names.join("");
+  return `${names.slice(0, -1).join(", ")} and ${names.at(-1)}`;
+}
+
+export const formatDate = (iso: string) =>
+  new Intl.DateTimeFormat("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(
+    new Date(iso),
+  );

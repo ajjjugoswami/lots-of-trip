@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
 import { getDestinations, getStates } from "@/lib/data/destinations";
+import { getPolicies } from "@/lib/data/guides";
 import { getTours } from "@/lib/data/tours";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -71,5 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticRoutes, ...stateRoutes, ...destinationRoutes, ...tourRoutes];
+  const policyRoutes: MetadataRoute.Sitemap = getPolicies().map((policy) => ({
+    url: `${siteUrl}/policies/${policy.slug}`,
+    lastModified: new Date(policy.updated),
+    changeFrequency: "yearly",
+    priority: 0.2,
+  }));
+
+  return [...staticRoutes, ...stateRoutes, ...destinationRoutes, ...tourRoutes, ...policyRoutes];
 }

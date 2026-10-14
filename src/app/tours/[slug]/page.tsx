@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DestinationGrid } from "@/components/sections/destinations/DestinationGrid";
+import { FaqSection } from "@/components/sections/shared/FaqSection";
 import { Itinerary } from "@/components/sections/tour/Itinerary";
 import { RelatedTours } from "@/components/sections/tour/RelatedTours";
 import { TourEnquiry } from "@/components/sections/tour/TourEnquiry";
@@ -8,7 +9,9 @@ import { TourHero } from "@/components/sections/tour/TourHero";
 import { TourInclusions } from "@/components/sections/tour/TourInclusions";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { getDestination } from "@/lib/data/destinations";
+import { getTourFaqs } from "@/lib/data/guides";
 import { getRelatedTours, getTour, getTours } from "@/lib/data/tours";
+import { buildFaqSchema } from "@/lib/utils/schema";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export function generateStaticParams() {
@@ -67,6 +70,7 @@ export default async function TourPage({ params }: PageProps<"/tours/[slug]">) {
   const destinations = tour.destinations.map(getDestination).filter((item) => item !== undefined);
   const related = getRelatedTours(slug);
   const siteUrl = getSiteUrl();
+  const faqs = getTourFaqs();
 
   const schemas = [
     {
@@ -120,6 +124,7 @@ export default async function TourPage({ params }: PageProps<"/tours/[slug]">) {
         },
       ],
     },
+    buildFaqSchema(faqs),
   ];
 
   return (
@@ -134,6 +139,7 @@ export default async function TourPage({ params }: PageProps<"/tours/[slug]">) {
           <DestinationGrid destinations={destinations} />
         </div>
       </section>
+      <FaqSection title="Before you book" faqs={faqs} subject={`the ${tour.title} journey`} />
       <TourEnquiry title={tour.title} />
       <RelatedTours tours={related} />
     </>
