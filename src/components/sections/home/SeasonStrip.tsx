@@ -5,13 +5,18 @@ import Link from "next/link";
 import { useState } from "react";
 import { AppImage } from "@/components/ui/AppImage";
 import { SectionIntro } from "@/components/ui/SectionIntro";
+import { useMounted } from "@/hooks/useMounted";
 import { CUBIC } from "@/lib/motion/tokens";
 import { cn } from "@/lib/utils/cn";
 import { MONTHS, monthShort } from "@/lib/utils/format";
 import type { Destination } from "@/types/destination";
 
 export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
-  const [month, setMonth] = useState(() => new Date().getMonth() + 1);
+  const mounted = useMounted();
+  const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
+  const month = selectedMonth ?? (mounted ? new Date().getMonth() + 1 : 10);
+  const setMonth = (val: number) => setSelectedMonth(val);
+
   const matches = destinations.filter((item) => item.bestMonths.includes(month));
 
   return (

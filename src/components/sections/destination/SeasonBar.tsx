@@ -3,13 +3,15 @@
 import { Bell } from "lucide-react";
 import { Reveal } from "@/components/motion/Reveal";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { useMounted } from "@/hooks/useMounted";
 import { cn } from "@/lib/utils/cn";
 import { MONTHS, monthShort } from "@/lib/utils/format";
 import { buildWhatsAppMessageLink } from "@/lib/utils/whatsapp";
 
 export function SeasonBar({ months, name }: { months: number[]; name: string }) {
-  const currentMonth = new Date().getMonth() + 1;
-  const isInSeason = months.includes(currentMonth);
+  const mounted = useMounted();
+  const currentMonth = mounted ? new Date().getMonth() + 1 : null;
+  const isInSeason = currentMonth ? months.includes(currentMonth) : true;
 
   const notifyLink = buildWhatsAppMessageLink(
     `Hi Lots of Trip! I'd like to visit ${name} — can you let me know the best upcoming dates and when the season opens?`,
