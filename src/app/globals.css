@@ -159,6 +159,19 @@
   background: var(--color-glacier);
 }
 
+html[data-dark-scrollbar] {
+  background-color: var(--color-night);
+  scrollbar-color: rgb(255 255 255 / 0.28) var(--color-night);
+}
+
+html[data-dark-scrollbar]::-webkit-scrollbar-track {
+  background: var(--color-night);
+}
+
+html[data-dark-scrollbar]::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 0.28);
+}
+
 @keyframes ken-burns {
   from {
     transform: scale(1.12);

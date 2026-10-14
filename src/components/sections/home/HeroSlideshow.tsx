@@ -1,8 +1,9 @@
 "use client";
 
 import { useReducedMotion } from "motion/react";
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { AppImage } from "@/components/ui/AppImage";
+import { useDarkScrollbar } from "@/hooks/useDarkScrollbar";
 import { cn } from "@/lib/utils/cn";
 import type { ImageAsset } from "@/types/image";
 import styles from "./HeroSlideshow.module.css";
@@ -17,6 +18,8 @@ const INTERVAL_MS = 5000;
 export function HeroSlideshow({ slides, children }: { slides: HeroSlide[]; children: ReactNode }) {
   const [active, setActive] = useState(0);
   const reducedMotion = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
+  useDarkScrollbar(sectionRef);
 
   useEffect(() => {
     if (reducedMotion || slides.length < 2) return;
@@ -25,7 +28,7 @@ export function HeroSlideshow({ slides, children }: { slides: HeroSlide[]; child
   }, [active, reducedMotion, slides.length]);
 
   return (
-    <section className="relative isolate flex flex-col overflow-hidden bg-night text-white md:min-h-svh">
+    <section ref={sectionRef} className="relative isolate flex flex-col overflow-hidden bg-night text-white md:min-h-svh">
       <div className="absolute inset-0 -z-10" aria-hidden>
         {slides.map((slide, index) => (
           <div key={slide.image.src} className={styles.slide} data-active={index === active || undefined}>
