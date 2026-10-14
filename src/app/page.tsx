@@ -52,9 +52,9 @@ export default async function HomePage() {
         destinations={destinations.map(({ slug, name, region, state }) => ({ slug, name, region, state }))}
       />
       <Manifesto />
+      <DestinationMap data={getMapData(weather)} />
       <TwoStates panels={statePanels} />
       <DestinationGallery destinations={destinations} total={destinations.length} weather={weather} />
-      <DestinationMap data={getMapData(weather)} />
       <FeaturedTours tours={getFeaturedTours()} />
       <SeasonStrip destinations={destinations} />
       <ExperienceGrid items={experienceItems} />

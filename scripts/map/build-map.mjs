@@ -8,10 +8,9 @@ const STATES = [
   { name: "Himachal Pradesh", key: "himachal", focus: true },
   { name: "Uttarakhand", key: "uttarakhand", focus: true },
   { name: "Punjab", key: "punjab", focus: false },
-  { name: "Haryana", key: "haryana", focus: false },
 ];
 
-const BOUNDS = { minLon: 74.3, maxLon: 81.3, minLat: 28.6, maxLat: 33.4 };
+const BOUNDS = { minLon: 73.75, maxLon: 81.2, minLat: 28.65, maxLat: 33.35 };
 const WIDTH = 1000;
 const TOLERANCE = 0.9;
 

@@ -1,4 +1,5 @@
 import mapSource from "@/content/generated/map.json";
+import { mapLabelSides } from "@/content/mapLabels";
 import type { Coordinates } from "@/types/destination";
 import type { MapData, MapState } from "@/types/map";
 import type { CurrentWeather } from "@/types/weather";
@@ -7,9 +8,9 @@ import { getDestinations } from "./destinations";
 const { projection } = mapSource;
 
 const STATE_LABELS: { text: string; coordinates: Coordinates }[] = [
-  { text: "Himachal Pradesh", coordinates: { lat: 32.75, lng: 77.6 } },
-  { text: "Uttarakhand", coordinates: { lat: 30.45, lng: 79.85 } },
-  { text: "Punjab", coordinates: { lat: 30.75, lng: 74.9 } },
+  { text: "Himachal Pradesh", coordinates: { lat: 32.85, lng: 77.75 } },
+  { text: "Uttarakhand", coordinates: { lat: 30.35, lng: 79.9 } },
+  { text: "Punjab", coordinates: { lat: 30.55, lng: 75.2 } },
 ];
 
 function project({ lat, lng }: Coordinates) {
@@ -35,6 +36,7 @@ export function getMapData(weather: Record<string, CurrentWeather | null>): MapD
       bestMonths: destination.bestMonths,
       image: destination.images[0],
       weather: weather[destination.slug] ?? null,
+      labelSide: mapLabelSides[destination.slug] ?? "right",
       ...project(destination.coordinates),
     })),
   };

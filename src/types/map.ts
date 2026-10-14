@@ -15,6 +15,8 @@ export interface MapLabel {
   y: number;
 }
 
+export type MapLabelSide = "left" | "right" | "top" | "bottom";
+
 export interface MapDestination {
   slug: string;
   name: string;
@@ -27,6 +29,7 @@ export interface MapDestination {
   weather: CurrentWeather | null;
   x: number;
   y: number;
+  labelSide: MapLabelSide;
 }
 
 export interface MapData {
