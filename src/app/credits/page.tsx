@@ -1,20 +1,54 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getDestinations } from "@/lib/data/destinations";
 import { getAllCredits } from "@/lib/data/images";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export const metadata: Metadata = {
-  title: "Photo credits",
-  description: "Credits and licences for the photographs used on Lots of Trip.",
+  title: "Photo Credits & Licences — Lots of Trip",
+  description: "Photographer credits, sources, and open licences for imagery across Lots of Trip.",
   alternates: { canonical: "/credits" },
+  openGraph: {
+    type: "website",
+    title: "Photo Credits & Licences — Lots of Trip",
+    description: "Photographer credits, sources, and open licences for imagery across Lots of Trip.",
+    url: "/credits",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Photo Credits & Licences — Lots of Trip",
+    description: "Photographer credits, sources, and open licences for imagery across Lots of Trip.",
+  },
 };
 
 export default function CreditsPage() {
   const names = new Map(getDestinations().map((item) => [item.slug, item.name]));
   const credits = getAllCredits();
+  const siteUrl = getSiteUrl();
+
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Photo Credits",
+        item: `${siteUrl}/credits`,
+      },
+    ],
+  };
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow="Photo credits"
         title="Credits"

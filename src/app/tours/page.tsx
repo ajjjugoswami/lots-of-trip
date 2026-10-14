@@ -1,20 +1,57 @@
 import type { Metadata } from "next";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { TourGrid } from "@/components/sections/shared/TourGrid";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { resolveImage } from "@/lib/data/images";
 import { getTours } from "@/lib/data/tours";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export const metadata: Metadata = {
-  title: "Journeys",
+  title: "Himalayan Tour Packages — Curated Trips in Uttarakhand & Himachal",
   description:
-    "Ready-made itineraries across Uttarakhand and Himachal — Shimla & Manali, Haridwar & Rishikesh, Nainital & Corbett, Kasol & Jibhi and more. Fully customisable.",
+    "Private and small-group journeys across Uttarakhand and Himachal — Shimla & Manali, Haridwar & Rishikesh, Nainital & Corbett, Kasol & Jibhi. Custom dates, stays, and transport included.",
   alternates: { canonical: "/tours" },
+  openGraph: {
+    type: "website",
+    title: "Curated Himalayan Journeys — Lots of Trip",
+    description:
+      "Handcrafted tours across Uttarakhand and Himachal Pradesh with private drivers, handpicked stays, and local support.",
+    url: "/tours",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Curated Himalayan Journeys — Lots of Trip",
+    description:
+      "Handcrafted tours across Uttarakhand and Himachal Pradesh with private drivers, handpicked stays, and local support.",
+  },
 };
 
 export default function ToursPage() {
+  const siteUrl = getSiteUrl();
+
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Journeys",
+        item: `${siteUrl}/tours`,
+      },
+    ],
+  };
+
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow="Journeys"
         title={

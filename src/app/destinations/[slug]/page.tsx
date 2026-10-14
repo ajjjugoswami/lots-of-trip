@@ -21,10 +21,38 @@ export async function generateMetadata({ params }: PageProps<"/destinations/[slu
   const { slug } = await params;
   const destination = getDestination(slug);
   if (!destination) return {};
+
+  const coverImage = destination.images[0]?.src;
+  const stateLabel = destination.state === "uttarakhand" ? "Uttarakhand" : "Himachal Pradesh";
+  const title = `${destination.name}, ${stateLabel} — Travel Guide, Weather & Trips`;
+  const description = `${destination.description.slice(0, 150)}... Explore ${destination.name} highlights, best months to visit, live weather, and custom itineraries.`;
+
   return {
-    title: `${destination.name} — ${destination.tagline}`,
-    description: destination.description,
+    title,
+    description,
     alternates: { canonical: `/destinations/${destination.slug}` },
+    openGraph: {
+      type: "website",
+      title: `${destination.name} — ${destination.tagline}`,
+      description,
+      url: `/destinations/${destination.slug}`,
+      images: coverImage
+        ? [
+            {
+              url: coverImage,
+              width: 1200,
+              height: 800,
+              alt: `${destination.name} in ${stateLabel}`,
+            },
+          ]
+        : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${destination.name} — ${destination.tagline}`,
+      description,
+      images: coverImage ? [coverImage] : undefined,
+    },
   };
 }
 
@@ -35,25 +63,57 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
 
   const tours = getToursForDestination(destination.slug);
   const siteUrl = getSiteUrl();
+  const stateName = destination.state === "uttarakhand" ? "Uttarakhand" : "Himachal Pradesh";
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TouristDestination",
-    name: destination.name,
-    description: destination.description,
-    url: `${siteUrl}/destinations/${destination.slug}`,
-    image: destination.images[0]?.src ? `${siteUrl}${destination.images[0].src}` : undefined,
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: destination.coordinates.lat,
-      longitude: destination.coordinates.lng,
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      name: destination.name,
+      description: destination.description,
+      url: `${siteUrl}/destinations/${destination.slug}`,
+      image: destination.images.map((img) => `${siteUrl}${img.src}`),
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: destination.coordinates.lat,
+        longitude: destination.coordinates.lng,
+      },
+      touristType: destination.types,
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: stateName,
+      },
+      hasMap: `https://www.openstreetmap.org/?mlat=${destination.coordinates.lat}&mlon=${destination.coordinates.lng}`,
     },
-    touristType: destination.types,
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${siteUrl}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Destinations",
+          item: `${siteUrl}/destinations`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: destination.name,
+          item: `${siteUrl}/destinations/${destination.slug}`,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
-      <JsonLd data={jsonLd} />
+      <JsonLd data={schemas} />
       <DestinationHero destination={destination} />
       <DestinationOverview destination={destination} />
       <LiveWeather destination={destination} />

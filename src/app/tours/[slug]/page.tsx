@@ -19,10 +19,35 @@ export async function generateMetadata({ params }: PageProps<"/tours/[slug]">): 
   const { slug } = await params;
   const tour = getTour(slug);
   if (!tour) return {};
+
+  const title = `${tour.title} (${tour.durationDays} Days Itinerary) — Lots of Trip`;
+  const description = `${tour.summary} Includes stays, private car transfers, sightseeing, and 24/7 on-trip assistance. Starting from ₹${tour.priceFromINR.toLocaleString("en-IN")}.`;
+  const coverImage = tour.cover.src;
+
   return {
-    title: `${tour.title} — ${tour.durationDays} days`,
-    description: tour.summary,
+    title,
+    description,
     alternates: { canonical: `/tours/${tour.slug}` },
+    openGraph: {
+      type: "website",
+      title: `${tour.title} — ${tour.durationDays} Days Himalayan Journey`,
+      description,
+      url: `/tours/${tour.slug}`,
+      images: [
+        {
+          url: coverImage,
+          width: 1200,
+          height: 750,
+          alt: tour.title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${tour.title} — ${tour.durationDays} Days Himalayan Journey`,
+      description,
+      images: [coverImage],
+    },
   };
 }
 
@@ -35,27 +60,70 @@ export default async function TourPage({ params }: PageProps<"/tours/[slug]">) {
   const related = getRelatedTours(slug);
   const siteUrl = getSiteUrl();
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Trip",
-    name: tour.title,
-    description: tour.summary,
-    url: `${siteUrl}/tours/${tour.slug}`,
-    itinerary: destinations.map((d) => ({
-      "@type": "City",
-      name: d.name,
-    })),
-    offers: {
-      "@type": "Offer",
-      price: tour.priceFromINR,
-      priceCurrency: "INR",
-      availability: "https://schema.org/InStock",
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      name: tour.title,
+      description: tour.summary,
+      url: `${siteUrl}/tours/${tour.slug}`,
+      image: `${siteUrl}${tour.cover.src}`,
+      touristType: tour.difficulty,
+      itinerary: {
+        "@type": "ItemList",
+        numberOfItems: tour.itinerary.length,
+        itemListElement: tour.itinerary.map((day) => ({
+          "@type": "ListItem",
+          position: day.day,
+          item: {
+            "@type": "TouristAttraction",
+            name: `Day ${day.day}: ${day.title}`,
+            description: day.description,
+          },
+        })),
+      },
+      offers: {
+        "@type": "Offer",
+        price: tour.priceFromINR,
+        priceCurrency: "INR",
+        availability: "https://schema.org/InStock",
+        url: `${siteUrl}/tours/${tour.slug}`,
+      },
+      provider: {
+        "@type": "TravelAgency",
+        name: "Lots of Trip",
+        url: siteUrl,
+      },
     },
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${siteUrl}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Journeys",
+          item: `${siteUrl}/tours`,
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: tour.title,
+          item: `${siteUrl}/tours/${tour.slug}`,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
-      <JsonLd data={jsonLd} />
+      <JsonLd data={schemas} />
       <TourHero tour={tour} places={destinations.map((item) => item.name)} />
       <Itinerary days={tour.itinerary} />
       <TourInclusions inclusions={tour.inclusions} exclusions={tour.exclusions} />

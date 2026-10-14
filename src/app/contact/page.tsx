@@ -2,16 +2,29 @@ import { Clock, MapPin, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
 import { ContactChannels } from "@/components/sections/contact/ContactChannels";
 import { EmbeddedForm } from "@/components/ui/EmbeddedForm";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { siteConfig } from "@/content/site";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 const DESCRIPTION =
-  "Plan a trip to Uttarakhand or Himachal with Lots of Trip. Tell us where and when — a trip designer replies within a day, usually much sooner on WhatsApp.";
+  "Contact Lots of Trip in Dehradun. Get personalized trip planning for Uttarakhand and Himachal Pradesh — instant WhatsApp assistance, transparent pricing, and local guidance.";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact & Trip Planner — Lots of Trip",
   description: DESCRIPTION,
   alternates: { canonical: "/contact" },
+  openGraph: {
+    type: "website",
+    title: "Plan Your Himalayan Journey — Contact Lots of Trip",
+    description: DESCRIPTION,
+    url: "/contact",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Plan Your Himalayan Journey — Contact Lots of Trip",
+    description: DESCRIPTION,
+  },
 };
 
 const PROMISES = [
@@ -22,9 +35,53 @@ const PROMISES = [
 
 export default function ContactPage() {
   const { contact } = siteConfig;
+  const siteUrl = getSiteUrl();
+
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      name: "Contact Lots of Trip",
+      description: DESCRIPTION,
+      url: `${siteUrl}/contact`,
+      mainEntity: {
+        "@type": "TravelAgency",
+        name: siteConfig.name,
+        telephone: siteConfig.contact.phoneE164,
+        email: siteConfig.contact.email,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Rajpur Road",
+          addressLocality: "Dehradun",
+          addressRegion: "Uttarakhand",
+          postalCode: "248001",
+          addressCountry: "IN",
+        },
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: `${siteUrl}/`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Contact",
+          item: `${siteUrl}/contact`,
+        },
+      ],
+    },
+  ];
 
   return (
     <>
+      <JsonLd data={schemas} />
       <PageHeader
         eyebrow="Contact"
         title={

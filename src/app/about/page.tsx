@@ -4,19 +4,56 @@ import { AboutValues } from "@/components/sections/about/AboutValues";
 import { TeamGrid } from "@/components/sections/about/TeamGrid";
 import { Manifesto } from "@/components/sections/home/Manifesto";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { resolveImage } from "@/lib/data/images";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export const metadata: Metadata = {
-  title: "About us",
+  title: "About Us — Himalayan Trip Designers Based in Dehradun",
   description:
-    "Lots of Trip is a small team from Dehradun planning journeys across Uttarakhand and Himachal — local drivers, handpicked stays and real support on every day.",
+    "Learn about Lots of Trip, a Dehradun-based travel company crafting authentic journeys, treks, and cultural trips across Uttarakhand and Himachal Pradesh.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    type: "website",
+    title: "About Lots of Trip — Himalayan Travel Specialists",
+    description:
+      "A Dehradun team planning trips across Uttarakhand and Himachal with trusted local drivers, homestays, and genuine mountain knowledge.",
+    url: "/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Lots of Trip — Himalayan Travel Specialists",
+    description:
+      "A Dehradun team planning trips across Uttarakhand and Himachal with trusted local drivers, homestays, and genuine mountain knowledge.",
+  },
 };
 
 export default function AboutPage() {
+  const siteUrl = getSiteUrl();
+
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "About Us",
+        item: `${siteUrl}/about`,
+      },
+    ],
+  };
+
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow="About us"
         title={

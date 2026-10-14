@@ -9,8 +9,10 @@ import { Testimonials } from "@/components/sections/home/Testimonials";
 import { TwoStates } from "@/components/sections/home/TwoStates";
 import { DestinationMap } from "@/components/sections/map/DestinationMap";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { experiences } from "@/content/experiences";
 import { heroSlides } from "@/content/hero";
+import { siteConfig } from "@/content/site";
 import { testimonials } from "@/content/testimonials";
 import {
   getDestinations,
@@ -21,6 +23,7 @@ import {
 import { resolveImage } from "@/lib/data/images";
 import { getMapData } from "@/lib/data/map";
 import { getFeaturedTours } from "@/lib/data/tours";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 import { getWeatherForAll } from "@/lib/weather/getWeather";
 
 const INSTAGRAM_REFS = [
@@ -45,8 +48,58 @@ export default async function HomePage() {
     image: resolveImage(experience.image, experience.label),
   }));
 
+  const siteUrl = getSiteUrl();
+
+  const schemas = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "@id": `${siteUrl}/#organization`,
+      name: siteConfig.name,
+      alternateName: siteConfig.shortName,
+      url: siteUrl,
+      logo: `${siteUrl}/logo-dark.png`,
+      image: `${siteUrl}/og-image.jpg`,
+      description: siteConfig.description,
+      telephone: siteConfig.contact.phoneE164,
+      email: siteConfig.contact.email,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Rajpur Road",
+        addressLocality: "Dehradun",
+        addressRegion: "Uttarakhand",
+        postalCode: "248001",
+        addressCountry: "IN",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 30.3165,
+        longitude: 78.0322,
+      },
+      priceRange: "₹₹",
+      areaServed: [
+        { "@type": "State", name: "Uttarakhand" },
+        { "@type": "State", name: "Himachal Pradesh" },
+      ],
+      sameAs: [siteConfig.social.instagram.url],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: siteConfig.name,
+      description: siteConfig.description,
+      inLanguage: "en-IN",
+      publisher: {
+        "@id": `${siteUrl}/#organization`,
+      },
+    },
+  ];
+
   return (
     <>
+      <JsonLd data={schemas} />
       <Hero
         slides={heroSlides.map((slide) => ({ caption: slide.caption, image: resolveImage(slide.image, slide.caption) }))}
         destinations={destinations.map(({ slug, name, region, state }) => ({ slug, name, region, state }))}

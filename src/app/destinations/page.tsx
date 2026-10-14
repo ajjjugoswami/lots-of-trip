@@ -7,22 +7,58 @@ import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { PageHeader } from "@/components/ui/PageHeader";
 import { getDestinations } from "@/lib/data/destinations";
 import { getMapData } from "@/lib/data/map";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { resolveImage } from "@/lib/data/images";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 import { getWeatherForAll } from "@/lib/weather/getWeather";
 
 export const metadata: Metadata = {
-  title: "Destinations",
+  title: "Destinations in Uttarakhand & Himachal — Places to Visit in the Himalayas",
   description:
-    "Explore Shimla, Manali, Rishikesh, Nainital, Jim Corbett, Kasol, Dharamshala and more — handpicked destinations across Uttarakhand and Himachal Pradesh.",
+    "Explore 13 curated mountain destinations across Uttarakhand and Himachal Pradesh — Shimla, Manali, Rishikesh, Nainital, Jim Corbett, Kasol, Jibhi, Dharamshala, and more.",
   alternates: { canonical: "/destinations" },
+  openGraph: {
+    type: "website",
+    title: "Himalayan Destinations — Uttarakhand & Himachal Pradesh",
+    description:
+      "Explore 13 curated mountain destinations across Uttarakhand and Himachal Pradesh — Shimla, Manali, Rishikesh, Nainital, Jim Corbett, Kasol, Jibhi, Dharamshala, and more.",
+    url: "/destinations",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Himalayan Destinations — Uttarakhand & Himachal Pradesh",
+    description:
+      "Explore 13 curated mountain destinations across Uttarakhand and Himachal Pradesh — Shimla, Manali, Rishikesh, Nainital, Jim Corbett, Kasol, Jibhi, Dharamshala, and more.",
+  },
 };
 
 export default async function DestinationsPage() {
   const destinations = getDestinations();
   const weather = await getWeatherForAll(destinations);
+  const siteUrl = getSiteUrl();
+
+  const breadcrumbs = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${siteUrl}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Destinations",
+        item: `${siteUrl}/destinations`,
+      },
+    ],
+  };
 
   return (
     <>
+      <JsonLd data={breadcrumbs} />
       <PageHeader
         eyebrow="Destinations"
         title={
