@@ -1,3 +1,5 @@
+import type { TripType } from "./destination";
+
 export interface NavItem {
   label: string;
   href: string;
@@ -31,7 +33,7 @@ export interface Testimonial {
 }
 
 export interface Experience {
-  type: string;
+  type: TripType;
   label: string;
   description: string;
   image: { destination: string; index: number };

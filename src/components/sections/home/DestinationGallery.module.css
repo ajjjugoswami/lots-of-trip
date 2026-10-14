@@ -1,0 +1,50 @@
+.track {
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  padding-inline: var(--spacing-gutter);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 78vw;
+  scroll-snap-align: start;
+}
+
+.progress {
+  display: block;
+  height: 100%;
+  background: var(--color-ink);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 24vw;
+  }
+
+  .card:nth-child(even) {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  .track {
+    width: max-content;
+    overflow: visible;
+    scroll-snap-type: none;
+    will-change: transform;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    flex-basis: 20vw;
+  }
+}
