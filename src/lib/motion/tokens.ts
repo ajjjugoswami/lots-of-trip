@@ -8,3 +8,10 @@ export const REVEAL = {
   duration: 0.8,
   stagger: 0.08,
 } as const;
+
+export const IMAGE_REVEAL = {
+  duration: 1.2,
+  inset: "inset(7% 7% 7% 7% round 0.75rem)",
+  open: "inset(0% 0% 0% 0% round 0.75rem)",
+  scale: 1.1,
+} as const;

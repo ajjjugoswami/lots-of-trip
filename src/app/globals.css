@@ -175,7 +175,7 @@ html[data-dark-scrollbar]::-webkit-scrollbar-thumb {
 
 @keyframes ken-burns {
   from {
-    transform: scale(1.12);
+    transform: scale(1.05);
   }
   to {
     transform: scale(1);

@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/motion/Reveal";
+import { RevealImage } from "@/components/motion/RevealImage";
 import { AppImage } from "@/components/ui/AppImage";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { FaWhatsapp } from "react-icons/fa6";
@@ -35,9 +36,9 @@ export function PlanCta({ image, subject }: PlanCtaProps) {
             </ButtonLink>
           </div>
         </div>
-        <div className="relative aspect-4/3 md:aspect-auto md:min-h-[28rem]">
+        <RevealImage delay={0.15} className="aspect-4/3 md:aspect-auto md:min-h-[28rem]">
           <AppImage image={image} sizes="(min-width: 768px) 40rem, 100vw" />
-        </div>
+        </RevealImage>
       </Reveal>
     </section>
   );

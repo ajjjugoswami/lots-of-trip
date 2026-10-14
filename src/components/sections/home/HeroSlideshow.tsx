@@ -36,8 +36,9 @@ export function HeroSlideshow({ slides, children }: { slides: HeroSlide[]; child
           </div>
         ))}
       </div>
-      <div className="absolute inset-0 -z-10 bg-linear-to-b from-black/60 via-black/35 to-black/80 md:from-black/55 md:via-black/15 md:to-black/75" />
-      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/50 via-black/10 to-transparent" />
+      <div className="absolute inset-x-0 top-0 -z-10 h-40 bg-linear-to-b from-black/45 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-[70%] bg-linear-to-t from-black/75 via-black/30 to-transparent md:h-[60%]" />
+      <div className="absolute inset-y-0 left-0 -z-10 hidden w-2/3 bg-linear-to-r from-black/35 to-transparent md:block" />
 
       <div className="container-x flex flex-1 flex-col justify-end pt-24 pb-6 sm:pt-32 md:pt-36 md:pb-10">
         {children}
