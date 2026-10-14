@@ -1,13 +1,12 @@
 "use client";
 
-import { Monitor, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useMounted } from "@/hooks/useMounted";
 import { cn } from "@/lib/utils/cn";
 
 const OPTIONS = [
   { value: "light", label: "Light theme", Icon: Sun },
-  { value: "system", label: "System theme", Icon: Monitor },
   { value: "dark", label: "Dark theme", Icon: Moon },
 ] as const;
 

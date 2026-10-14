@@ -56,7 +56,7 @@ export function Header({ data }: { data: HeaderData }) {
         data-scrolled={scrolled || undefined}
         data-menu-open={open || undefined}
       >
-        <div className="container-x relative grid h-header grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <div className="container-x relative flex h-header items-center justify-between gap-3 lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-4">
           <nav aria-label="Main" className="hidden items-center gap-1 self-stretch lg:flex">
             <MegaMenu data={data} label="Destinations" />
             {mainNav.map((item) => (
@@ -70,11 +70,10 @@ export function Header({ data }: { data: HeaderData }) {
               </Link>
             ))}
           </nav>
-          <div className="lg:hidden" />
 
           <Logo inheritColor />
 
-          <div className="flex items-center justify-end gap-1.5">
+          <div className="flex items-center justify-end gap-1 sm:gap-1.5">
             <ThemeToggle className={styles.iconButton} />
             <Link href="/contact" className={styles.cta}>
               Plan a trip

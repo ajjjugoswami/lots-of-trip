@@ -5,7 +5,8 @@ import { cn } from "@/lib/utils/cn";
 
 export type ButtonVariant = "solid" | "light" | "glass" | "outline" | "link" | "link-light";
 
-const PILL = "h-12 rounded-full px-7 text-[12px] font-medium tracking-[0.16em] uppercase";
+const PILL =
+  "h-10 rounded-full px-4 text-[10.5px] font-medium tracking-[0.12em] uppercase sm:h-12 sm:px-7 sm:text-[12px] sm:tracking-[0.16em]";
 
 const VARIANTS: Record<ButtonVariant, string> = {
   solid: `${PILL} bg-ink text-snow hover:bg-ink-soft`,
@@ -16,9 +17,11 @@ const VARIANTS: Record<ButtonVariant, string> = {
   "link-light": "text-[15px] font-medium text-accent-light underline-offset-4 hover:underline",
 };
 
+const PILL_VARIANTS = new Set<ButtonVariant>(["solid", "light", "glass", "outline"]);
+
 export const buttonClassName = (variant: ButtonVariant, className?: string) =>
   cn(
-    "group inline-flex items-center justify-center gap-2 whitespace-nowrap transition-colors duration-300",
+    "group inline-flex items-center justify-center gap-1.5 whitespace-nowrap transition-colors duration-300 sm:gap-2",
     VARIANTS[variant],
     className,
   );
@@ -45,7 +48,7 @@ export function ButtonLink({ children, variant = "solid", icon, external, classN
     <Link {...props} {...externalProps} className={buttonClassName(variant, className)}>
       {icon}
       {children}
-      {!icon && <Chevron />}
+      {!icon && (PILL_VARIANTS.has(variant) ? <span className="hidden sm:inline-flex"><Chevron /></span> : <Chevron />)}
     </Link>
   );
 }

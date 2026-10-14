@@ -21,7 +21,7 @@ function Field({
   children: ReactNode;
 }) {
   return (
-    <label className="group relative flex flex-1 items-center gap-3 px-5 py-3.5 md:py-2">
+    <label className="group relative flex flex-1 items-center gap-3 px-4 py-2.5 sm:px-5 sm:py-3.5 md:py-2">
       <Icon className="size-4 shrink-0 text-[#d4b483]" aria-hidden />
       <span className="flex min-w-0 flex-1 flex-col">
         <span className="text-[10px] font-medium tracking-[0.2em] text-white/60 uppercase">{label}</span>
@@ -33,7 +33,7 @@ function Field({
 }
 
 const SELECT_CLASS =
-  "w-full cursor-pointer appearance-none bg-transparent text-[15px] text-white outline-none [&>option]:text-[#1c1b19]";
+  "w-full cursor-pointer appearance-none bg-transparent text-[14px] text-white outline-none sm:text-[15px] [&>option]:text-[#1c1b19]";
 
 export function TripFinder({ destinations }: TripFinderProps) {
   const [destination, setDestination] = useState("");
@@ -44,7 +44,7 @@ export function TripFinder({ destinations }: TripFinderProps) {
   const message = `Hi Lots of Trip! I'd like to plan a trip to ${place}${month ? ` in ${month}` : ""} for ${travellers} ${travellers === "1" ? "traveller" : "travellers"}.`;
 
   return (
-    <div className="flex flex-col divide-y divide-white/15 overflow-hidden rounded-xl bg-white/10 p-1.5 ring-1 ring-white/20 backdrop-blur-xl md:flex-row md:items-center md:divide-x md:divide-y-0 md:rounded-full">
+    <div className="flex flex-col divide-y divide-white/15 overflow-hidden rounded-xl bg-black/25 p-1.5 ring-1 ring-white/20 backdrop-blur-xl md:flex-row md:items-center md:divide-x md:divide-y-0 md:rounded-full">
       <Field Icon={MapPin} label="Destination">
         <select value={destination} onChange={(event) => setDestination(event.target.value)} className={SELECT_CLASS}>
           <option value="">Anywhere in the hills</option>
@@ -78,7 +78,7 @@ export function TripFinder({ destinations }: TripFinderProps) {
         href={buildWhatsAppMessageLink(message)}
         target="_blank"
         rel="noopener noreferrer"
-        className="group m-1.5 inline-flex h-13 items-center justify-center gap-2 rounded-full bg-white px-7 text-[12px] font-medium tracking-[0.16em] text-[#1c1b19] uppercase transition-colors duration-300 hover:bg-[#d4b483] md:m-0"
+        className="group m-1.5 inline-flex h-12 items-center md:h-13 justify-center gap-2 rounded-full bg-white px-7 text-[12px] font-medium tracking-[0.16em] text-[#1c1b19] uppercase transition-colors duration-300 hover:bg-[#d4b483] md:m-0"
       >
         Plan my trip
         <ArrowRight className="size-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden />

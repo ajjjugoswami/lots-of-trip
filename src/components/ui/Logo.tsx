@@ -17,7 +17,7 @@ export function Logo({ inheritColor = false, className }: LogoProps) {
       aria-label={`${siteConfig.name} home`}
       className={cn("group inline-flex items-center gap-2.5", !inheritColor && "text-ink", className)}
     >
-      <span className="relative size-9 shrink-0 overflow-hidden rounded-full ring-1 ring-current/15">
+      <span className="relative size-8 shrink-0 overflow-hidden rounded-full ring-1 ring-current/15 sm:size-9">
         <Image
           src="/logo-light.png"
           alt=""
@@ -37,7 +37,7 @@ export function Logo({ inheritColor = false, className }: LogoProps) {
           className={cn(MARK_CLASS, "hidden dark:block")}
         />
       </span>
-      <span className="font-serif-display text-[1.6rem] leading-none tracking-[-0.01em] whitespace-nowrap">
+      <span className="font-serif-display text-[1.3rem] leading-none tracking-[-0.02em] whitespace-nowrap sm:text-[1.6rem]">
         Lots <em className="italic">of</em> Trip
       </span>
     </Link>

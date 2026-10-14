@@ -9,6 +9,18 @@
   color-scheme: light;
 }
 
+@media (max-width: 63.99rem) {
+  :root {
+    --spacing-header: 3.75rem;
+  }
+}
+
+@media (min-width: 40rem) {
+  body {
+    font-size: 1.0625rem;
+  }
+}
+
 .dark {
   color-scheme: dark;
   --color-snow: #0e0d0c;
@@ -37,12 +49,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     font-family: var(--font-sans);
-    font-size: 1.0625rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.55;
     letter-spacing: -0.011em;
     color: var(--color-ink);
     background: var(--color-snow);
@@ -93,6 +108,7 @@
   input[type="radio"],
   input[type="submit"] {
     cursor: pointer;
+    touch-action: manipulation;
   }
 
   button:disabled,
