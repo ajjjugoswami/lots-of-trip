@@ -70,39 +70,30 @@ npm run lint     # lint
 
 ## 5. Destinations
 
-### Uttarakhand — "Devbhoomi"
-| Destination | Type | Best season | Highlight |
-|---|---|---|---|
-| Rishikesh | Spiritual / Adventure | Sep–Jun | Ganga Aarti, rafting, Laxman Jhula |
-| Kedarnath | Pilgrimage / Trek | May–Jun, Sep–Oct | One of the Char Dham, ~3,583 m |
-| Badrinath | Pilgrimage | May–Jun, Sep–Oct | Char Dham, Mana village |
-| Valley of Flowers | Trek / UNESCO | Jul–Sep | Alpine meadows, Hemkund Sahib |
-| Auli | Snow / Ski | Dec–Mar | Skiing, Nanda Devi views, ropeway |
-| Chopta – Tungnath – Chandrashila | Trek | Apr–Jun, Sep–Dec | Highest Shiva temple |
-| Kedarkantha | Winter trek | Dec–Apr | Classic snow summit trek |
-| Har Ki Dun | Trek | Apr–Jun, Sep–Nov | "Valley of Gods" |
-| Nainital | Hill station / Lakes | Mar–Jun, Oct–Dec | Naini Lake, Kumaon hills |
-| Mussoorie | Hill station | Mar–Jun, Sep–Nov | "Queen of the Hills" |
-| Jim Corbett | Wildlife | Nov–Jun | Tiger safaris |
-| Munsiyari | Offbeat | Mar–Jun, Oct–Nov | Panchachuli peaks |
-| Kausani | Offbeat | Oct–Jun | 300 km Himalayan panorama |
+**Scope is exactly these 13 destinations (set by the owner). Do not add content, photos or tours for any other place.** Nearby attractions inside them (e.g. Solang in Manali, Kufri near Shimla, Khajjiar near Dalhousie, Triund near Dharamshala, Kheerganga near Kasol, Jalori/Serolsar near Jibhi, Wagah near Amritsar) are fine.
 
-### Himachal Pradesh — "Dev Bhoomi of the West"
-| Destination | Type | Best season | Highlight |
+### Uttarakhand
+| Destination | Slug | Type | Highlight |
 |---|---|---|---|
-| Manali | Hill station / Adventure | Oct–Jun | Solang, Old Manali, Atal Tunnel |
-| Spiti Valley (Kaza) | High-altitude desert | Jun–Oct | Key Monastery, Langza, Hikkim |
-| Chandratal | Lake / Camping | Jun–Sep | Moon Lake, ~4,300 m |
-| Kasol & Parvati Valley | Backpacking | Mar–Jun, Sep–Nov | Tosh, Malana, Kheerganga trek |
-| Shimla | Hill station | Mar–Jun, Dec–Jan | Colonial Mall Road, toy train |
-| Dharamshala / McLeod Ganj | Culture | Mar–Jun, Sep–Nov | Tibetan culture, Triund trek |
-| Bir Billing | Paragliding | Mar–May, Oct–Nov | World-class paragliding |
-| Kinnaur (Kalpa, Chitkul) | Offbeat | Apr–Oct | Kinner Kailash, last village on the Indo-Tibet road |
-| Jibhi & Tirthan Valley | Offbeat | Mar–Jun, Sep–Nov | Great Himalayan National Park |
-| Dalhousie & Khajjiar | Hill station | Mar–Jun | "Mini Switzerland of India" |
-| Hampta Pass | Trek | Jun–Sep | Green Kullu to barren Lahaul crossover |
+| Jim Corbett | `jim-corbett` | Wildlife | Tiger safaris, Dhikala |
+| Nainital | `nainital` | Hill station / Lakes | Naini Lake, Snow View |
+| Haridwar | `haridwar` | Spiritual | Ganga Aarti at Har Ki Pauri |
+| Rishikesh | `rishikesh` | Spiritual / Adventure | Laxman Jhula, rafting |
+| Mussoorie | `mussoorie` | Hill station | Mall Road, Landour |
+| Dhanaulti | `dhanaulti` | Hill station / Offbeat | Surkanda Devi, deodar forest |
 
-> Verify seasons, altitudes, and temple opening dates (they change every year) before publishing.
+### Himachal (Amritsar grouped here as the usual gateway; its region reads "Amritsar, Punjab")
+| Destination | Slug | Type | Highlight |
+|---|---|---|---|
+| Shimla | `shimla` | Hill station / Snow | The Ridge, toy train |
+| Manali | `manali` | Snow / Adventure | Solang Valley, Atal Tunnel |
+| Kasol | `kasol` | Offbeat | Parvati river, Kheerganga |
+| Jibhi | `jibhi` | Offbeat | Serolsar lake, Jalori Pass |
+| Dharamshala | `dharamshala` | Culture / Trek | McLeod Ganj, Triund |
+| Dalhousie | `dalhousie` | Hill station | Khajjiar meadow |
+| Amritsar | `amritsar` | Spiritual | Golden Temple, Wagah |
+
+> Verify seasons and altitudes before publishing.
 
 ### Image sourcing
 - Sources: **Unsplash** and **Pexels** (free for commercial use), **Wikimedia Commons** (check each image's license; attribution is required for CC-BY / CC-BY-SA).
