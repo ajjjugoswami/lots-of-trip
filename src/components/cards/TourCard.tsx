@@ -2,10 +2,16 @@ import Link from "next/link";
 import { AppImage } from "@/components/ui/AppImage";
 import { Chevron } from "@/components/ui/ButtonLink";
 import { difficultyLabel, formatINR } from "@/lib/utils/format";
-import type { Tour } from "@/types/tour";
+import type { Difficulty, Tour } from "@/types/tour";
+
+const DIFFICULTY_DOT: Record<Difficulty, string> = {
+  easy: "bg-[#4caf50]",
+  moderate: "bg-[#f59e0b]",
+  challenging: "bg-[#ef4444]",
+};
 
 export function TourCard({ tour }: { tour: Tour }) {
-  const facts = [`${tour.durationDays} days`, difficultyLabel(tour.difficulty), tour.groupSize];
+  const facts = [`${tour.durationDays} days`, tour.groupSize];
 
   return (
     <Link
@@ -21,6 +27,10 @@ export function TourCard({ tour }: { tour: Tour }) {
       </div>
       <div className="flex flex-1 flex-col p-7 md:p-9">
         <div className="flex flex-wrap gap-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-surface px-3 py-1 text-[12px] font-medium text-ink-soft">
+            <span className={`size-2 rounded-full ${DIFFICULTY_DOT[tour.difficulty]}`} aria-hidden />
+            {difficultyLabel(tour.difficulty)}
+          </span>
           {facts.map((fact) => (
             <span key={fact} className="rounded-full bg-surface px-3 py-1 text-[12px] font-medium text-ink-soft">
               {fact}

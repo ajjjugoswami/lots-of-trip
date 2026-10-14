@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 import { DestinationCard } from "@/components/cards/DestinationCard";
 import { CUBIC } from "@/lib/motion/tokens";
 import { cn } from "@/lib/utils/cn";
@@ -24,13 +24,24 @@ interface DestinationExplorerProps {
 }
 
 export function DestinationExplorer({ destinations, weather }: DestinationExplorerProps) {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const types = Array.from(new Set(destinations.flatMap((item) => item.types)));
-  const initialType = searchParams.get("type") as TripType | null;
 
-  const [state, setState] = useState<StateFilter>("all");
-  const [type, setType] = useState<TripType | null>(
-    initialType && types.includes(initialType) ? initialType : null,
+  const state = (searchParams.get("state") as StateFilter | null) ?? "all";
+  const type = (searchParams.get("type") as TripType | null) ?? null;
+
+  const setParam = useCallback(
+    (key: string, value: string | null) => {
+      const params = new URLSearchParams(searchParams.toString());
+      if (value && value !== "all") {
+        params.set(key, value);
+      } else {
+        params.delete(key);
+      }
+      router.replace(`?${params.toString()}`, { scroll: false });
+    },
+    [router, searchParams],
   );
 
   const results = destinations.filter(
@@ -47,7 +58,7 @@ export function DestinationExplorer({ destinations, weather }: DestinationExplor
               type="button"
               role="tab"
               aria-selected={state === filter.value}
-              onClick={() => setState(filter.value)}
+              onClick={() => setParam("state", filter.value)}
               className={cn(
                 "relative rounded-full px-5 py-2 text-[14px] font-medium transition-colors",
                 state === filter.value ? "text-ink" : "text-slate hover:text-ink",
@@ -71,7 +82,7 @@ export function DestinationExplorer({ destinations, weather }: DestinationExplor
               key={value}
               type="button"
               aria-pressed={type === value}
-              onClick={() => setType(type === value ? null : value)}
+              onClick={() => setParam("type", type === value ? null : value)}
               className={cn(
                 "rounded-full px-3.5 py-1.5 text-[13px] font-medium ring-1 ring-inset transition-colors",
                 type === value ? "bg-ink text-snow ring-ink" : "text-slate ring-line hover:text-ink",

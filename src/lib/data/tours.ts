@@ -19,3 +19,16 @@ export const getTour = (slug: string) => tours.find((tour) => tour.slug === slug
 
 export const getToursForDestination = (destinationSlug: string) =>
   tours.filter((tour) => tour.destinations.includes(destinationSlug));
+
+export function getRelatedTours(currentSlug: string, limit = 2): Tour[] {
+  const current = tours.find((t) => t.slug === currentSlug);
+  if (!current) return [];
+  return tours
+    .filter(
+      (t) =>
+        t.slug !== currentSlug &&
+        t.destinations.some((d) => current.destinations.includes(d)),
+    )
+    .slice(0, limit);
+}
+

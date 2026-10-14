@@ -1,15 +1,19 @@
-import { Check, Newspaper } from "lucide-react";
+import { Check, Map, Newspaper, Share2 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa6";
 import { Reveal } from "@/components/motion/Reveal";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { ShareButton } from "@/components/ui/ShareButton";
 import { formatAltitude, formatCoordinates, formatMonthRange, tripTypeLabel } from "@/lib/utils/format";
 import { buildWhatsAppLink } from "@/lib/utils/whatsapp";
 import type { Destination } from "@/types/destination";
 
-/** Builds a Google News search URL for the given destination name. */
 function buildGoogleNewsLink(destinationName: string): string {
   const query = encodeURIComponent(`${destinationName} travel news`);
   return `https://news.google.com/search?q=${query}&hl=en-IN&gl=IN&ceid=IN:en`;
+}
+
+function buildMapsLink({ lat, lng }: { lat: number; lng: number }): string {
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 }
 
 export function DestinationOverview({ destination }: { destination: Destination }) {
@@ -62,6 +66,14 @@ export function DestinationOverview({ destination }: { destination: Destination 
                 Ask on WhatsApp
               </ButtonLink>
               <ButtonLink
+                href={buildMapsLink(destination.coordinates)}
+                external
+                variant="outline"
+                icon={<Map className="size-4" />}
+              >
+                Get directions
+              </ButtonLink>
+              <ButtonLink
                 href={buildGoogleNewsLink(destination.name)}
                 external
                 variant="outline"
@@ -69,6 +81,11 @@ export function DestinationOverview({ destination }: { destination: Destination 
               >
                 Latest news from {destination.name}
               </ButtonLink>
+              <ShareButton
+                title={destination.name}
+                text={destination.tagline}
+                icon={<Share2 className="size-4" />}
+              />
             </div>
           </div>
         </Reveal>

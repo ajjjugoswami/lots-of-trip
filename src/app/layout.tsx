@@ -7,6 +7,7 @@ import { MotionProvider } from "@/components/layout/MotionProvider";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { SocialFloat } from "@/components/layout/SocialFloat";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { siteConfig } from "@/content/site";
 import { getHeaderData } from "@/lib/data/navigation";
 import { getSiteUrl } from "@/lib/utils/siteUrl";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <main id="main">{children}</main>
             <Footer />
             <SocialFloat />
+            <ScrollToTop />
             <MobileActionBar />
           </MotionProvider>
         </ThemeProvider>

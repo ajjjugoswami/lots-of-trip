@@ -8,8 +8,10 @@ import { PhotoGrid } from "@/components/sections/destination/PhotoGrid";
 import { SeasonBar } from "@/components/sections/destination/SeasonBar";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { TourGrid } from "@/components/sections/shared/TourGrid";
+import { JsonLd } from "@/components/ui/JsonLd";
 import { getAdjacentDestination, getDestination, getDestinations } from "@/lib/data/destinations";
 import { getToursForDestination } from "@/lib/data/tours";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 
 export function generateStaticParams() {
   return getDestinations().map((destination) => ({ slug: destination.slug }));
@@ -32,9 +34,26 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
   if (!destination) notFound();
 
   const tours = getToursForDestination(destination.slug);
+  const siteUrl = getSiteUrl();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    name: destination.name,
+    description: destination.description,
+    url: `${siteUrl}/destinations/${destination.slug}`,
+    image: destination.images[0]?.src ? `${siteUrl}${destination.images[0].src}` : undefined,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: destination.coordinates.lat,
+      longitude: destination.coordinates.lng,
+    },
+    touristType: destination.types,
+  };
 
   return (
     <>
+      <JsonLd data={jsonLd} />
       <DestinationHero destination={destination} />
       <DestinationOverview destination={destination} />
       <LiveWeather destination={destination} />

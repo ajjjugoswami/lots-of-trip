@@ -11,7 +11,7 @@ import { MONTHS, monthShort } from "@/lib/utils/format";
 import type { Destination } from "@/types/destination";
 
 export function SeasonStrip({ destinations }: { destinations: Destination[] }) {
-  const [month, setMonth] = useState(10);
+  const [month, setMonth] = useState(() => new Date().getMonth() + 1);
   const matches = destinations.filter((item) => item.bestMonths.includes(month));
 
   return (
