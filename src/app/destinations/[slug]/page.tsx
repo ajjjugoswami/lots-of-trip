@@ -22,7 +22,6 @@ export async function generateMetadata({ params }: PageProps<"/destinations/[slu
     title: `${destination.name} — ${destination.tagline}`,
     description: destination.description,
     alternates: { canonical: `/destinations/${destination.slug}` },
-    openGraph: { images: [destination.images[0].src] },
   };
 }
 

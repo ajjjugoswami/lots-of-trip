@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import { SocialFloat } from "@/components/layout/SocialFloat";
 import { siteConfig } from "@/content/site";
 import { getHeaderData } from "@/lib/data/navigation";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,8 +17,15 @@ const inter = Inter({
   display: "swap",
 });
 
+const OG_IMAGE = {
+  url: "/og-image.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Lots of Trip — Find your way to the Himalayas",
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
+  metadataBase: new URL(getSiteUrl()),
   title: {
     default: `${siteConfig.name} — Journeys in Uttarakhand & Himachal`,
     template: `%s · ${siteConfig.name}`,
@@ -27,6 +35,11 @@ export const metadata: Metadata = {
     type: "website",
     siteName: siteConfig.name,
     locale: "en_IN",
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [OG_IMAGE.url],
   },
 };
 

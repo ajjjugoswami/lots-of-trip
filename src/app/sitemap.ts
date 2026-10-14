@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/content/site";
+import { getSiteUrl } from "@/lib/utils/siteUrl";
 import { getDestinations, getStates } from "@/lib/data/destinations";
 import { getTours } from "@/lib/data/tours";
 
@@ -16,5 +16,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...getTours().map((tour) => `/tours/${tour.slug}`),
   ];
 
-  return paths.map((path) => ({ url: `${siteConfig.url}${path}` }));
+  return paths.map((path) => ({ url: `${getSiteUrl()}${path}` }));
 }

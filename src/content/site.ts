@@ -5,7 +5,7 @@ export const siteConfig: SiteConfig = {
   shortName: "LOT",
   description:
     "Small-group journeys, treks and pilgrimages across Uttarakhand and Himachal Pradesh — planned by people who live in the mountains.",
-  url: "https://lotsoftrip.com",
+  url: "https://lots-of-trip.vercel.app",
   established: "2026",
   copyrightYear: 2026,
   contact: {

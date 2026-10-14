@@ -20,7 +20,6 @@ export async function generateMetadata({ params }: PageProps<"/tours/[slug]">): 
     title: `${tour.title} — ${tour.durationDays} days`,
     description: tour.summary,
     alternates: { canonical: `/tours/${tour.slug}` },
-    openGraph: { images: [tour.cover.src] },
   };
 }
 
