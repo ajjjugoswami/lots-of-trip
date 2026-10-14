@@ -119,13 +119,13 @@ All business details live in `src/content/site.ts`. Use **dummy placeholder valu
 |---|---|
 | Brand | Lots of Trip |
 | Instagram | https://www.instagram.com/lotsoftrip_/ (real) |
-| WhatsApp | `+91 98765 43210` (dummy) → link `https://wa.me/919876543210?text=<prefilled message>` |
-| Phone | `+91 98765 43210` (dummy) |
-| Email | `hello@lotsoftrip.com` (dummy) |
+| WhatsApp | +91 70152 48493 (real) → wa.me/917015248493 with a prefilled message |
+| Phone | +91 70152 48493 (real) |
+| Email | lotsoftrip9@gmail.com (real) |
 | Address | `Dehradun, Uttarakhand, India` (dummy) |
 
 ### Contact flows
-1. **Contact / trip planner form** (`/contact` and the tour detail enquiry). Fields: name, phone, email, destination/tour, travel dates, group size, message. Validated with React Hook Form + Zod. For now it submits to a dummy server action that logs and returns success. A real email/CRM integration comes later.
+1. **Contact form** is the DA Forms embed (siteConfig.contactFormSrc) rendered by components/ui/EmbeddedForm, which auto-resizes via the da-forms:height postMessage. Used on /contact and every tour page.
 2. **Direct WhatsApp.** A floating WhatsApp button on every page, plus "Chat on WhatsApp" CTAs on tour and destination pages. Each opens `wa.me` with a prefilled message naming the tour or destination (built by a `buildWhatsAppLink` util).
 3. **Instagram.** Linked in the header/menu and footer, plus an "On the trail with us" Instagram section on the home page (dummy grid of local images linking to the profile; no API for now).
 
