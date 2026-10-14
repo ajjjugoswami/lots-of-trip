@@ -27,9 +27,4 @@ export const aboutValues = [
   },
 ] as const;
 
-export const team = [
-  { name: "Aarav Negi", role: "Founder & trip designer", initials: "AN" },
-  { name: "Priya Rawat", role: "Head of operations", initials: "PR" },
-  { name: "Karan Thakur", role: "Himachal trip lead", initials: "KT" },
-  { name: "Meera Bisht", role: "Guest experience", initials: "MB" },
-];
+export const team = [{ name: "Karan Dangwal", role: "Founder & trip designer", initials: "KD" }];
