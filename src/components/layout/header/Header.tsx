@@ -72,7 +72,7 @@ export function Header({ data }: { data: HeaderData }) {
           </nav>
           <div className="lg:hidden" />
 
-          <Logo inverted={overlay} />
+          <Logo inheritColor />
 
           <div className="flex items-center justify-end gap-1.5">
             <ThemeToggle className={styles.iconButton} />

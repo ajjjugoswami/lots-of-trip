@@ -6,16 +6,16 @@ import { cn } from "@/lib/utils/cn";
 const MARK_CLASS = "size-full scale-[1.12] object-cover";
 
 interface LogoProps {
-  inverted?: boolean;
+  inheritColor?: boolean;
   className?: string;
 }
 
-export function Logo({ inverted = false, className }: LogoProps) {
+export function Logo({ inheritColor = false, className }: LogoProps) {
   return (
     <Link
       href="/"
       aria-label={`${siteConfig.name} home`}
-      className={cn("group inline-flex items-center gap-2.5", inverted ? "text-white" : "text-ink", className)}
+      className={cn("group inline-flex items-center gap-2.5", !inheritColor && "text-ink", className)}
     >
       <span className="relative size-9 shrink-0 overflow-hidden rounded-full ring-1 ring-current/15">
         <Image
@@ -24,7 +24,8 @@ export function Logo({ inverted = false, className }: LogoProps) {
           width={36}
           height={36}
           sizes="36px"
-          className={cn(MARK_CLASS, inverted ? "hidden" : "dark:hidden")}
+          data-logo-mark="light"
+          className={cn(MARK_CLASS, "dark:hidden")}
         />
         <Image
           src="/logo-dark.png"
@@ -32,7 +33,8 @@ export function Logo({ inverted = false, className }: LogoProps) {
           width={36}
           height={36}
           sizes="36px"
-          className={cn(MARK_CLASS, inverted ? "block" : "hidden dark:block")}
+          data-logo-mark="dark"
+          className={cn(MARK_CLASS, "hidden dark:block")}
         />
       </span>
       <span className="font-serif-display text-[1.6rem] leading-none tracking-[-0.01em] whitespace-nowrap">

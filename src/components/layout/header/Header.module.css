@@ -28,6 +28,14 @@
   background-color: var(--color-snow);
 }
 
+.header[data-overlay]:not(:has(nav :hover, nav :focus-within)) :global([data-logo-mark="light"]) {
+  display: none;
+}
+
+.header[data-overlay]:not(:has(nav :hover, nav :focus-within)) :global([data-logo-mark="dark"]) {
+  display: block;
+}
+
 .header[data-menu-open] {
   background-color: var(--color-snow);
   -webkit-backdrop-filter: none;
