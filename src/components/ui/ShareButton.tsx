@@ -9,9 +9,10 @@ interface ShareButtonProps {
   title: string;
   text: string;
   icon?: ReactNode;
+  label?: string;
 }
 
-export function ShareButton({ title, text, icon }: ShareButtonProps) {
+export function ShareButton({ title, text, icon, label = "Share this destination" }: ShareButtonProps) {
   const [copied, setCopied] = useState(false);
 
   async function handleShare() {
@@ -32,7 +33,7 @@ export function ShareButton({ title, text, icon }: ShareButtonProps) {
       className={buttonClassName("outline", "w-full")}
     >
       {copied ? <Check className="size-4 text-[#4caf50]" /> : (icon ?? <Share2 className="size-4" />)}
-      {copied ? "Link copied!" : "Share this destination"}
+      {copied ? "Link copied!" : label}
     </button>
   );
 }
