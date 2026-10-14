@@ -7,6 +7,7 @@ import { Manifesto } from "@/components/sections/home/Manifesto";
 import { SeasonStrip } from "@/components/sections/home/SeasonStrip";
 import { Testimonials } from "@/components/sections/home/Testimonials";
 import { TwoStates } from "@/components/sections/home/TwoStates";
+import { DestinationMap } from "@/components/sections/map/DestinationMap";
 import { PlanCta } from "@/components/sections/shared/PlanCta";
 import { experiences } from "@/content/experiences";
 import { heroSlides } from "@/content/hero";
@@ -18,7 +19,9 @@ import {
   getStates,
 } from "@/lib/data/destinations";
 import { resolveImage } from "@/lib/data/images";
+import { getMapData } from "@/lib/data/map";
 import { getFeaturedTours } from "@/lib/data/tours";
+import { getWeatherForAll } from "@/lib/weather/getWeather";
 
 const INSTAGRAM_REFS = [
   { destination: "manali", index: 1 },
@@ -29,8 +32,9 @@ const INSTAGRAM_REFS = [
   { destination: "dharamshala", index: 0 },
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
   const destinations = getDestinations();
+  const weather = await getWeatherForAll(destinations);
   const statePanels = getStates().map((state) => ({
     ...state,
     image: getStateHeroImage(state.slug),
@@ -49,7 +53,8 @@ export default function HomePage() {
       />
       <Manifesto />
       <TwoStates panels={statePanels} />
-      <DestinationGallery destinations={destinations} total={destinations.length} />
+      <DestinationGallery destinations={destinations} total={destinations.length} weather={weather} />
+      <DestinationMap data={getMapData(weather)} />
       <FeaturedTours tours={getFeaturedTours()} />
       <SeasonStrip destinations={destinations} />
       <ExperienceGrid items={experienceItems} />

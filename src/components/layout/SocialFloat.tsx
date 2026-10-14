@@ -32,7 +32,7 @@ const LINKS: FloatLink[] = [
 
 export function SocialFloat() {
   return (
-    <div className="fixed right-3 bottom-[calc(0.75rem+env(safe-area-inset-bottom))] z-40 flex flex-col items-end gap-2.5 sm:right-4 sm:bottom-4 md:right-6 md:bottom-6">
+    <div className="fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-3 md:flex">
       {LINKS.map(({ href, label, Icon, className }, index) => (
         <motion.a
           key={label}

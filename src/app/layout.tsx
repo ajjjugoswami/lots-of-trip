@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/footer/Footer";
 import { Header } from "@/components/layout/header/Header";
 import { MotionProvider } from "@/components/layout/MotionProvider";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { MobileActionBar } from "@/components/layout/MobileActionBar";
 import { SocialFloat } from "@/components/layout/SocialFloat";
 import { siteConfig } from "@/content/site";
 import { getHeaderData } from "@/lib/data/navigation";
@@ -60,7 +61,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en-IN" className={inter.variable} suppressHydrationWarning>
-      <body className="min-h-dvh">
+      <body className="min-h-dvh pb-[calc(4.25rem+env(safe-area-inset-bottom))] md:pb-0">
         <ThemeProvider>
           <MotionProvider>
             <a
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <main id="main">{children}</main>
             <Footer />
             <SocialFloat />
+            <MobileActionBar />
           </MotionProvider>
         </ThemeProvider>
         <Analytics />

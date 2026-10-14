@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { DestinationHero } from "@/components/sections/destination/DestinationHero";
 import { DestinationOverview } from "@/components/sections/destination/DestinationOverview";
+import { LiveWeather } from "@/components/sections/destination/LiveWeather";
 import { NextDestination } from "@/components/sections/destination/NextDestination";
 import { PhotoGrid } from "@/components/sections/destination/PhotoGrid";
 import { SeasonBar } from "@/components/sections/destination/SeasonBar";
@@ -36,6 +37,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
     <>
       <DestinationHero destination={destination} />
       <DestinationOverview destination={destination} />
+      <LiveWeather destination={destination} />
       <PhotoGrid images={destination.images.slice(1)} title={`${destination.name} in pictures`} />
       <SeasonBar months={destination.bestMonths} name={destination.name} />
       {tours.length > 0 && (

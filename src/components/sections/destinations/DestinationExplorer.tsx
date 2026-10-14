@@ -8,6 +8,7 @@ import { CUBIC } from "@/lib/motion/tokens";
 import { cn } from "@/lib/utils/cn";
 import { tripTypeLabel } from "@/lib/utils/format";
 import type { Destination, StateSlug, TripType } from "@/types/destination";
+import type { CurrentWeather } from "@/types/weather";
 
 type StateFilter = StateSlug | "all";
 
@@ -17,7 +18,12 @@ const STATE_FILTERS: { value: StateFilter; label: string }[] = [
   { value: "himachal", label: "Himachal" },
 ];
 
-export function DestinationExplorer({ destinations }: { destinations: Destination[] }) {
+interface DestinationExplorerProps {
+  destinations: Destination[];
+  weather: Record<string, CurrentWeather | null>;
+}
+
+export function DestinationExplorer({ destinations, weather }: DestinationExplorerProps) {
   const searchParams = useSearchParams();
   const types = Array.from(new Set(destinations.flatMap((item) => item.types)));
   const initialType = searchParams.get("type") as TripType | null;
@@ -94,6 +100,7 @@ export function DestinationExplorer({ destinations }: { destinations: Destinatio
             >
               <DestinationCard
                 destination={destination}
+                weather={weather[destination.slug]}
                 aspect="landscape"
                 sizes="(min-width: 1024px) 26rem, (min-width: 640px) 50vw, 100vw"
               />

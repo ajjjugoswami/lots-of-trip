@@ -1,0 +1,87 @@
+.state {
+  stroke: var(--color-slate);
+  stroke-opacity: 0.6;
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  transition: fill 0.3s ease;
+}
+
+.stateFocus {
+  fill: var(--color-surface);
+}
+
+.stateMuted {
+  fill: transparent;
+  stroke-opacity: 0.3;
+}
+
+.stateLabel {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  fill: var(--color-slate);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.pin {
+  cursor: pointer;
+  outline: none;
+}
+
+.pinHit {
+  fill: transparent;
+}
+
+.pinDot {
+  fill: var(--color-ink);
+  stroke: var(--color-snow);
+  stroke-width: 3;
+  transition: r 0.3s var(--ease-out-expo);
+}
+
+.pin[data-active] .pinDot {
+  fill: var(--color-accent);
+}
+
+.pin:focus-visible .pinDot {
+  stroke: var(--color-accent);
+  stroke-width: 4;
+}
+
+.pinPulse {
+  fill: var(--color-accent);
+  opacity: 0.35;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: pulse 1.8s ease-out infinite;
+}
+
+.tagText {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  fill: var(--color-ink);
+  paint-order: stroke;
+  stroke: var(--color-snow);
+  stroke-width: 6px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  to {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pinPulse {
+    animation: none;
+  }
+}

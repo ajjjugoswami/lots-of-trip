@@ -1,18 +1,21 @@
 import Link from "next/link";
 import { ViewTransition } from "react";
 import { AppImage } from "@/components/ui/AppImage";
+import { WeatherIcon } from "@/components/ui/WeatherIcon";
 import { formatAltitude } from "@/lib/utils/format";
 import { cn } from "@/lib/utils/cn";
 import type { Destination } from "@/types/destination";
+import type { CurrentWeather } from "@/types/weather";
 
 interface DestinationCardProps {
   destination: Destination;
   sizes: string;
   className?: string;
   aspect?: "portrait" | "landscape";
+  weather?: CurrentWeather | null;
 }
 
-export function DestinationCard({ destination, sizes, className, aspect = "portrait" }: DestinationCardProps) {
+export function DestinationCard({ destination, sizes, className, aspect = "portrait", weather }: DestinationCardProps) {
   return (
     <Link href={`/destinations/${destination.slug}`} className={cn("group block", className)}>
       <ViewTransition name={`destination-${destination.slug}`} share="morph" default="none">
@@ -30,6 +33,15 @@ export function DestinationCard({ destination, sizes, className, aspect = "portr
           <span className="absolute top-3 left-3 rounded-full bg-white/90 px-2.5 py-1 text-[12px] font-medium text-black backdrop-blur">
             {formatAltitude(destination.altitudeM)}
           </span>
+          {weather && (
+            <span
+              title={`${weather.label} in ${destination.name} right now`}
+              className="absolute top-3 right-3 inline-flex items-center gap-1.5 rounded-full bg-black/45 px-2.5 py-1 text-[12px] font-medium text-white backdrop-blur"
+            >
+              <WeatherIcon kind={weather.kind} className="size-3.5" />
+              {weather.temperature}°
+            </span>
+          )}
         </div>
       </ViewTransition>
       <div className="mt-4 px-1">

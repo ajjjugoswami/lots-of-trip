@@ -17,7 +17,7 @@ export default function CreditsPage() {
     <>
       <PageHeader
         eyebrow="Photo credits"
-        title="Thank you, photographers."
+        title="Credits"
         description="Destination photographs are sourced from Wikimedia Commons under open licences. Each is credited below with a link to the original."
       />
       <section className="container-x pb-section">
@@ -44,6 +44,17 @@ export default function CreditsPage() {
             ))}
           </ul>
         </div>
+        <p className="mx-auto mt-8 max-w-4xl text-center text-[13px] text-slate">
+          Map boundaries from{" "}
+          <a href="https://datameet.org" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            DataMeet
+          </a>{" "}
+          (CC BY 2.5 IN). Live weather forecasts from{" "}
+          <a href="https://www.met.no/en" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            MET Norway
+          </a>{" "}
+          (CC BY 4.0).
+        </p>
       </section>
     </>
   );
